@@ -110,7 +110,8 @@
               "title": "Calendar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "1430851f823f919b",
@@ -186,6 +187,13 @@
   },
   "active": "fe0e5e7cd172094d",
   "lastOpenFiles": [
+    "Archive",
+    "Resource",
+    "Area",
+    "Project",
+    "yearly",
+    "quarterly",
+    "monthly",
     "weekly",
     "daily",
     "취업 스터디 01.12 1일차.md",
@@ -193,8 +201,6 @@
     "인하대 24년/머신 러닝 개론/머신러닝 개론 회독.md",
     "인하대 24년/데이터베이스/데이터 베이스 연습문제.md",
     "인하대 24년/머신 러닝 개론",
-    "인하대 24년/데이터베이스",
-    "인하대 24년",
     "2024-10-21.md"
   ]
 }

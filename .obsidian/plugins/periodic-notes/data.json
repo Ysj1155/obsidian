@@ -11,25 +11,25 @@
   "weekly": {
     "format": "",
     "template": "",
-    "folder": "",
+    "folder": "weekly",
     "enabled": true
   },
   "monthly": {
     "format": "",
     "template": "",
-    "folder": "",
+    "folder": "monthly",
     "enabled": true
   },
   "quarterly": {
     "format": "",
     "template": "",
-    "folder": "",
+    "folder": "quarterly",
     "enabled": true
   },
   "yearly": {
     "format": "",
     "template": "",
-    "folder": "",
+    "folder": "yearly",
     "enabled": true
   }
 }
