@@ -5,31 +5,31 @@
   "daily": {
     "format": "",
     "template": "",
-    "folder": "/daily",
+    "folder": "time line/Daily",
     "enabled": true
   },
   "weekly": {
     "format": "",
     "template": "",
-    "folder": "weekly",
+    "folder": "time line/weekly",
     "enabled": true
   },
   "monthly": {
     "format": "",
     "template": "",
-    "folder": "monthly",
+    "folder": "time line/Monthly",
     "enabled": true
   },
   "quarterly": {
     "format": "",
     "template": "",
     "folder": "quarterly",
-    "enabled": true
+    "enabled": false
   },
   "yearly": {
     "format": "",
     "template": "",
-    "folder": "yearly",
+    "folder": "time line/yearly",
     "enabled": true
   }
 }
