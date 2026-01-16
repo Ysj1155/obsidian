@@ -1,0 +1,4 @@
+[삼성 공식 홈페이지 반도체 백과사전](https://semiconductor.samsung.com/kr/support/tools-resources/fabrication-process/eight-essential-semiconductor-fabrication-processes-part-9-packaging-to-protect-the-chips-from-external-elements/)
+
+**반도체를 외부환경으로부터 보호하고, 전기적으로 연결해주는 패키징 (Packaging) 공정** 
+전공정을 통해 완성된 웨이퍼의 반도체 칩은 낱개로 하나하나 잘라내는데, 이렇게 잘린 칩을 베어칩(bare chip) 또는 다이(die)라고 합니다. 그러나 이 상태의 칩은 외부와 전기신호를 주고받을 수 없으며, 외부 충격에 의해 손상되기 쉬운데요. 반도체 칩, 즉 집적회로(IC)가 기판이나 전자기기에 장착되기 위해선 그에 맞는 포장이 필요합니다. 이와 같이 반도체 칩이 외부와 신호를 주고 받을 수 있도록 길을 만들어주고 다양한 외부환경으로부터 안전하게 보호받는 형태로 만드는 과정을 ‘패키징(Packaging)’이라고 합니다. 패키징은 집적회로와 전자기기를 연결하고 고온, 고습, 화학약품, 진동/충격 등의 외부환경으로부터 회로를 보호하기 위한 공정입니다. 그렇다면 이렇게 중요한 패키지 공정의 단계에 대해 알아볼까요? **1) 웨이퍼 절단**

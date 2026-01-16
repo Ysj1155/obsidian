@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'"
+              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정"
             }
           }
         ]
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정' 의 백링크"
+              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정 의 백링크"
             }
           },
           {
@@ -175,12 +175,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정' 의 나가는 링크"
+              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정 의 나가는 링크"
             }
           },
           {
@@ -189,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정' 의 개요"
+              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정 의 개요"
             }
           }
         ],
@@ -234,7 +234,10 @@
   },
   "active": "4350d0a35e74ed71",
   "lastOpenFiles": [
+    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
+    "attached file/Pasted image 20260116163058.png",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/6. 금속 배선/6탄, 전기가 통하는 길을 만드는 '금속 배선 공정'.md",
     "attached file/Pasted image 20260116162244.png",
     "attached file/Pasted image 20260116162231.png",
@@ -254,7 +257,6 @@
     "Area(꾸준히 신경쓸거)/반도체 공부/전자 산업의 혁명! 직접회로.md",
     "전자.md",
     "().md",
-    "attached file/Pasted image 20260116154229.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/.md",
     "time line/yearly/2026 목표.md",
     "time line/yearly/yearly.md",
@@ -269,7 +271,6 @@
     "Tags",
     "TaskNotes/Tasks",
     "TaskNotes/Views",
-    "TaskNotes",
     "time line/weekly/2026-W03.md",
     "time line/Daily/2026-01-16.md",
     "Area(꾸준히 신경쓸거)/우분투로 넘어가는 방법.md",
