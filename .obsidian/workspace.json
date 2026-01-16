@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/3탄, 웨이퍼에 회로를 그려 넣는 포토공정.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1탄, '웨이퍼'란 무엇일까요"
+              "title": "3탄, 웨이퍼에 회로를 그려 넣는 포토공정"
             }
           }
         ]
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/3탄, 웨이퍼에 회로를 그려 넣는 포토공정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "1탄, '웨이퍼'란 무엇일까요 의 백링크"
+              "title": "3탄, 웨이퍼에 회로를 그려 넣는 포토공정 의 백링크"
             }
           },
           {
@@ -175,12 +175,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/3탄, 웨이퍼에 회로를 그려 넣는 포토공정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "1탄, '웨이퍼'란 무엇일까요 의 나가는 링크"
+              "title": "3탄, 웨이퍼에 회로를 그려 넣는 포토공정 의 나가는 링크"
             }
           },
           {
@@ -189,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/3탄, 웨이퍼에 회로를 그려 넣는 포토공정.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1탄, '웨이퍼'란 무엇일까요 의 개요"
+              "title": "3탄, 웨이퍼에 회로를 그려 넣는 포토공정 의 개요"
             }
           }
         ],
@@ -234,13 +234,16 @@
   },
   "active": "4350d0a35e74ed71",
   "lastOpenFiles": [
-    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/2. 산화/2탄, 웨이퍼 표면을 보호하는 산화공정.md",
+    "attached file/Pasted image 20260116155636.png",
+    "attached file/Pasted image 20260116155624.png",
+    "attached file/Pasted image 20260116155606.png",
+    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/3탄, 웨이퍼에 회로를 그려 넣는 포토공정.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/2. 산화/2탄, 웨이퍼 표면을 보호하는 산화공정.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/전자 산업의 혁명! 직접회로.md",
     "전자.md",
     "().md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/전자 산업의 혁명! 직접회로.md",
     "attached file/Pasted image 20260116154229.png",
-    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/Untitled.md",
     "attached file/Pasted image 20260116153705.png",
     "attached file/Pasted image 20260116153640.png",
     "attached file/Pasted image 20260116153615.png",
