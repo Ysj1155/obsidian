@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정"
+              "title": "수율"
             }
           }
         ]
@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정 의 백링크"
+              "title": "수율 의 백링크"
             }
           },
           {
@@ -175,12 +175,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정 의 나가는 링크"
+              "title": "수율 의 나가는 링크"
             }
           },
           {
@@ -189,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정 의 개요"
+              "title": "수율 의 개요"
             }
           }
         ],
@@ -234,8 +234,15 @@
   },
   "active": "4350d0a35e74ed71",
   "lastOpenFiles": [
-    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
+    "attached file/Pasted image 20260116164726.png",
+    "attached file/Pasted image 20260116164710.png",
+    "attached file/Pasted image 20260116164652.png",
+    "attached file/Pasted image 20260116164640.png",
+    "attached file/Pasted image 20260116164625.png",
+    "attached file/Pasted image 20260116164607.png",
     "attached file/Pasted image 20260116163058.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/6. 금속 배선/6탄, 전기가 통하는 길을 만드는 '금속 배선 공정'.md",
@@ -244,15 +251,9 @@
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/5. 증착 & 이온주입/5탄, 반도체에 전기적 특성을 입히다! 증착 & 이온 주입 공정.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/4. 식각/4탄, 반도체 회로패턴의 완성 '식각 공정'.md",
     "attached file/Pasted image 20260116162005.png",
-    "attached file/Pasted image 20260116161714.png",
-    "attached file/Pasted image 20260116161508.png",
-    "attached file/Pasted image 20260116161422.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/2. 산화/2탄, 웨이퍼 표면을 보호하는 산화공정.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/3탄, 웨이퍼에 회로를 그려 넣는 포토공정.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/4. 식각/.md",
-    "attached file/Pasted image 20260116155636.png",
-    "attached file/Pasted image 20260116155624.png",
-    "attached file/Pasted image 20260116155606.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/전자 산업의 혁명! 직접회로.md",
     "전자.md",
