@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0f367bcb6e15a9d4",
+        "id": "71d6653e1235f00d",
         "type": "tabs",
         "children": [
           {
-            "id": "eef998c9c4150e57",
+            "id": "4afc6d5a2cd17c9e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/웨이퍼.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "웨이퍼"
             }
           }
         ]
@@ -69,8 +73,19 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "45b60b0e36399d57",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -118,9 +133,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "17040bf050f78d0f",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "1430851f823f919b",
@@ -165,12 +190,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/웨이퍼.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "웨이퍼 의 개요"
             }
           }
         ],
@@ -202,27 +228,32 @@
       "tasknotes:Open kanban board": false,
       "tasknotes:Open pomodoro": false,
       "tasknotes:Open pomodoro stats": false,
-      "tasknotes:Create new task": false
+      "tasknotes:Create new task": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "eef998c9c4150e57",
+  "active": "4afc6d5a2cd17c9e",
   "lastOpenFiles": [
+    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/웨이퍼.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/.md",
+    "time line/yearly/2026 목표.md",
+    "time line/yearly/yearly.md",
+    "2026-01-16.md",
+    "TaskNotes/Views/mini-calendar-default.base",
+    "TaskNotes/Views/kanban-default.base",
     "TaskNotes/Views/tasks-default.base",
     "TaskNotes/Views/calendar-default.base",
-    "TaskNotes/Views/mini-calendar-default.base",
-    "TaskNotes/Tasks/22262.md",
-    "TaskNotes/Tasks",
-    "TaskNotes/Views/kanban-default.base",
-    "time line/yearly/2026 목표.md",
-    "TaskNotes/Views/relationships.base",
     "TaskNotes/Views/agenda-default.base",
+    "TaskNotes/Views/relationships.base",
+    "TaskNotes/Tasks/22262.md",
+    "Tags",
+    "TaskNotes/Tasks",
     "TaskNotes/Views",
     "TaskNotes",
-    "2026-01-16.md",
     "time line/weekly/2026-W03.md",
     "time line/Daily/2026-01-16.md",
     "attached file/Pasted image 20260115211048.png",
-    "Area(꾸준히 신경쓸거)/반도체 공부/SSD",
     "attached file/Pasted image 20260115195135.png",
     "Area(꾸준히 신경쓸거)/우분투로 넘어가는 방법.md",
     "Project(목표와 데드라인)/취준/취업 스터디 2026.01.15 2일차.md",
