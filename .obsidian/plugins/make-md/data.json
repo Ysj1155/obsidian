@@ -22,7 +22,7 @@
   "spacesEnabled": true,
   "syncFormulaToFrontmatter": true,
   "spacesPerformance": false,
-  "currentWaypoint": 0,
+  "currentWaypoint": 1,
   "enableFolderNote": true,
   "folderIndentationLines": true,
   "revealActiveFile": false,
@@ -49,7 +49,9 @@
     "//time line/time line/yearly",
     "//Area(꾸준히 신경쓸거)",
     "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부",
-    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정"
+    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정",
+    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/2. 산화",
+    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
