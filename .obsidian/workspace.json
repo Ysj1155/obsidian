@@ -11,14 +11,12 @@
             "id": "4350d0a35e74ed71",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/전자 산업의 혁명! 직접회로.md",
-                "mode": "source",
-                "source": false
+                "path": "Area(꾸준히 신경쓸거)/반도체 공부/SSD"
               },
               "icon": "lucide-file",
-              "title": "전자 산업의 혁명! 직접회로"
+              "title": "SSD"
             }
           }
         ]
@@ -176,12 +174,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/전자 산업의 혁명! 직접회로.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "전자 산업의 혁명! 직접회로 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -226,8 +223,8 @@
   },
   "active": "4350d0a35e74ed71",
   "lastOpenFiles": [
-    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/전자 산업의 혁명! 직접회로.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
     "attached file/Pasted image 20260116165221.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
