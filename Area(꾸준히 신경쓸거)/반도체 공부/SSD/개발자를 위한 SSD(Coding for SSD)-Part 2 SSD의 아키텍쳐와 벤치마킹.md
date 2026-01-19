@@ -67,4 +67,34 @@ NAND 플래시 메모리 모듈의 중요한 속성은 수명이 제한적(Weari
 ![[Pasted image 20260119152138.png]]
 
 ## 1.3. SSD의 생산 공정
-많은 SSD 제조사는 SSD 생산을 위해서 SMT(Surface-Mount Technology)를 사용하는데,SMT 생산 과정에서는 전자 부품들이 회로 기판(PCBs)위에 직접 장착된다.SMT 생산 라인은 기계들이 줄지어 있고, 각 기계들이 부품을 기판위에 놓거나 놓여진 부품들을 납땜하는 등의 각 작업들을 담당하게 된다.전체 생산 공정에서 여러번의 품질 체크 과정도 수행된다.
+많은 SSD 제조사는 SSD 생산을 위해서 SMT(Surface-Mount Technology)를 사용하는데,SMT 생산 과정에서는 전자 부품들이 회로 기판(PCBs)위에 직접 장착된다. SMT 생산 라인은 기계들이 줄지어 있고, 각 기계들이 부품을 기판위에 놓거나 놓여진 부품들을 납땜하는 등의 각 작업들을 담당하게 된다. 전체 생산 공정에서 여러번의 품질 체크 과정도 수행된다. 
+[RAM & SSD & 메인 보드는 어떻게 만들어 지는가?](https://www.youtube.com/watch?v=3s7KG6QwUeQ)
+
+## 2. 벤치마킹과 성능 메트릭
+### 2.1. 기본 벤치마킹
+아래의 표2는 여러 SSD 드라이브들의 랜덤과 시퀀셜 워크로드에서 스루풋을 보여주고 있다.비교를 위해서 2008년과 2013년에 출시된 SSD를 HDD와 메모리(RAM)과 함께 나열해 보았다.
+![[Pasted image 20260119152640.png]]
+Notes
+- metric is not applicable for that storage solution
+- measured with 2 MB chunks, not 4 KB
+Metrics
+- MB/s: Megabytes per Second
+- KIOPS: Kilo IOPS, i.e 1000 Input/Output Operations Per Second
+Sources
+- Samsung 64 GB
+- Intel X25-M
+- Samsung SSD 840 EVO
+- Micron P420M
+- Western Digital Black 4 TB
+- Corsair Vengeance DDR3 RAM
+호스트 인터페이스는 성능을 결정하는 중요한 요소중 하나이다. 최근에 출시되는 SSD의 일반적인 인터페이스는 SATA 3.0 또는 PCI Express 3.0이다. SATA 3.0 인터페이스는 6 Gbit/s 정도의 데이터 전송량을 낼 수 있는데, 이는 초당 550MB 정도의 성능이다. 그리고 PCIe 3.0 인터페이스에서는 레인(lane)당 8 GT/s(GT/s 는 초당 전송가능한 Giga를 의미, Gigatransfers/second) 데이터 전송이 가능한데,이는 대략 1 GB/s 정도이다. PCIe 3.0 인터페이스는 최소 1개 이상의 레인(lane)을 가지고 있는데, 4개 레인을 가진 SSD는 SATA 3.0 인터페이스보다 8배나 빠른 4 GB/s 전송 속도를 낼 수 있다. 일부 엔터프라이즈 SSD중에는 SAS (Serial Attached SCSI) 인터페이스를 장착한 제품들도 있는데, 이들은 12 GBit/s정도의 전송 속도를 제공하지만 실제 SAS 인터페이스를 장착한 제품은 많지 않다. 
+최근 출시되는 대 부분의 SSD들은 SATA 3.0의 최대 전송 속도인 550MB/s를 초과할 정도의 성능을 가지고 있으므로, 현재는 대부분 인터페이스가 병목 지점인 경우가 많다. PCI Express 3.0이나 SAS 인터페이스를 장착한 SSD는 엄청난 성능 향상을 제공할 것이다. SATA보다 빠른 PCI Express 와 SAS 인터페이스 제조사에서 주로 사용되는 호스트 인터페이스는SATA 3.0 (550 MB/s)과 PCI Express 3.0 (레인당 1 GB/s, 다중 채널 사용)이다. SAS(Serial Attached SCSI) 또한 엔터프라이즈 SSD에 사용되는데, PCIe와 SAS 인터페이스는 SATA보다 훨씬 빠른 성능을 제공하지만, 그만큼 가격도 비싼 편이다.
+
+### 2.2. 프리 컨디셔닝 (Pre-conditioning)
+> If you torture the data long enough, it will confess.
+> 
+> — Ronald Coase
+
+SSD 제조사가 제공하는 제품의 데이터 시트에는 놀라울 정도의 성능 메트릭들로 채워져 있다.마케팅 효과를 위해서 제조사들은 항상 반짝이는 수치들을 보여주기 위해서 방법을 찾아내는 것처럼 보인다.그 수치들이 진정으로 뭔가를 의미하는지 모르겠지만, 실제 데이터 시트의 수치와 운영 시스템에서 사용되는 제품의 성능 예측은 다른 문제이다.
+Marc Bevand가 작성한 문서[27](https://tech.kakao.com/posts/327#fn:66)는 일반적인 SSD 벤치마크의 결함에 대해서 언급하고 있는데,이 문서에서 Marc Bevand는 SSD의 LBA(Logical Block Addressing) 크기 설정에 대한 언급없이 랜덤 쓰기 성능을 명시하거나Queue depth를 1로 설정하고 테스트한 결과를 레포팅하는 것은 적절하지 못하다고 이야기하고 있다.또한 이 이외에도 벤치마크 도구의 버그나 잘못된 사용으로 인한 케이스들도 다양하다.
+SSD의 성능을 정확하게 예측하는 것은 어려운 부분이다.많은 하드웨어 리뷰 블로그들이 10여분 정도의 테스트 실행 후, 그 결과를 두고 충분히 신뢰성 있다라고 이야기하고 있다.그러나 SSD는 지속적인 랜덤 쓰기(SSD의 전체 공간이 30분에서 3시간 정도 저장할 수 있는 수준의 워크로드)가 발생하는 테스트 환경에서만 성능 저하를 보여준다.그래서 어느정도의 쓰기 부하를 발생(이를 “pre-conditioning” [28](https://tech.kakao.com/posts/327#fn:50)라고 함)시킨 후, 벤치마크가 좀 더 신뢰성 있는 테스트라고 볼 수 있는 것이다.아래의 그림 7은 [StorageReview.com](http://storagereview.com/) [16](https://tech.kakao.com/posts/327#fn:26)으로부터 가져온 것인데, 다양한 SSD에서 “pre-conditioning”의 효과를 잘 보여주고 있다.좀더 명확한 성능 저하는 30분 정도 지난 이후 시점부터 나타나는데,이때부터 모든 SSD 드라이브에 대해서 스루풋은 떨어지고 레이턴시(응답 속도)는 커지는 것을 확인할 수 있다.그리고 4시간정도 경과한 후에는 성능이 더 떨어져서 최하 수준으로 수렴하는 것을 확인할 수 있다.
