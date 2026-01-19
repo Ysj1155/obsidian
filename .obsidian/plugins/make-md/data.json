@@ -45,9 +45,11 @@
     "//time line/time line/Monthly",
     "//time line/time line/weekly",
     "//time line/time line/yearly",
-    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부",
     "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정",
-    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/SSD"
+    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/SSD",
+    "//Area(꾸준히 신경쓸거)",
+    "//Project(목표와 데드라인)",
+    "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
