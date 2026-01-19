@@ -75,7 +75,7 @@
             }
           },
           {
-            "id": "45b60b0e36399d57",
+            "id": "40116add1008ea99",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -84,7 +84,8 @@
               "title": "Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -219,15 +220,6 @@
       "command-palette:명령어 팔레트 열기": false,
       "workspaces:작업 공간 레이아웃 관리": false,
       "obsidian-git:Open Git source control": false,
-      "periodic-notes:Open today": false,
-      "tasknotes:Open mini calendar": false,
-      "tasknotes:Open advanced calendar": false,
-      "tasknotes:Open task list": false,
-      "tasknotes:Open agenda": false,
-      "tasknotes:Open kanban board": false,
-      "tasknotes:Open pomodoro": false,
-      "tasknotes:Open pomodoro stats": false,
-      "tasknotes:Create new task": false,
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false
     }
