@@ -1,6 +1,5 @@
 ---
 aliases:
-  - "개발자를 위한 SSD(Coding for SSD) - Part 6: A Summary - What every programmer should know about solid-state drives"
 ---
 이번 챕터에서는 지금까지 언급했던 내용들을 간략히 요약해서 정리해 보았다.조금 더 상세한 내용을 쉽게 찾아갈 수 있도록, 각 내용들은 다른 파티의 한두개 이상의 섹션을 나열해 두었다.
 
