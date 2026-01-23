@@ -16,12 +16,23 @@
 - 반도체의 셀이 병렬로 연결된 플래시 메모리
 	- 각 셀이 비트라인에 직접 연결되어 주소 기반(random access)읽기 쉬운 구조
 - 셀 단위 랜덤 엑세스이며 읽기 속도가 빠름
+	- 지연시간(latency)이 짧다.
+	- 바이트/워드 단위로 바로 읽어 실행([XIP](obsidian://open?vault=obsidian&file=Area(%EA%BE%B8%EC%A4%80%ED%9E%88%20%EC%8B%A0%EA%B2%BD%EC%93%B8%EA%B1%B0)%2F%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B3%B5%EB%B6%80%2F%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%9A%A9%EC%96%B4%2FXIP)) 가능
 - 한 셀씩 기록하기 때문에 쓰기 속도가 느림
+	- 쓰기/삭제 자체가 느리고 대량 쓰기 처리량이 낮아 쓰기 성능이 불리하다
 - 저밀도에 가격이 비쌈
+	- 셀당 연결 구조가 커서 면적 효율이 낮아 대용량에 불리
 - ex) RAM처럼 실행 가능한 코드 저장
 
 ### 두 개 차이
 ![[Pasted image 20260123201411.png]]
 
-NAND는 보통 페이지 단위로 읽고/쓰기 때문에 작은 랜덤 읽기 지연이 크고, NOR는 바이트/워드 단위 랜덤 읽기 + XIP가 가능해 읽기에 유리하다.
-
+- NAND는 보통 페이지 단위로 읽고/쓰기 때문에 작은 랜덤 읽기 지연이 크고, NOR는 바이트/워드 단위 랜덤 읽기 + [XIP](obsidian://open?vault=obsidian&file=Area(%EA%BE%B8%EC%A4%80%ED%9E%88%20%EC%8B%A0%EA%B2%BD%EC%93%B8%EA%B1%B0)%2F%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B3%B5%EB%B6%80%2F%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%9A%A9%EC%96%B4%2FXIP)가 가능해 읽기에 유리하다.
+- 접근 단위(Granularirty)
+	- NAND: Read/Program은 Page 단위, Erase는 Block 단위
+	- NOR: Read는 Byte/Word 단위, Erase는 Sector/Block 단위
+- 삭제(Erase)가 먼저라는 플래시 공통 특성
+	- 둘 다 write 전에 반드시 erase가 필요
+	- NAND가 블록이 크고 관리가 복잡해서 SSD에서는 FTL이 필수
+- ECC/Bad block
+	- NAND는 공정상 Bad block
