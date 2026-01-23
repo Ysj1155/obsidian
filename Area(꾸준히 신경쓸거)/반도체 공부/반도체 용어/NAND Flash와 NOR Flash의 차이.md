@@ -35,4 +35,12 @@
 	- 둘 다 write 전에 반드시 erase가 필요
 	- NAND가 블록이 크고 관리가 복잡해서 SSD에서는 FTL이 필수
 - ECC/Bad block
-	- NAND는 공정상 Bad block
+	- NAND는 공정상 Bad block이 존재하는 것을 전제로 설계
+	- 그래서 ECC가 강하게 필요하고 컨트롤러가 중요하다.
+	- NOR는 NAND만큼 불량 블록 전제 설계까지는 필요 x
+- XIP(Execute-In-Place)
+	- NOR이 왜 살아있는지의 1순위 이유
+	- 펌웨어를 그 자리에서 실행 가능. 부팅/임베디드에 중요
+- 용도 중심 요약
+	- NAND: 저장 장치(대용량 데이터)
+	- NOR: 펌웨어/부트(빠른 랜덤 읽기 + 실행)
