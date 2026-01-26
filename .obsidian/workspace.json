@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/후공정 테스트 엔지니어.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 엔지니어.md",
                 "mode": "source",
                 "source": false
               },
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/후공정 테스트 엔지니어.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 엔지니어.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -226,7 +226,12 @@
   },
   "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
-    "Area(꾸준히 신경쓸거)/반도체 공부/후공정 테스트 엔지니어.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Test Time Reduction을 위한 Smart Sample Test + Cluster Detection.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스크 공정] 테스트 리소스들의 기능.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/테스트 엔지니어.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 엔지니어.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 공부.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.26 4일차.md",
     "attached file/Pasted image 20260126174458.png",
     "attached file/Pasted image 20260126163640.png",
@@ -261,17 +266,12 @@
     "Project(목표와 데드라인)/취준 컨설팅/Untitled.md",
     "Project(목표와 데드라인)/취준/자격증",
     "Project(목표와 데드라인)/취준",
-    "Project(목표와 데드라인)/취준/취준 컨설팅/서류전형대응전략.pdf",
     "attached file/Pasted image 20260119225116.png",
     "attached file/Pasted image 20260119224930.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD)-Part 3 페이지 & 블록 & FTL(Flash Translation Layer).md",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.15 2일차.md",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.12 1일차.md",
     "Vault.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/전자 산업의 혁명! 직접회로.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/6. 금속 배선/6탄, 전기가 통하는 길을 만드는 '금속 배선 공정'.md",
     "time line/yearly/무제.canvas",
     "Project/무제 파일.canvas"
   ]
