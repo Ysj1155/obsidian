@@ -204,7 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,10 +226,10 @@
   },
   "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 엔지니어.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Test Time Reduction을 위한 Smart Sample Test + Cluster Detection.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스크 공정] 테스트 리소스들의 기능.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/테스트 엔지니어.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 엔지니어.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 공부.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.26 4일차.md",
