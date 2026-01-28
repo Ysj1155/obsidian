@@ -29,4 +29,7 @@ ex) ILK1200: High Side Pin에서 1250V (50V 정도 마진)를 인가했을 때, 
 - High Side Pin 쪽에서 측정.
 
 
-IQ는 Quiscsent Current. 
+IQ는 Quiscsent Current. 어떤 핀에서 측정하는지에 따라 이름이 바뀌는데 IQCC(IQDD) / IQBS가 있다. 둘 다 IC에 전압을 인가하는 곳이다. VCC, VB는 꾸준히 전압이 들어오는 핀으로 인풋이 아니라 전자 기기의 전원 코드와 비슷한 기능을 하는 핀이다.
+
+IQCC는 VCC 단자를 측정할 때 얻는 Input Current 값을 재는 것이다. 이 때 세팅할 조건은 VB, VS 사이에서 15V가 인가되어야 하고 High Side Input 전압은 0V여야 한다. 
+
