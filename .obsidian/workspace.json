@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] 아날로그 IC 테스트.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "[테스트 공정] Analog To Digital Converter  Accuracy & Resolution"
+              "title": "[테스트 공정] 아날로그 IC 테스트"
             }
           }
         ]
@@ -227,6 +227,7 @@
   },
   "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
     "attached file/Pasted image 20260128181458.png",
     "attached file/Pasted image 20260128180442.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Under Voltage Lock Out Method Flow.md",
@@ -234,7 +235,6 @@
     "attached file/Pasted image 20260128172751.png",
     "attached file/Pasted image 20260128171716.png",
     "attached file/Pasted image 20260128170225.png",
-    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스크 공정] 테스트 리소스들의 기능.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Leakage Current & Quiescent Current.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] 아날로그 IC 테스트.md",
@@ -252,7 +252,6 @@
     "attached file/Pasted image 20260127223632.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Test Time Reduction을 위한 Smart Sample Test + Cluster Detection.md",
     "attached file/Pasted image 20260127220758.png",
-    "attached file/Pasted image 20260127220037.png",
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.26 4일차.md",
