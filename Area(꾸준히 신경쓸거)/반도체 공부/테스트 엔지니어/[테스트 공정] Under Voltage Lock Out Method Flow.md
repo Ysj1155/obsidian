@@ -20,3 +20,6 @@ positive 먼저 보면 VB를 올리는 상황에서 0부터 천천히 sweep시�
 
 ![[Pasted image 20260128172917.png]]
 
+빨간 화살표의 집합이 HO의 파란 그래프가 된다. 따라서 VBSUV+(Positive)는 Output이 발생하는 그 시점에 측정된 VB의 전압을 재는 것이라고 판단한다.
+
+Negative는 그 반대다. 특정 시점부터 Output이 발생하지 않을 때 그 때의 VB에 측정된 전압 값이다. UVLO는 Input과 Output 사이의 관계를 가장 잘 보여주는 테스트 항목이다. 중요하면서 이 아이템에 대한 Fail issue가 종종 나온다. 테스트 조건을 기억하고 Schematic을 참고해 어떤 Relay가 불량인지, 혹은 소스 코드 내에서 전압 값을 바꿔야 하느지 체크하면서 디버깅 해야된다.
