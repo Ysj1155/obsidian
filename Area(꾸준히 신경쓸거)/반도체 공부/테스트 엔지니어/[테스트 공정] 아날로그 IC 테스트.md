@@ -9,3 +9,5 @@ VCC, VB에서 전압이 잘 들어가는지, Input, Output Voltage와 Current는
 ### 검사해야될 아날로그 핀
 - VCC, VB: 아날로그 소자에 전압 지속적으로 인가되는 곳. 
 - Vin, Vout: 각 소자마다 다르지만 대충 저정도면 이해한다. High Side, Low Side 따로 구분지어서 HIN, HOUT, LIN, LOUT이라고 하는 곳도 있다. Vin과 Vout은 DC 테스트를 할 때 가장 중점적으로 보는 곳이다. 옴의 법칙 V=IR 알면 된다. 
+	일단 테스트 공정 엔지니어가 테스트를 진행하면 테스트 개발팀, 회로 설계 팀으로부터 'Test Plan'이라는 Sheet을 받는다. 거기에 Vout 값에 TYP=? Vout=??이런 식으로 정보가 넘어온다. TYP는 타겟 값을 의미한다. 개발팀, 회로 설계 팀이 Test Plan을 짜면서 Vout의 예상 값을 적은 것이다.
+	그러면 
