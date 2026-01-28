@@ -4,3 +4,7 @@ Input을 인가한 시점부터 Output이 발생하는데 까지 걸린 시간. 
 ![[Pasted image 20260128170225.png]]
 위 사진을 보면 Rising Time과 Falling Time 사이에 Delay 구간이 있다. 저 range는 회사마다 다르다. 
 
+![[Pasted image 20260128171716.png]]
+
+ VULO Filter Time 테스트 조건
+ -
