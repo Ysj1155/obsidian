@@ -19,4 +19,7 @@ G: LIN
 H: NC
 라고 가정해보자.
 
-VB, VCC는 IC에 지속적으로 전력을 공급하는 PIN이다. 15V를 인가하고 있다고 가정한다. HIN, LIN, HO, LO는 인풋과 아웃풋으로 사용되는 PIN이다. 
+VB, VCC는 IC에 지속적으로 전력을 공급하는 PIN이다. 15V를 인가하고 있다고 가정한다. HIN, LIN, HO, LO는 인풋과 아웃풋으로 사용되는 PIN이다. H,L은 High Side / Low Side이다. 하나의 IC 내에 2개의 인풋이 있는 것이다.
+
+- ILK: 누설 전류. IC에 대한 BV(Breakdown Voltage; IC가 버틸 수 있는 최대 전압 값)를 측정하고자 전압을 인가하는 과정에서 발생하는 전류. 수백nA가 나오는게 보통이다.
+- 
