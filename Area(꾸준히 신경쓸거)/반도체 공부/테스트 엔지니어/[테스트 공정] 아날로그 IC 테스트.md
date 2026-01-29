@@ -12,4 +12,4 @@ VCC, VB에서 전압이 잘 들어가는지, Input, Output Voltage와 Current는
 	일단 테스트 공정 엔지니어가 테스트를 진행하면 테스트 개발팀, 회로 설계 팀으로부터 'Test Plan'이라는 Sheet을 받는다. 거기에 Vout 값에 TYP=? Vout=??이런 식으로 정보가 넘어온다. TYP는 타겟 값을 의미한다. 개발팀, 회로 설계 팀이 Test Plan을 짜면서 Vout의 예상 값을 적은 것이다.
 	그러면 테스트 엔지니어는 DC 테스트를 했을 때 Vout이 TYP에 적힌 Vout보다 차이가 크면 그에 대한 원인 분석을 한다. 아날로그 IC 주변에는 저항이나 CAP 등 소자가 많다. 우리는 Vin, Vout도 알고 저항고 알기 때문에 옴의 법칙에 따라 인풋/아웃풋 전류값을 안다. 이를 통해 어느 소자에서 발열이 심할 지 예상할 수 있는 것이다.
 - GND, N.C: Not Connect로 안쓰는 핀이다. GND는 접지다. GND가 0이 아닌 경우를 Floating Source라고 한다.
-- OVI, DVI, HVS: DVI(Dual Volatage Current). 이 3개는 테스트 Resource를 뜻하며 이 소자들을 이용해서 테스트를 진행한다. DVI는 채널이 2개뿐인 소자이며 HVS는 단일 소자이다. OVI는 채널이 8개가 된다. 테스트를 진행하기 앞서 각 아날로그 IC의 핀들에 어떤 테스트 Resource를 쓸지 schematic을 그릴 일이 많은데 
+- OVI, DVI, HVS: DVI(Dual Volatage Current). 이 3개는 테스트 Resource를 뜻하며 이 소자들을 이용해서 테스트를 진행한다. DVI는 채널이 2개뿐인 소자이며 HVS는 단일 소자이다. OVI는 채널이 8개가 된다. 테스트를 진행하기 앞서 각 아날로그 IC의 핀들에 어떤 테스트 Resource를 쓸지 schematic을 그릴 일이 많다. 위 3가지 개념을 알아야 전압, 전류를 알 수 있기 때문이다.
