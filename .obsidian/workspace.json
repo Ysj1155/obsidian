@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] ILK & IQ & IP Method Flow.md",
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Leakage Current & Quiescent Current.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "[테스트 공정] ILK & IQ & IP Method Flow"
+              "title": "[테스트 공정] Leakage Current & Quiescent Current"
             }
           }
         ]
@@ -227,6 +227,8 @@
   },
   "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] ILK & IQ & IP Method Flow.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Leakage Current & Quiescent Current.md",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.29 5일차.md",
     "attached file/Pasted image 20260129213842.png",
     "attached file/Pasted image 20260129213807.png",
@@ -248,9 +250,7 @@
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Under Voltage Lock Out Method Flow.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스크 공정] 테스트 리소스들의 기능.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Leakage Current & Quiescent Current.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/테스트 엔지니어.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] ILK & IQ & IP Method Flow.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/FTL.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/XIP(Execute-In-Place).md",
     "Area(꾸준히 신경쓸거)/C/C.md",
