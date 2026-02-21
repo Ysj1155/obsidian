@@ -11,14 +11,12 @@
             "id": "0d1ad2218bc189a6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/FADU/파두 블로그 3.md",
-                "mode": "source",
-                "source": false
+                "path": "Project(목표와 데드라인)/취준/자격증"
               },
               "icon": "lucide-file",
-              "title": "파두 블로그 3"
+              "title": "자격증"
             }
           }
         ]
@@ -205,11 +203,12 @@
       "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "0d1ad2218bc189a6",
+  "active": "5829dbd2b87d9cb3",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/FADU/파두 블로그 2.md",
-    "Project(목표와 데드라인)/취준/FADU/파두 블로그 3.md",
+    "Project(목표와 데드라인)/취준/자격증/자격증.md",
     "Project(목표와 데드라인)/취준/공부할 리스트.md",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 3.md",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 2.md",
     "Project(목표와 데드라인)/취준/FADU/파두 블로그 1.md",
     "Project(목표와 데드라인)/취준/FADU/FDP 개요.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509165227_FADU_PCIe3.0_SSD_Brochure.pdf",
@@ -223,7 +222,6 @@
     "Project(목표와 데드라인)/취준/FADU",
     "Project(목표와 데드라인)/취준/취준.md",
     "Resource(자료)/Resource(자료).md",
-    "Project(목표와 데드라인)/취준/자격증/자격증.md",
     "Project(목표와 데드라인)/Project(목표와 데드라인).md",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.02.02 6일차.md",
     "Archieve(휴지통)/Archieve(휴지통).md",
