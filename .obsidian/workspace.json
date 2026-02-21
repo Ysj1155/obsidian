@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/공부할 리스트.md",
+                "file": "Project(목표와 데드라인)/취준/FADU/파두 블로그 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "공부할 리스트"
+              "title": "파두 블로그 3"
             }
           }
         ]
@@ -207,12 +207,15 @@
   },
   "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/FADU/Untitled.md",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 2.md",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 3.md",
     "Project(목표와 데드라인)/취준/공부할 리스트.md",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 1.md",
+    "Project(목표와 데드라인)/취준/FADU/FDP 개요.pdf",
+    "Project(목표와 데드라인)/취준/FADU/20250509165227_FADU_PCIe3.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/FADU.md",
     "Project(목표와 데드라인)/취준/FADU/20250509161838_FADU_PCIe5.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509165015_FADU_PCIe4.0_SSD_Brochure.pdf",
-    "Project(목표와 데드라인)/취준/FADU/20250509165227_FADU_PCIe3.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509162233_FADU_PCIe5.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf",
@@ -225,7 +228,6 @@
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.02.02 6일차.md",
     "Archieve(휴지통)/Archieve(휴지통).md",
     "Archieve(휴지통)",
-    "Resource(자료)",
     "attached file/Pasted image 20260202173719.png",
     "attached file/Pasted image 20260202171125.png",
     "attached file/Pasted image 20260202161712.png",
@@ -251,8 +253,6 @@
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/XIP(Execute-In-Place).md",
     "Area(꾸준히 신경쓸거)/C/C.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 양산 엔지니어.md",
-    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 공부.md",
-    "Area(꾸준히 신경쓸거)/Untitled.md",
     "time line/yearly/무제.canvas",
     "Project/무제 파일.canvas"
   ]
