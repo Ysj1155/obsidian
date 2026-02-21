@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "935e2ec7cfc00b4c",
+        "id": "65827b5af8aea5cc",
         "type": "tabs",
         "children": [
           {
-            "id": "ffe8f0652b0999a3",
+            "id": "0d1ad2218bc189a6",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/make-md/data.json",
-                "bFile": ".obsidian/plugins/make-md/data.json",
-                "aRef": ""
+                "file": "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.02.02 6일차.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "취업 스터디 2026.02.02 6일차"
             }
           }
         ]
@@ -75,7 +75,7 @@
             }
           },
           {
-            "id": "dc11b0ad6e7316e8",
+            "id": "95921e7909e675fd",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -84,7 +84,8 @@
               "title": "Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -114,6 +115,16 @@
             }
           },
           {
+            "id": "9879a03754c3d659",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
             "id": "24c3dcd05eedede8",
             "type": "leaf",
             "state": {
@@ -122,9 +133,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "17040bf050f78d0f",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "1430851f823f919b",
@@ -136,6 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/전자 산업의 혁명! 직접회로.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +167,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "전자 산업의 혁명! 직접회로 의 백링크"
             }
           },
           {
@@ -154,11 +176,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "linksCollapsed": true,
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 양산 엔지니어.md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "후공정 테스트 양산 엔지니어 의 나가는 링크"
             }
           },
           {
@@ -167,20 +190,22 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/전자 산업의 혁명! 직접회로.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "전자 산업의 혁명! 직접회로 의 개요"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,54 +225,54 @@
       "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "ffe8f0652b0999a3",
+  "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
+    "attached file/Pasted image 20260202173719.png",
+    "attached file/Pasted image 20260202171125.png",
+    "attached file/Pasted image 20260202161712.png",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Leakage Current & Quiescent Current.md",
+    "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.02.02 6일차.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] ILK & IQ & IP Method Flow.md",
+    "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.29 5일차.md",
+    "attached file/Pasted image 20260129213842.png",
+    "attached file/Pasted image 20260129213807.png",
+    "attached file/Pasted image 20260129213541.png",
+    "attached file/Pasted image 20260129213219.png",
+    "attached file/Pasted image 20260129212950.png",
+    "attached file/Pasted image 20260129212856.png",
+    "attached file/Pasted image 20260129212453.png",
+    "attached file/Pasted image 20260129211939.png",
+    "Project(목표와 데드라인)/취준/면접 대비/면접 질문 리스트.md",
+    "Project(목표와 데드라인)/취준/면접 대비/면접 대비.md",
+    "Project(목표와 데드라인)/취준/면접 대비",
+    "Project(목표와 데드라인)/취준/취준 컨설팅/면접대응전략.pdf",
+    "Project(목표와 데드라인)/취준/취준 컨설팅/면접대응전략.pdf.zmdownload",
+    "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.26 4일차.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] 아날로그 IC 테스트.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Under Voltage Lock Out Method Flow.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스크 공정] 테스트 리소스들의 기능.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/테스트 엔지니어.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/FTL.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/XIP(Execute-In-Place).md",
     "Area(꾸준히 신경쓸거)/C/C.md",
-    "Project(목표와 데드라인)/취준/자격증/KSTQB/KSTQB_베이직_레벨(BL)_v.1.1_실러버스_한글.pdf",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 양산 엔지니어.md",
+    "Area(꾸준히 신경쓸거)/C",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 공부.md",
+    "Area(꾸준히 신경쓸거)/Untitled.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/[테스트 공정] Test Time Reduction을 위한 Smart Sample Test + Cluster Detection.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/NAND Flash와 NOR Flash의 차이.md",
+    "Project(목표와 데드라인)/취준/자격증/자격증.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 2 SSD의 아키텍쳐와 벤치마킹.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/NAND Flash와 NOR Flash의 차이1.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/SSD/SSD.md",
     "Project(목표와 데드라인)/취준/자격증/KSTQB/KSTQB_베이직_레벨(BL)_v.1.1_샘플문제B.pdf",
+    "Project(목표와 데드라인)/취준/자격증/KSTQB/KSTQB_베이직_레벨(BL)_v.1.1_실러버스_한글.pdf",
     "Project(목표와 데드라인)/취준/자격증/KSTQB/KSTQB_베이직_레벨(BL)_v.1.1_샘플문제A.pdf",
+    "Project(목표와 데드라인)/취준/자격증/PCB SL",
     "Project(목표와 데드라인)/취준/자격증/KSTQB",
-    "obsidian/time line/yearly/yearly.md",
-    "obsidian/time line/yearly/2026 목표.md",
-    "obsidian/time line/yearly",
-    "obsidian/time line",
-    "obsidian/attached file/Pasted image 20260202173719.png",
-    "obsidian/attached file/Pasted image 20260202171125.png",
-    "obsidian/attached file/Pasted image 20260202161712.png",
-    "obsidian/attached file/Pasted image 20260129213842.png",
-    "obsidian/attached file/Pasted image 20260129213807.png",
-    "obsidian/attached file/Pasted image 20260129213541.png",
-    "obsidian/attached file/Pasted image 20260129213219.png",
-    "obsidian/attached file/Pasted image 20260129212950.png",
-    "obsidian/attached file/Pasted image 20260129212856.png",
-    "obsidian/attached file/Pasted image 20260129212453.png",
-    "obsidian/attached file",
-    "obsidian/Vault.md",
-    "obsidian/Project(목표와 데드라인)/취준/자격증/KSTQB/KSTQB_베이직_레벨(BL)_v.1.1_실러버스_한글.pdf",
-    "obsidian/Project(목표와 데드라인)/취준/자격증/KSTQB/KSTQB_베이직_레벨(BL)_v.1.1_샘플문제B.pdf",
-    "obsidian/Project(목표와 데드라인)/취준/자격증/KSTQB/KSTQB_베이직_레벨(BL)_v.1.1_샘플문제A.pdf",
-    "obsidian/Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.02.02 6일차.md",
-    "obsidian/Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.29 5일차.md",
-    "obsidian/Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.26 4일차.md",
-    "obsidian/Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.19 3일차.md",
-    "obsidian/Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.15 2일차.md",
-    "obsidian/Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.12 1일차.md",
-    "obsidian/Project(목표와 데드라인)/취준/자격증/자격증.md",
-    "obsidian/Project(목표와 데드라인)/취준/면접 대비/면접 질문 리스트.md",
-    "obsidian/Project(목표와 데드라인)/취준/면접 대비/면접 대비.md",
-    "obsidian/Project(목표와 데드라인)/취준/취준.md",
-    "obsidian/Project(목표와 데드라인)/Project(목표와 데드라인).md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/8. 패키징/8탄, 외부 환경으로부터 반도체를 보호하는 패키징(Packaging) 공정.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/7. EDS/7탄, 완벽한 반도체로 태어나기 위한 첫 번째 테스트 'EDS 공정'.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/6. 금속 배선/6탄, 전기가 통하는 길을 만드는 '금속 배선 공정'.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/5. 증착 & 이온주입/5탄, 반도체에 전기적 특성을 입히다! 증착 & 이온 주입 공정.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/4. 식각/4탄, 반도체 회로패턴의 완성 '식각 공정'.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/3. 포토/3탄, 웨이퍼에 회로를 그려 넣는 포토공정.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/2. 산화/2탄, 웨이퍼 표면을 보호하는 산화공정.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/전자 산업의 혁명! 직접회로.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/수율.md",
-    "obsidian/Area(꾸준히 신경쓸거)/반도체 공부/반도체 용어/XIP(Execute-In-Place).md",
     "time line/yearly/무제.canvas",
     "Project/무제 파일.canvas"
   ]
