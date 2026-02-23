@@ -35,8 +35,7 @@
               "title": "클라이언트 SSD"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -218,10 +217,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "854977112e1b24f8",
+  "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
-    "Area(꾸준히 신경쓸거)/반도체 공부/SSD/엔터프라이즈 SSD.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/SSD/클라이언트 SSD.md",
+    "Area(꾸준히 신경쓸거)/반도체 공부/SSD/엔터프라이즈 SSD.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/SSD/SSD.md",
     "Area(꾸준히 신경쓸거)/반도체 공부/반도체 공부.md",
     "Vault.md",
