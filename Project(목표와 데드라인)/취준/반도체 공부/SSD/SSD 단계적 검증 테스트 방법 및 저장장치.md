@@ -89,3 +89,9 @@ Preconditioning 예시 (steady-state 유도)
 - NVMe spec / NVMe-MI / PCle base 개념 공부 필요
 - 내부 시험 규격서?
 - 릴리즈 검증 기준서?
+
+### 특허 비판적 읽기
+1. 4K random write IOPS 하나만 맞춰도 충분한가?
+	 특허의 target은 4K random write 성능(IOPS) 중심. 실무는 평균 IOPS만 같아도 tail latency(P99/P99.9)는 다를 수 있다. GC 주기/진폭이 다르면 QoS가 달라질 수 있다. mixed workload(R70/W30), read disturb 성격, TRIM 유무에서는 달라질 수 있다. 즉, 이 방법은 단계적 빠른 스크리닝에 강하지만 최종 사양 검증 대체로 쓰면 위험하다. 
+2. 용량 축소가 내부 동작을 완전히 보존하지는 않는다. 
+	 왜곡 문제가 있을 수 있다. OP 비율 체감 변화, GC 타이밍, wear distribution, thermal profile (테스트 시간이 줄어들면 발열 양상 자체가 달라짐), FTL mapping pressure, metadata behavior등 고려할 변수들이 존재한다. 즉, full-cap steady-state와 동일이 아니라 특정 지표에서 근사로 이해해야 된다. 
