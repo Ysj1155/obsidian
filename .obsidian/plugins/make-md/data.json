@@ -42,7 +42,10 @@
     "//Area(꾸준히 신경쓸거)",
     "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/SSD",
     "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준",
-    "//Project(목표와 데드라인)"
+    "//Project(목표와 데드라인)",
+    "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준/Project(목표와 데드라인)/취준/반도체 공부",
+    "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준/Project(목표와 데드라인)/취준/반도체 공부/Project(목표와 데드라인)/취준/반도체 공부/SSD",
+    "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준/Project(목표와 데드라인)/취준/FADU"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
