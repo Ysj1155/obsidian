@@ -94,4 +94,17 @@ Preconditioning 예시 (steady-state 유도)
 1. 4K random write IOPS 하나만 맞춰도 충분한가?
 	 특허의 target은 4K random write 성능(IOPS) 중심. 실무는 평균 IOPS만 같아도 tail latency(P99/P99.9)는 다를 수 있다. GC 주기/진폭이 다르면 QoS가 달라질 수 있다. mixed workload(R70/W30), read disturb 성격, TRIM 유무에서는 달라질 수 있다. 즉, 이 방법은 단계적 빠른 스크리닝에 강하지만 최종 사양 검증 대체로 쓰면 위험하다. 
 2. 용량 축소가 내부 동작을 완전히 보존하지는 않는다. 
-	 왜곡 문제가 있을 수 있다. OP 비율 체감 변화, GC 타이밍, wear distribution, thermal profile (테스트 시간이 줄어들면 발열 양상 자체가 달라짐), FTL mapping pressure, metadata behavior등 고려할 변수들이 존재한다. 즉, full-cap steady-state와 동일이 아니라 특정 지표에서 근사로 이해해야 된다. 
+	왜곡 문제가 있을 수 있다. OP 비율 체감 변화, GC 타이밍, wear distribution, thermal profile (테스트 시간이 줄어들면 발열 양상 자체가 달라짐), FTL mapping pressure, metadata behavior등 고려할 변수들이 존재한다. 즉, full-cap steady-state와 동일이 아니라 특정 지표에서 근사로 이해해야 된다. 
+3. Workload의 국한성.
+	 특허는 4K Random Write에 집중하고 있다. 하지만 실제 엔터프라이즈 환경에서는 Sequential Write와 Random Write가 섞인 믹스 워크로드(Mixed IO) 상황에서 GC가 훨씬 복잡하게 동작한다. 4K 단독 지표로 찾은 '목표 용량'이 믹스 워크로드에서도 대표성을 갖는지 검증이 필요하다. 
+4. Wear Leveling 및 내부 수명 관리 알고리즘
+	 특정 구간(Short Stroke 구간)만 계속 쓰게 되면, SSD 내부의 Wear Leveling 알고리즘이 특정 블록에 집중되는 마모를 피하기 위해 데이터를 옮기는 작업을 수행할 수 있다. 이 과정이 단기 테스트(Quick Test)에서는 나타나지 않다가 장기 테스트에서만 튀어나올 수 있는 리스크가 있다.
+5. Thermal Throttling의 부재
+	 테스트 시간이 짧아지면 SSD의 온도가 정상 상태(Thermal Equilibrium)에 도달하기 전에 테스트가 끝날 수 있다. 온도에 의한 성능 저하(Throttling) 시나리오를 놓칠 수 있다. 
+
+
+### 직무 활동 해볼거
+- FIO 스크립트 자동화:명세서에 나온 Preconditioning 및 측정 조건을 바탕으로 `fio` 스크립트를 짜보고, 파이썬 등으로 성능을 비교하여 용량을 자동으로 조절(Binary Search 방식 등)하는 캘리브레이션 툴의 로직을 설계해 보는 경험은 매우 강력한 포트폴리오가 됩니다.
+- **JESD218B 규격 비교:** 특허에서 언급된 JEDEC 표준의 Short Stroke 개념과 실제 이 특허의 방식이 어떻게 다른지(표준은 외삽법(Extrapolation) 위주, 특허는 성능 매칭 위주) 비교 분석해 보세요.
+- **데이터 시각화:** 도면 5, 6처럼 실제 테스트 시간 단축 효과를 그래프로 그려보고, 시간 대비 검증 효율(Efficiency per Hour)이라는 지표를 정의.
+- **OP 상관관계**와 **DRAM 캐시 영향도** 같은 하드웨어/펌웨어 구조적 관점 추가.
