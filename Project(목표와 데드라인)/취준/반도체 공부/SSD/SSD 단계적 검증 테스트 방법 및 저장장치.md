@@ -50,4 +50,32 @@ capacity tuning by performance matching. 기준 성능과의 일치성(consisten
 ![[Pasted image 20260224224907.png]]
 
 ### short stroke를 왜 쓰는가
-사용자 용량()
+사용자 용량(논리 주소 범위)을 줄이지만 SSD 내부 동작이 너무 비정상적으로 왜곡되지 않게 해야 한다는점, 특히 명세서에 모든 Die에 접근 가능해야 된다는 취지가 강조된다. JESD218B의 short stroke extrapolation 개념을 참조한다.
+
+Validation 입장에서 가장 위험한 것은 테스트가 빠른 대신 실제 full-cap 조건과 다른 현상을 보고 잘못 판단하는 것. 특허는 이 문제를 피하기 위해 target performance 매칭, short stroke 적용 시 내부 구조 왜곡 최소화(모든 die 접근)를 함께 말한다. 시간 단축이 아니라 대표성(representativeness)을 확보하려는 시도.
+
+### 특허에서 직접 나온 테스트 조건
+명세서 기준으로
+Preconditioning 예시 (steady-state 유도)
+- 순차쓰기 2회
+    - `blocksize=128KB`
+    - `iodepth=1024`
+    - `numjobs=1`
+- 랜덤쓰기 2회
+    - `blocksize=4KB`
+    - `iodepth=8`
+    - `numjobs=64`
+성능 측정 예시
+- 4KB random write
+    - `blocksize=4KB`
+    - `iodepth=8`
+    - `numjobs=64`
+    - `runtime=600`
+또한 데이터 제거는 sanitize/erase 명령을 통한 전체 사용자 데이터 삭제로 설명한다.
+
+### 특허에 대한 Validation 관점으로 공부할 내용
+1. 기준값 기반 축약 테스트 설계 능력
+- 빠르게 하지만, 기준과 연결된 빠른 테스트.
+	 full-cap baseline -> 축약 조건 calibration -> 반복 quick test 구조.
+1. 성능 대표성(Representative test) 개념
+- 
