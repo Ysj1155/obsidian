@@ -54,6 +54,8 @@ capacity tuning by performance matching. 기준 성능과의 일치성(consisten
 
 Validation 입장에서 가장 위험한 것은 테스트가 빠른 대신 실제 full-cap 조건과 다른 현상을 보고 잘못 판단하는 것. 특허는 이 문제를 피하기 위해 target performance 매칭, short stroke 적용 시 내부 구조 왜곡 최소화(모든 die 접근)를 함께 말한다. 시간 단축이 아니라 대표성(representativeness)을 확보하려는 시도.
 
+
+
 ### 특허에서 직접 나온 테스트 조건
 명세서 기준으로
 Preconditioning 예시 (steady-state 유도)
@@ -105,6 +107,6 @@ Preconditioning 예시 (steady-state 유도)
 
 ### 직무 활동 해볼거
 - FIO 스크립트 자동화:명세서에 나온 Preconditioning 및 측정 조건을 바탕으로 `fio` 스크립트를 짜보고, 파이썬 등으로 성능을 비교하여 용량을 자동으로 조절(Binary Search 방식 등)하는 캘리브레이션 툴의 로직을 설계해 보는 경험은 매우 강력한 포트폴리오가 됩니다.
-- **JESD218B 규격 비교:** 특허에서 언급된 JEDEC 표준의 Short Stroke 개념과 실제 이 특허의 방식이 어떻게 다른지(표준은 외삽법(Extrapolation) 위주, 특허는 성능 매칭 위주) 비교 분석해 보세요.
-- **데이터 시각화:** 도면 5, 6처럼 실제 테스트 시간 단축 효과를 그래프로 그려보고, 시간 대비 검증 효율(Efficiency per Hour)이라는 지표를 정의.
-- **OP 상관관계**와 **DRAM 캐시 영향도** 같은 하드웨어/펌웨어 구조적 관점 추가.
+- JESD218B 규격 비교: 특허에서 언급된 JEDEC 표준의 Short Stroke 개념과 실제 이 특허의 방식이 어떻게 다른지(표준은 외삽법(Extrapolation) 위주, 특허는 성능 매칭 위주) 비교 분석해 보세요.
+- 데이터 시각화: 도면 5, 6처럼 실제 테스트 시간 단축 효과를 그래프로 그려보고, 시간 대비 검증 효율(Efficiency per Hour)이라는 지표를 정의.
+- OP 상관관계와 DRAM 캐시 영향도 같은 하드웨어/펌웨어 구조적 관점 추가.
