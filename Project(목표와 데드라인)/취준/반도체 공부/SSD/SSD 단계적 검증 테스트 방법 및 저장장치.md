@@ -39,4 +39,15 @@ steady-state: 비반복 데이터 쓰기 -> GC 활성화 -> GC와 host write 균
 		 성능이 목표보다 낮으면 → 용량 감소
 		 성능이 목표보다 높으면 → 용량 증가
 4. 일치했다고 끝내지 않고, **여러 번 반복 측정(예: 6회)** 해서 일관되게 맞는지 확인 후 확정
-capacity tuning by performance matching. 기준 성능과 
+capacity tuning by performance matching. 기준 성능과의 일치성(consistency)을 조건으로 목표 용량을 찾는 접근.
+
+#### C. 빠른 단계 검증(일상 회귀 / 빈번한 확인)
+1. 찾은 목표 용량으로 SSD 사용자 용량 설정
+2. 그 용량만 preconditioning
+3. 랜덤쓰기 성능 테스트
+4. 결과 기록 후 현재 버전 이상 여부 분석
+특허는 이걸 통해 기존 시간(시간~일 단위)을 분 단위로 줄일 수 있다고 주장하고, 개발 단계에서 검증 빈도를 늘리고 커버리지를 높일 수 있다고 설명한다. 도면 5/6도 기존 대비 시작부터 steady-state 도달까지 시간 단축을 비교하려는 용도다.
+![[Pasted image 20260224224907.png]]
+
+### short stroke를 왜 쓰는가
+사용자 용량()
