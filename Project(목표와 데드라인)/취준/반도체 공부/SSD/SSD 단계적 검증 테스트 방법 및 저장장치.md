@@ -54,7 +54,8 @@ capacity tuning by performance matching. 기준 성능과의 일치성(consisten
 
 Validation 입장에서 가장 위험한 것은 테스트가 빠른 대신 실제 full-cap 조건과 다른 현상을 보고 잘못 판단하는 것. 특허는 이 문제를 피하기 위해 target performance 매칭, short stroke 적용 시 내부 구조 왜곡 최소화(모든 die 접근)를 함께 말한다. 시간 단축이 아니라 대표성(representativeness)을 확보하려는 시도.
 
-
+용량을 줄이면 L2P(Logical to Physical) 매핑 테이블의 크기도 줄어든다. 엔터프라이즈 SSD는 매핑 테이블이 크기 때문에 컨트롤러 캐시(DRAM) 히트율에 영향을 준다. 어떻게?
+-> 용량을 줄여서 테스트할 때, 컨트롤러의 DRAM 캐시 부하가 실제 Full Cap 상황보다 너무 가벼워지지는 않는가에 대한 데이터 분석이 병행되어야 이 방법론의 신뢰성이 완성.
 
 ### 특허에서 직접 나온 테스트 조건
 명세서 기준으로
