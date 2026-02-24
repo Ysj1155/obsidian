@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 443.5,
-    "collapsed": true
+    "width": 443.5
   },
   "right": {
     "id": "566ea4904b6eaf58",
@@ -206,18 +205,18 @@
   },
   "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 전력 손실 보호 원리.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
+    "Project(목표와 데드라인)/취준/공부할 리스트.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 단계적 검증 테스트 방법 및 저장장치.md",
     "attached file/Pasted image 20260224224907.png",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/클라이언트 SSD.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 단계적 검증 테스트 방법 및 저장장치.md",
     "Project(목표와 데드라인)/취준/FADU/FADU.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/반도체 공부.md",
-    "Project(목표와 데드라인)/취준/공부할 리스트.md",
     "Project(목표와 데드라인)/취준/FADU/삼성 엔터프라이즈 SSD.pdf",
     "Area(꾸준히 신경쓸거)/C/C.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 전력 손실 보호 원리.md",
     "Project(목표와 데드라인)/Project(목표와 데드라인).md",
     "Vault.md",
     "Archieve(휴지통)/Archieve(휴지통).md",
@@ -251,7 +250,6 @@
     "attached file/Pasted image 20260129213219.png",
     "attached file/Pasted image 20260129212950.png",
     "attached file/Pasted image 20260129212856.png",
-    "attached file/Pasted image 20260129212453.png",
     "time line/yearly/무제.canvas",
     "Project/무제 파일.canvas"
   ]

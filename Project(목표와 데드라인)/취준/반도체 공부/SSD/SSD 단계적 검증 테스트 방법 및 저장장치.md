@@ -77,5 +77,15 @@ Preconditioning 예시 (steady-state 유도)
 1. 기준값 기반 축약 테스트 설계 능력
 - 빠르게 하지만, 기준과 연결된 빠른 테스트.
 	 full-cap baseline -> 축약 조건 calibration -> 반복 quick test 구조.
-1. 성능 대표성(Representative test) 개념
-- 
+2. 성능 대표성(Representative test) 개념
+- 그 결과가 실제 제품 위험을 반영하냐
+- 오탐/미탐을 얼마나 줄이냐
+	- 어떤 metric을 target으로 잡을거냐(평균 IOPS?)
+	- 일치 기준은 얼마나 엄격하게 할거냐(±x%?)
+	-  한 workload에서 맞으면 다른 workload도 맞는지?
+3. 테스트 시간 vs 커버리지 트레이드 오프 설계
+- 테스트 1회가 짧아지니 같은 장비 시간 내 더 많은 항목/버전 검증이 가능하다.
+4. 표준/규격(JESD218B) 참조 습관
+- NVMe spec / NVMe-MI / PCle base 개념 공부 필요
+- 내부 시험 규격서?
+- 릴리즈 검증 기준서?
