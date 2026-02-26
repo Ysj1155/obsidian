@@ -114,4 +114,39 @@ Random Read Latency (µs) / Random Write Latency (µs)
 - 표에서:
     - Read 70µs 고정
     - Write는 M.2 20µs, E1.S 15µs
-- 주의: 지연시간은 “평균인지, 중간값인지”가 없어서 숫자만으로는 제한적. 실무에선 **percentile(꼬리)**이 더 중요함.
+- 주의: 지연시간은 평균인지, 중간값인지가 없어서 숫자만으로는 제한적. 실무에선 percentile(꼬리)이 더 중요함.
+QoS (99.9%) Random Read (µs) / QoS (99.9%) Random Write (µs)
+- 여기서 QoS(99.9%)는 보통 p99.9 latency 의미로 쓰임(1,000개 중 1개 꼴의 느린 지연).
+- Notes 조건:
+    - Queue Depth = 1/64
+    - IO Size = 4KB
+- 표기 150/400 같은 형태는 QD=1일 때 150µs, QD=64일 때 400µs 같은 식으로 읽는 게 자연스러움.
+- 특히 Write QoS가:
+    - M.2: 200/5300 µs
+    - E1.S: 60/2000, 60/1500 µs
+- 이게 의미하는 바:
+    - 랜덤 쓰기에서는 어떤 상황에서 ms 단위 tail latency 이벤트가 생긴다는 신호일 수 있음(예: GC, mapping update, flush, thermal/power state 변화).
+    - E1.S가 M.2보다 QoS가 더 좋다는 메시지를 주려는 구조.
+
+# 3) Power Consumption (전력)
+
+## Active (W)
+
+- 활성 동작 시 전력. 표는 모델/용량에 따라:
+    
+    - M.2: <6.0, <7.5
+        
+    - E1.S: <9.5, <10.0
+        
+- 여기서 중요한 점: “Active”가 **어떤 워크로드(읽기/쓰기/혼합)**인지 표에 없음. 실무에서는 이 조건이 없으면 비교가 어렵다.
+    
+
+## Idle (W)
+
+- 유휴 전력:
+    
+    - M.2: <2.0
+        
+    - E1.S: <3.0
+        
+- 역시 절전 상태(PS state, APST 등) 조건이 없어서 실제 시스템에서 달라질 수 있음.
