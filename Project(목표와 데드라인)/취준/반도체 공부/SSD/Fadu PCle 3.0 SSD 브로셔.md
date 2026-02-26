@@ -217,107 +217,36 @@ TCG/OPAL 2.01
 - 실제로는 sedutil 같은 도구로 잠금/해제/PSID revert 등 동작 확인이 필요.
 - 단순히 Supports OPAL은 체크박스일 수 있음 → 어떤 툴/OS 조합에서 검증됐는지 질문해야 함.
 
-# 2) PCIe 3.0 SSD Data Center Features (운영/관리/가용성)
-
-## 1) Multiple Namespaces (NS) – Max 16 NS
-
-**무슨 기능?**
-
+2) PCIe 3.0 SSD Data Center Features (운영/관리/가용성)
+Multiple Namespaces (NS) – Max 16 NS
 - 하나의 물리 SSD를 여러 개의 논리 디바이스(네임스페이스)로 나누는 기능.
-    
-
-**왜 중요?**
-
 - 테넌트 분리, 서비스별 분할, 가상화 환경에서 유용.
-    
 - 운영/관리 자동화에서 자주 쓰임.
-    
-
-**검증/질문 포인트**
-
 - 실제로 16개까지 생성/attach 가능한지
-    
 - 네임스페이스 분할이 성능/QoS에 어떤 영향을 주는지
-    
 - 지원하는 NS 관리 명령 범위.
-    
-
----
-
-## 2) SMART / Health Log / Telemetry Log (OCP log fully support)
-
-**무슨 기능?**
-
+SMART / Health Log / Telemetry Log (OCP log fully support)
 - SMART/Health: 기본 상태 지표(온도, 미디어 오류, 사용량 등)
-    
-- Telemetry: 더 विस्त한 내부 상태/이벤트 로그(벤더/표준 로그 페이지)
-    
+- Telemetry: 더 상세한 내부 상태/이벤트 로그(벤더/표준 로그 페이지)
 - OCP log: 클라우드 SSD 규격에서 요구하는 운영/디버깅용 로그 요구사항
-    
-
-**왜 중요?**
-
-- 데이터센터 운영은 “고장 나기 전 조기 감지”가 핵심.
-    
+- 데이터센터 운영은 고장 나기 전 조기 감지가 핵심.
 - 장애 분석(RCA)도 로그 없으면 불가능.
-    
-
-**검증/질문 포인트**
-
-- “Fully supports”라고 써도 실제로는 **어떤 log page를 제공하는지**가 중요.
-    
+- Fully supports라고 써도 실제로는 어떤 log page를 제공하는지**가 중요.
 - 로그 필드 정의서가 있는지
-    
 - 호스트에서 nvme-cli로 덤프 가능한지.
-    
-
----
-
-## 3) Latency Monitoring Feature
-
-**무슨 기능?**
-
+Latency Monitoring Feature
 - SSD 레벨에서 지연시간을 측정/카운팅/로그로 제공하는 기능(추정).
-    
-- “어느 시점에 latency가 튀었는지”를 찾기 위한 운영 기능.
-    
-
-**왜 중요?**
-
-- 데이터센터 성능 문제는 평균보다 “tail latency spike”가 원인인 경우가 많음.
-    
+- 어느 시점에 latency가 튀었는지를 찾기 위한 운영 기능.
+- 데이터센터 성능 문제는 평균보다 tail latency spike가 원인인 경우가 많음.
 - 병목이 스토리지인지 네트워크인지 앱인지 분리할 때 SSD 측 지표가 도움이 됨.
-    
-
-**검증/질문 포인트**
-
 - 어떤 방식으로 제공? (log page? vendor command? histogram?)
-    
 - 시간 해상도/구간(버킷) 정의
-    
 - 호스트 도구(nvme-cli)에서 바로 볼 수 있는지.
-    
-
----
-
-## 4) NVMe-MI 1.0a
-
-**무슨 기능?**
-
-- NVMe Management Interface: 대규모 환경에서 SSD를 **표준 방식으로 관리/모니터링**하기 위한 인터페이스.
-    
-
-**왜 중요?**
-
-- 수천/수만 개 SSD를 운영하는 데이터센터는 “표준 관리 경로”가 필요.
-    
-
-**검증/질문 포인트**
-
+NVMe-MI 1.0a
+- NVMe Management Interface: 대규모 환경에서 SSD를 표준 방식으로 관리/모니터링하기 위한 인터페이스.
+- 수천/수만 개 SSD를 운영하는 데이터센터는 표준 관리 경로가 필요.
 - 어떤 전송 경로(SMBus/PCIe VDM 등)로 제공되는지
-    
 - 실제 BMC/관리 솔루션과 연동 검증이 되었는지.
-    
 
 ---
 
