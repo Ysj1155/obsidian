@@ -177,3 +177,4 @@ Operating Temperature (°C): 0 ~ 70
 - EOL retention 조건이 왜 중요한지(마모 상태에서의 데이터 유지)
 ---
 ![[Pasted image 20260226220355.png]]
+
