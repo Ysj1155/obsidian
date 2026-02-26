@@ -11,8 +11,10 @@ AWS/Google/Microsoft 같은 초대형 데이터센터인 Hyperscaler, 스토리�
 KIOPS/Watt 성능 업계 최고(같은 전력에서 더 많은 IOPS를 낸다고 주장). superior Qos(지연시간 분포(p99/p99.9)) 지원. -> 전력 효율 + Qos가 핵심 가치다. 
 업계 최초 E1.S 폼팩터 SSD. PCIe 3.0 SSD 대비 전력 30% 덜 먹고, 속도 2배 빠르다 주장. -> ㅣㅂ교 대상, 측정 조건(워크로드/QD/온도/방열)이 없어 기준 모호.
 데이터 센터 기능 체크리스트로 현대 데이터센터에 필요한 기능을 지원한다. hardware-based security(하드웨어 보안), advanced telemetry(상태/로그/모니터링 데이터), virtualization functions(가상화 관련 기능), data path(데이터 경로 최적화/기능), power loss protection(PLP: 전원 꺼져도 데이터/메타데이터 보호). 성능만이 아니라 운영/관리/보안/신뢰성 기능이 있다.
+
 업계 표준인 NVMe 1.3, PCIe 3.0 x4, OPC NVMe Cloud SSD 1.0을 따르면서 데이터센터(특히 클라우드)에서 요구하는 규격/호환성 틀 안에 있다고 주장.
 
+---
 ![[Pasted image 20260226192910.png]]
 
 A. 제품 포지션/세그먼트
@@ -46,7 +48,7 @@ C. 전력/효율 주장 방향
 - QoS “4x”는 p99.9 기준인가? workload mix는?
 - Active power <10W는 read/write 중 어떤 workload 기준인가? PS state는?
 - M.2와 E1.S에서 **스로틀링 발생 조건**과 성능 차이는?
-
+---
 ![[Pasted image 20260226195150.png]]
 
 1) 상단 기본 사양 영역 (제품 정체/호환성)
@@ -75,7 +77,7 @@ E1.S (5.9/9.5/15/25mm)
 - 두께 옵션이 여러 개라는 뜻(방열/PLP 부품 탑재/구성에 영향).
 - U.2 플랫폼 최적화. 보통은 서버 섀시/백플레인/운영환경에 맞춘다는 의미
 
-1) 성능 영역: E1.S and M.2 OP7 Performance
+2) 성능 영역: E1.S and M.2 OP7 Performance
 P7 뜻
 - Over-Provisioning 7% (여유 공간을 약 7% 두는 구성).
 - OP는 랜덤 쓰기 성능, QoS, 수명, GC 부담에 큰 영향을 줌.
@@ -128,25 +130,50 @@ QoS (99.9%) Random Read (µs) / QoS (99.9%) Random Write (µs)
     - 랜덤 쓰기에서는 어떤 상황에서 ms 단위 tail latency 이벤트가 생긴다는 신호일 수 있음(예: GC, mapping update, flush, thermal/power state 변화).
     - E1.S가 M.2보다 QoS가 더 좋다는 메시지를 주려는 구조.
 
-# 3) Power Consumption (전력)
-
-## Active (W)
-
+3) Power Consumption (전력)
+Active (W)
 - 활성 동작 시 전력. 표는 모델/용량에 따라:
-    
     - M.2: <6.0, <7.5
-        
     - E1.S: <9.5, <10.0
-        
-- 여기서 중요한 점: “Active”가 **어떤 워크로드(읽기/쓰기/혼합)**인지 표에 없음. 실무에서는 이 조건이 없으면 비교가 어렵다.
-    
-
-## Idle (W)
-
+- 여기서 중요한 점: Active가 어떤 워크로드(읽기/쓰기/혼합)인지 표에 없음. 실무에서는 이 조건이 없으면 비교가 어렵다.
+Idle (W)
 - 유휴 전력:
-    
     - M.2: <2.0
-        
     - E1.S: <3.0
-        
 - 역시 절전 상태(PS state, APST 등) 조건이 없어서 실제 시스템에서 달라질 수 있음.
+
+4) Reliability (신뢰성)
+MTBF (Hour): **2.0M**
+- 평균 고장 간격(통계적 지표). 개별 제품이 2M시간 버틴다가 아니라, 모델링 기반 신뢰성 지표로 이해해야 함.
+UBER: 1 Sector per 10^17 Read
+- 읽기 중 “복구 불가능 오류”의 확률 지표(보통 Uncorrectable Bit Error Rate).
+- 데이터센터에서 데이터 무결성 얘기할 때 자주 등장.
+Retention: 3 Months @ 40°C (EOL)
+- **수명 말기(EOL)** 조건에서 40°C 환경에서 3개월 데이터 유지.
+- “EOL에서”라는 조건이 붙는 게 중요함(새 제품 상태가 아니라, 마모된 상태 기준).
+5) Warranty (보증)
+DWPD: 1.3
+- Drive Writes Per Day: 하루에 드라이브 전체 용량을 1.3번 쓰는 수준까지 보증한다는 의미.
+Period: 3 Years
+- 보증 기간 3년.
+Operating Temperature (°C): 0 ~ 70
+- 동작 온도 범위.
+---
+#### 내가 판단하고 공부할거
+(1) 성능 공부
+- Seq(128KB, QD128) vs Rand(4KB, QD128)의 의미
+- QD가 올라가면 왜 성능이 오르고, 왜 latency tail이 생기는지
+- 폼팩터/용량(E1.S vs M.2, 960 vs 3840) 차이가 왜 성능/QoS에 반영되는지
+ (2) QoS 공부 (가장 직무형)
+- QoS(99.9%)가 무엇인지(p99.9)
+- 왜 Random Write QoS가 ms로 튈 수 있는지(FTL/GC/flush/열/전력)
+- consistent latency를 어떻게 테스트로 증명하는지(Percentile 기반 리포트)
+ (3) 전력/열 공부
+- Active/Idle 전력 측정 조건이 왜 중요한지
+- thermal throttling이 실제로 언제 발생하는지(폼팩터/에어플로우/히트싱크/워크로드)
+- KIOPS/Watt 같은 효율 지표를 어떻게 산출하는지
+(4) 신뢰성 공부
+- UBER/Retention/DWPD가 의미하는 바
+- EOL retention 조건이 왜 중요한지(마모 상태에서의 데이터 유지)
+---
+![[Pasted image 20260226220355.png]]
