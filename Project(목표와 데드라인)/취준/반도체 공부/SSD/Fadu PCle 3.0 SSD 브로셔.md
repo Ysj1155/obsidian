@@ -9,3 +9,4 @@ FADU’sPCIe 3.0 NVMe SSDsaredesigned to meetthe increasing demands placed on Hy
 AWS/Google/Microsoft 같은 초대형 데이터센터인 Hyperscaler, 스토리지/컴퓨트/네트워크를 소프트웨어로 통합한 인프라(HCI)인 Hyperconverged, 일반 기업 데이터 센터 용도의 Enterprise, 데이터가 생성되는 현장 가까운 소형/분산 데이터센터인 Edge data center를 대상으로 설계. PC용이 아니라 데이터 센터용(엔터프라이즈 SSD) 포지셔닝.
 컨트롤러 아키텍쳐가 혁신적이기 때문에 지연시간이 낮고 일관적이다(ultra-low and consistent latency). 열 때문에 성능이 떨어지는 현상(thermal throttling)을 줄였다.
 KIOPS/Watt 성능 업계 최고(같은 전력에서 더 많은 IOPS를 낸다고 주장). superior Qos(지연시간 분포(p99/p99.9)) 지원. -> 전력 효율 + Qos가 핵심 가치다. 
+업계 최초 E1.S 폼팩터 SSD. PCLE 3.0 SSD 대비 전력 30% 덜 먹고 
