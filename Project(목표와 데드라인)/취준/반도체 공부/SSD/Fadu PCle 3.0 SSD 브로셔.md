@@ -178,3 +178,26 @@ Operating Temperature (°C): 0 ~ 70
 ---
 ![[Pasted image 20260226220355.png]]
 
+# 1) PCIe 3.0 SSD Security Features (보안/무결성)
+
+#Data-path E2E Protection (SECDED)
+
+- “호스트 → 컨트롤러 내부 → NAND”로 데이터가 이동하는 전체 경로에서 **오류 검출/정정**을 하는 메커니즘.
+    
+- SECDED는 보통 **Single Error Correction, Double Error Detection**(1비트 정정, 2비트 오류 검출) 계열을 뜻해.
+    
+
+**왜 중요?**
+
+- DRAM/버스/내부 데이터 경로에서 생기는 **소프트 에러**(bit flip)가 데이터 훼손으로 이어지는 걸 막는 쪽.
+    
+- 데이터센터는 “성능”도 중요하지만, 결국 **무결성(integrity)**이 핵심.
+    
+
+**검증/질문 포인트**
+
+- E2E가 “어디부터 어디까지”인지(호스트 메모리까지 포함? SSD 내부만?)
+    
+- 오류가 발생했을 때 **어떤 로그(telemetry/SMART)에 기록되는지**
+    
+- 실제로는 벤더 내부 테스트 항목이 많아서, 외부에서 할 수 있는 건 “에러 카운터/로그로 추적 가능하냐”가 핵심 질문.
