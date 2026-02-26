@@ -85,4 +85,33 @@ P7 뜻
 - E1.S: 1,920GB, 3,840GB
 Capacity (GB)
 - SSD 용량 표기. 성능/전력/내구성은 용량과 함께 달라질 수 있음(병렬성, NAND 다이 수, OP 구성 등).
-
+Sequential Read (MB/s) / Sequential Write (MB/s)
+- 순차 읽기/쓰기 대역폭.
+- Notes에 조건이 붙어 있음:
+    - Queue Depth = 128
+    - IO Size = 128KB
+- 의미: 링크/컨트롤러를 최대한 활용하는 최대치(peak) 조건에 가까움.
+- 표에서:
+    - Read 3,400 MB/s로 PCIe 3.0 x4 상한 근처
+    - Write는 M.2는 1,500, E1.S는 2,400으로 차이가 큼 → 내부 구성/병렬성/전력/열/펌웨어 정책 차이를 의심해볼 포인트.
+Random Read (KIOPS) / Random Write (KIOPS)
+- 4KB 랜덤 I/O 성능을 IOPS(초당 처리 개수)로 표시. KIOPS = 천 IOPS.
+- Notes 조건:
+    - Queue Depth = 128
+    - IO Size = 4KB
+- 표에서:
+    - Random Read는 모두 800K로 동일
+    - Random Write는 M.2 30K, E1.S 75K/95K로 차이가 큼  
+        → 랜덤 쓰기는 GC/FTL/OP/열/전력 제한 영향을 가장 크게 받아서 폼팩터/용량에 따라 잘 갈림.
+- 직무 관점에서 여기서 바로 나오는 질문:
+    - 이 랜덤 write 수치는 steady-state가? (브로셔는 말 안 함)
+    - preconditioning(사전 쓰기) 조건은? (없음)
+Random Read Latency (µs) / Random Write Latency (µs)
+- 단일 I/O 지연시간 성격이 강함.
+- Notes 조건:
+    - Queue Depth = 1
+    - IO Size = 4KB
+- 표에서:
+    - Read 70µs 고정
+    - Write는 M.2 20µs, E1.S 15µs
+- 주의: 지연시간은 “평균인지, 중간값인지”가 없어서 숫자만으로는 제한적. 실무에선 **percentile(꼬리)**이 더 중요함.
