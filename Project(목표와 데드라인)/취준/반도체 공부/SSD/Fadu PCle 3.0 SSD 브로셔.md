@@ -39,3 +39,13 @@ C. 전력/효율 주장 방향
 - OCP NVMe Cloud SSD 1.0: 클라우드 운영에 필요한 log/health 요구사항(가능하면 spec 읽기)
 - Security standards: TCG Opal, secure boot 같은 것들이 실제로는 설정/모드/제약이 많음  
 	→ 어떤 명령/툴/절차로 확인할지 준비
+
+#### 문답
+- 위 성능 수치의 IO size/QD/numjobs는?
+- 랜덤 write 95K는 steady-state인가? preconditioning 절차는?
+- QoS “4x”는 p99.9 기준인가? workload mix는?
+- Active power <10W는 read/write 중 어떤 workload 기준인가? PS state는?
+- M.2와 E1.S에서 **스로틀링 발생 조건**과 성능 차이는?
+
+![[Pasted image 20260226195150.png]]
+
