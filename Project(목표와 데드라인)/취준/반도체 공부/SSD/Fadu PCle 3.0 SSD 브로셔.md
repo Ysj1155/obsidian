@@ -6,4 +6,5 @@ Turnkey Storage Solution with FLASH Controller, Customizable Firmware, and SSD D
 
 FADU’sPCIe 3.0 NVMe SSDsaredesigned to meetthe increasing demands placed on Hyperscaler, Hyper converged, Enterprise, and Edge data centers. At the heart of FADU’s SSDs is an innovative SSD controller architecture that enables ultra-low and consistent latency while virtually eliminating thermal throttling issues. As a result, FADU SSDs deliver industry leading KIOPS/Watt performance while supporting superior QoS. In the industry’s first E1.S form factor SSD, FADU’s PCIe 3.0 SSD consumes up to 30% less power and operates up to twice as fast as other PCIe 3.0 SSDs. Consistent low-latency delivers stable, superior Quality of Service (QoS) at any workload. The SSDs support a variety of features for modern data centers, including hardware-based security, advanced telemetry, virtualization functions, data path, and power loss protection.
 
-AWS/Google/Microsoft 같은 초대형 데이터센터인 Hyperscaler, 스토리지/컴퓨트/네트워크를 소프트웨어로 통합한 인프라(HCI)인 Hyperconverged, 일ㄷ
+AWS/Google/Microsoft 같은 초대형 데이터센터인 Hyperscaler, 스토리지/컴퓨트/네트워크를 소프트웨어로 통합한 인프라(HCI)인 Hyperconverged, 일반 기업 데이터 센터 용도의 Enterprise, 데이터가 생성되는 현장 가까운 소형/분산 데이터센터인 Edge data center를 대상으로 설계. PC용이 아니라 데이터 센터용(엔터프라이즈 SSD) 포지셔닝.
+컨트롤러 아키텍쳐가 혁신적이기 때문에 
