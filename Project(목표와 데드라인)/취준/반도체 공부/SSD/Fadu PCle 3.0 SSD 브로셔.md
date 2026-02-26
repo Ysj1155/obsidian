@@ -25,3 +25,17 @@ B. 성능의 상한(peak) 수준
 C. 전력/효율 주장 방향
 - 성능 단독보다 효율(성능/전력)과 QoS를 핵심 세일즈 포인트로 잡고 있음.
 
+측정 조건이 없음. 
+- 성능 수치의 조건: IO size, QD, numjobs, read/write mix
+- 상태: resh-out-of-box vs steady-state(Preconditioning)
+- QoS의 정의: p99? p99.9? 측정 window?
+- 전력 측정 조건: 활성 상태가 read인지 write인지, PS state/APST 설정
+- 폼팩터별 차이: M.2 vs E1.S는 열/전력/스로틀링이 완전히 다름
+-> “브로셔 수치는 peak 조건이라 QD sweep/steady-state 조건을 분리해 재현하고, 평균뿐 아니라 p99.9 지연으로 QoS를 확인하겠습니다.” 이거 각 단어 뜻이 뭔지 알아야 한다. 
+
+#### 알면 좋은거
+공부 목표: 
+- NVMe 1.4: Identify/Log pages/Telemetry 관련 확인 포인트
+- OCP NVMe Cloud SSD 1.0: 클라우드 운영에 필요한 log/health 요구사항(가능하면 spec 읽기)
+- Security standards: TCG Opal, secure boot 같은 것들이 실제로는 설정/모드/제약이 많음  
+	→ 어떤 명령/툴/절차로 확인할지 준비
