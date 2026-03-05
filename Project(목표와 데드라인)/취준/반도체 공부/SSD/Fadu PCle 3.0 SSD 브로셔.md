@@ -12,7 +12,7 @@ KIOPS/Watt 성능 업계 최고(같은 전력에서 더 많은 IOPS를 낸다고
 업계 최초 E1.S 폼팩터 SSD. PCIe 3.0 SSD 대비 전력 30% 덜 먹고, 속도 2배 빠르다 주장. -> ㅣㅂ교 대상, 측정 조건(워크로드/QD/온도/방열)이 없어 기준 모호.
 데이터 센터 기능 체크리스트로 현대 데이터센터에 필요한 기능을 지원한다. hardware-based security(하드웨어 보안), advanced telemetry(상태/로그/모니터링 데이터), virtualization functions(가상화 관련 기능), data path(데이터 경로 최적화/기능), power loss protection(PLP: 전원 꺼져도 데이터/메타데이터 보호). 성능만이 아니라 운영/관리/보안/신뢰성 기능이 있다.
 
-업계 표준인 NVMe 1.3, PCIe 3.0 x4, OPC NVMe Cloud SSD 1.0을 따르면서 데이터센터(특히 클라우드)에서 요구하는 규격/호환성 틀 안에 있다고 주장.
+업계 표준인 NVMe 1.3, PCIe 3.0 x4, OCP NVMe Cloud SSD 1.0을 따르면서 데이터센터(특히 클라우드)에서 요구하는 규격/호환성 틀 안에 있다고 주장.
 
 ---
 ![[Pasted image 20260226192910.png]]
@@ -27,9 +27,9 @@ B. 성능의 상한(peak) 수준
 C. 전력/효율 주장 방향
 - 성능 단독보다 효율(성능/전력)과 QoS를 핵심 세일즈 포인트로 잡고 있음.
 
-측정 조건이 없음. 
+QD/IOsize 정도만 있고, steady-state/혼합비/측정 window/환경 조건이 빠져 비교가 어렵다.
 - 성능 수치의 조건: IO size, QD, numjobs, read/write mix
-- 상태: resh-out-of-box vs steady-state(Preconditioning)
+- 상태: fresh-out-of-box vs steady-state(Preconditioning)
 - QoS의 정의: p99? p99.9? 측정 window?
 - 전력 측정 조건: 활성 상태가 read인지 write인지, PS state/APST 설정
 - 폼팩터별 차이: M.2 vs E1.S는 열/전력/스로틀링이 완전히 다름
@@ -78,7 +78,7 @@ E1.S (5.9/9.5/15/25mm)
 - U.2 플랫폼 최적화. 보통은 서버 섀시/백플레인/운영환경에 맞춘다는 의미
 
 2) 성능 영역: E1.S and M.2 OP7 Performance
-P7 뜻
+OP7 뜻
 - Over-Provisioning 7% (여유 공간을 약 7% 두는 구성).
 - OP는 랜덤 쓰기 성능, QoS, 수명, GC 부담에 큰 영향을 줌.
 - 즉 이 표의 성능은 OP7 조건에서의 수치라고 이해하는 게 안전함.
