@@ -10,5 +10,10 @@ PC와 연결되는 인터페이스, 데이터 저장용 메모리, 인터페이�
 ### NAND Flash Memory
 비휘발성 메모리. 전원이 꺼져도 데이터가 사라지지 않는다. 이는 데이터를 장기간 보관 가능하게 해준다. Cell이라는 기본 저장 단위로 구성되며 셀 하나는 1비트 또는 그 이상의 데이터를 저장할 수 있다. 여기에는 SLC(Single-Level Cell), MLC(Multi-Level Cell), TLC(Triple-Level Cell), QLC(Quad-Level Cell)이 있다. 각 기술은 속도와 내구성, 비용 등에서 차이가 있으며 SLC는 가장 빠르고 내구성이 뛰어나지만 용량당 비용이 높다. 반면 QLC는 더 많은 데이터를 저장할 수 있지만 속도와 내구성이 상대적으로 낮다. 
 ### 컨트롤러
-데이터의 읽기, 쓰기, 삭제 등의 모든 작업을 관리하며 SSD의 성능을 결정짓는 중요한 요소 중 하나. 컨트롤러는 Wear Leveling, Garbage Collection, [TRIM](obsidian://open?vault=obsidian_clean&file=Project(%EB%AA%A9%ED%91%9C%EC%99%80%20%EB%8D%B0%EB%93%9C%EB%9D%BC%EC%9D%B8)%2F%EC%B7%A8%EC%A4%80%2F%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B3%B5%EB%B6%80%2FSSD%2FSSD%20Trim)과 같은 다양한 알고리즘을 사용해 플래시 메모리의 수명을 연장하고 성능을 최적화 한다. 
-- Wear Leveling: NAND Flash Memory는 쓰기와 삭제가 반복되면서 
+데이터의 읽기, 쓰기, 삭제 등의 모든 작업을 관리하며 SSD의 성능을 결정짓는 중요한 요소 중 하나. 컨트롤러는 Wear Leveling, Garbage Collection, [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md|TRIM]]과 같은 다양한 알고리즘을 사용해 플래시 메모리의 수명을 연장하고 성능을 최적화 한다. 
+- [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md|Wear Leveling]]: NAND Flash Memory는 쓰기와 삭제가 반복되면서 특정 셀의 내구성이 떨어지기 때문에 이를 균등하게 분배하는 기술
+- [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md|Garbage Collection]]: 셀 내 불필요한 데이터 청소하는 기술
+- [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md|TRIM]]: 해당 데이터 완전 삭제 기술
+
+### DRAM 캐시
+SSD가 데이터를 임시로 저장하는 고속 메모리 공간. 데이터의 접근 속도를 크게 향상시키는 요인. 
