@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "SSD 기본 원리와 구조"
             }
-          },
-          {
-            "id": "2f95358eb4eb423c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "릴리즈 노트 1.12.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,7 +203,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2f95358eb4eb423c",
+  "active": "0d1ad2218bc189a6",
   "lastOpenFiles": [
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 기본 원리와 구조.md",
