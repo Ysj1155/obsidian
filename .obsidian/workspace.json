@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives"
+              "title": "SSD Wear Leveling"
             }
           }
         ]
@@ -205,12 +205,13 @@
   },
   "active": "31ad44a3e57dd894",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 허브.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/클라이언트 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCle 3.0 SSD 브로셔.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
     "무제.base",
     "202603062240.md",
     "Vault.md",
@@ -222,7 +223,6 @@
     "Garbage Collection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 단계적 검증 테스트 방법 및 저장장치.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 전력 손실 보호 원리.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/실험용.md",
     "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
