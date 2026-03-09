@@ -1,3 +1,18 @@
+# Secret-prone / plugin local data
 .obsidian/plugins/chatgpt-md/
+
+# Obsidian runtime/UI state
 .obsidian/workspace.json
+.obsidian/workspace-mobile.json
 .obsidian/cache/
+.obsidian/backlink.json
+.obsidian/graph.json
+
+# Plugin-generated local state
+.makemd/
+
+# Trash / temporary
+.trash/
+
+# Optional local-only attachments
+attachments_local/
