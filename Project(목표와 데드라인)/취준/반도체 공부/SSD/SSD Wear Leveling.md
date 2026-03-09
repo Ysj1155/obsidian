@@ -5,4 +5,7 @@
 # GC와의 관계
 # WAF와의 trade-off
 # 엔터프라이즈 SSD에서 왜 중요한가
+## DWPD
+## retention
+## endurance
 # 검증 관련 질문
