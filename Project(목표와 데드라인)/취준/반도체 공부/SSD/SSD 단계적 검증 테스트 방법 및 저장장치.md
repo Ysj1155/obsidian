@@ -1,4 +1,4 @@
-[출처](obsidian://open?vault=obsidian_clean&file=Project(%EB%AA%A9%ED%91%9C%EC%99%80%20%EB%8D%B0%EB%93%9C%EB%9D%BC%EC%9D%B8)%2F%EC%B7%A8%EC%A4%80%2FFADU%2Fssd%20validation%20%ED%8A%B9%ED%97%88.pdf)
+[[[Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf|출처]]
 
 출원인은 北京忆恒创源科技股份有限公司(메모블레이즈 계열로 알려진 중국 엔터프라이즈 SSD 업체)이고, 공개번호는 CN120808860A, 공개일은 2025-10-17
 

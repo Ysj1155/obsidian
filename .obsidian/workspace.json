@@ -4,21 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "65827b5af8aea5cc",
+        "id": "f64aede40b246d95",
         "type": "tabs",
         "children": [
           {
-            "id": "0d1ad2218bc189a6",
+            "id": "31ad44a3e57dd894",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 기본 원리와 구조.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SSD 기본 원리와 구조"
+              "title": "개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives"
             }
           }
         ]
@@ -75,7 +76,7 @@
             }
           },
           {
-            "id": "dba39c87a214b323",
+            "id": "452acf3fac673d79",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -89,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 443.5
+    "width": 342.5
   },
   "right": {
     "id": "566ea4904b6eaf58",
@@ -120,12 +121,11 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "1430851f823f919b",
@@ -156,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Area(꾸준히 신경쓸거)/반도체 공부/테스트 엔지니어/후공정 테스트 양산 엔지니어.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 허브.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "후공정 테스트 양산 엔지니어 의 나가는 링크"
+              "title": "SSD 허브 의 나가는 링크"
             }
           },
           {
@@ -203,49 +203,48 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0d1ad2218bc189a6",
+  "active": "31ad44a3e57dd894",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 기본 원리와 구조.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 허브.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/클라이언트 SSD.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCle 3.0 SSD 브로셔.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
+    "무제.base",
+    "202603062240.md",
+    "Vault.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/9대 공정/Untitled.md",
+    "Project(목표와 데드라인)/취준/공부할 리스트.md",
+    "Untitled.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/테스트 엔지니어.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
+    "Garbage Collection.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 단계적 검증 테스트 방법 및 저장장치.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 전력 손실 보호 원리.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/실험용.md",
+    "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
+    "Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf",
+    "Project(목표와 데드라인)/취준/FADU/SSD Test case generation method for early defect detection.pdf",
+    "Project(목표와 데드라인)/취준/FADU/삼성 엔터프라이즈 SSD.pdf",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 2.md",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 3.md",
+    "Project(목표와 데드라인)/취준/FADU/파두 블로그 1.md",
     "attached file/Pasted image 20260305164445.png",
     "attached file/Pasted image 20260226220355.png",
     "attached file/Pasted image 20260226195150.png",
     "attached file/Pasted image 20260226192910.png",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 단계적 검증 테스트 방법 및 저장장치.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 전력 손실 보호 원리.md",
-    "Project(목표와 데드라인)/취준/공부할 리스트.md",
     "attached file/Pasted image 20260224224907.png",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/클라이언트 SSD.md",
     "Project(목표와 데드라인)/취준/FADU/FADU.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/반도체 공부.md",
-    "Project(목표와 데드라인)/취준/FADU/삼성 엔터프라이즈 SSD.pdf",
     "Area(꾸준히 신경쓸거)/C/C.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
-    "Project(목표와 데드라인)/Project(목표와 데드라인).md",
-    "Vault.md",
-    "Archieve(휴지통)/Archieve(휴지통).md",
-    "Project(목표와 데드라인)/취준/면접 대비/면접 대비.md",
     "Project(목표와 데드라인)/취준/FADU/FDP 개요.pdf",
-    "Project(목표와 데드라인)/취준/FADU/파두 블로그 1.md",
-    "time line/yearly/2026 목표.md",
-    "Project(목표와 데드라인)/취준/자격증/자격증.md",
-    "Project(목표와 데드라인)/취준/FADU/파두 블로그 3.md",
-    "Project(목표와 데드라인)/취준/FADU/파두 블로그 2.md",
     "Project(목표와 데드라인)/취준/FADU/20250509165227_FADU_PCIe3.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509161838_FADU_PCIe5.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509165015_FADU_PCIe4.0_SSD_Brochure.pdf",
-    "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509162233_FADU_PCIe5.0_SSD_Brochure.pdf",
-    "Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf",
-    "Project(목표와 데드라인)/취준/FADU/20250509162324_FADU_PCIe3.0_SSD_Brochure.pdf",
-    "Project(목표와 데드라인)/취준/FADU",
-    "Project(목표와 데드라인)/취준/취준.md",
-    "Resource(자료)/Resource(자료).md",
-    "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.02.02 6일차.md",
     "attached file/Pasted image 20260202173719.png",
     "attached file/Pasted image 20260202171125.png",
     "attached file/Pasted image 20260202161712.png",
