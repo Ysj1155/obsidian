@@ -38,6 +38,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -171,12 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Fadu PCIe 4.0 SSD 브로셔 의 나가는 링크"
+              "title": "Fadu PCIe 3.0 SSD 브로셔 의 나가는 링크"
             }
           },
           {
@@ -218,11 +219,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "384fc5d1fecf6590",
+  "active": "06486332cb4add17",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
     "attached file/Pasted image 20260317214258.png",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
     "attached file/Pasted image 20260317214115.png",
     "attached file",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
@@ -266,7 +267,6 @@
     "Project(목표와 데드라인)/취준/FADU/FDP 개요.pdf",
     "Resourece/Pasted image 20260202173719.png",
     "Resourece/Pasted image 20260202171125.png",
-    "Resourece/Pasted image 20260202161712.png",
     "time line/yearly/무제.canvas",
     "Project/무제 파일.canvas"
   ]
