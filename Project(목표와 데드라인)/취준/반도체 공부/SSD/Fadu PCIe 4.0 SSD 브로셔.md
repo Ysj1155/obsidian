@@ -7,9 +7,11 @@ tags:
   - validation
   - enterprise-ssd
 ---
+[[[Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf|출처]]
 
+Turnkey Storage Solution with FLASH Controller, Customizable Firmware, and SSD Designs.
 
-
+우리는 컨트롤러도 있고, 펌웨어도 우리 손에 있고, SSD 하드웨어 설계까지 묶어서 고객이 빠르게 SSD를 만들 수 있게 해준다.
 
 
 #### 3.0에 비해 발전한 부분
