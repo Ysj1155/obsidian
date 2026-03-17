@@ -38,6 +38,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -171,12 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Fadu PCIe 4.0 SSD 브로셔 의 나가는 링크"
+              "title": "Fadu PCIe 3.0 SSD 브로셔 의 나가는 링크"
             }
           },
           {
@@ -218,10 +219,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "384fc5d1fecf6590",
+  "active": "06486332cb4add17",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 허브.md",
     "무제.canvas",
