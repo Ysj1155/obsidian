@@ -38,7 +38,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -172,12 +171,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Fadu PCIe 3.0 SSD 브로셔 의 나가는 링크"
+              "title": "Fadu PCIe 4.0 SSD 브로셔 의 나가는 링크"
             }
           },
           {
@@ -219,10 +218,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "06486332cb4add17",
+  "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+    "attached file/Pasted image 20260317214258.png",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+    "attached file/Pasted image 20260317214115.png",
+    "attached file",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 허브.md",
     "무제.canvas",
@@ -252,7 +254,6 @@
     "202603062240.md",
     "Vault.md",
     "Project(목표와 데드라인)/취준/반도체 공부/9대 공정/Untitled.md",
-    "Project(목표와 데드라인)/취준/공부할 리스트.md",
     "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/SSD Test case generation method for early defect detection.pdf",
@@ -263,11 +264,9 @@
     "Resourece/Pasted image 20260226192910.png",
     "Resourece/Pasted image 20260224224907.png",
     "Project(목표와 데드라인)/취준/FADU/FDP 개요.pdf",
-    "Project(목표와 데드라인)/취준/FADU/20250509165227_FADU_PCIe3.0_SSD_Brochure.pdf",
     "Resourece/Pasted image 20260202173719.png",
     "Resourece/Pasted image 20260202171125.png",
     "Resourece/Pasted image 20260202161712.png",
-    "Resourece/Pasted image 20260129213842.png",
     "time line/yearly/무제.canvas",
     "Project/무제 파일.canvas"
   ]
