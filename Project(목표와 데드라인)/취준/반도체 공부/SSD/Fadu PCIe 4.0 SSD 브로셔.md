@@ -13,6 +13,9 @@ Turnkey Storage Solution with FLASH Controller, Customizable Firmware, and SSD D
 
 우리는 컨트롤러도 있고, 펌웨어도 우리 손에 있고, SSD 하드웨어 설계까지 묶어서 고객이 빠르게 SSD를 만들 수 있게 해준다.
 
+FADU’s PCIe 4.0 NVMe SSDs are designed to meet the increasing demands placed on Hyperscaler, Hyper converged, Enterprise, and Edgedata centers. At the heart of FADU’s SSDs is an innovative SSD controller architecture that enables ultra-low and consistent latency while virtually eliminating thermal throttling issues. As a result, FADU SSDs deliver industry leading KIOPS/Watt performance while supporting superior QoS. It consumes up to 30% less power and operates up to twice as fast as other PCIe4.0 SSDs, leading to the industry’s best IOPS/Watt. TheSSDssupportavariety offeatures for moderndata centers, including hardware-based security, advanced telemetry, data path, and power loss protection. FADU’s PCIe 4.0 SSD Platform is based on industry standard specifications including NVMe 1.4b, PCIe 4.0 x 4, and OCP NVMeCloud SSD1.0a.
+
+
 
 #### 3.0에 비해 발전한 부분
 PCIe 4.0 브로셔는 단순히 인터페이스만 3.0에서 4.0으로 올라간 버전이 아니라, 제품 포지션 자체가 더 전형적인 데이터센터 SSD 쪽으로 정리된 느낌이다. 3.0에서는 M.2와 E1.S를 같이 두며 메인스트림 엔터프라이즈 느낌이 강했는데, 4.0에서는 U.2와 E1.S 조합, 최대 8TB 용량, FC4121 컨트롤러, DELTA 플랫폼을 내세우면서 서버/스토리지 어레이용 라인업이라는 색이 더 짙어졌다.
