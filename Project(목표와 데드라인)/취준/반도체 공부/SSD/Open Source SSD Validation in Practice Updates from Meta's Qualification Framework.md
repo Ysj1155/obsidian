@@ -24,4 +24,6 @@ Meta는 삼성, 하닉, 마이크론 등 수많은 제조사(Vendor)의 SSD를 �
 스크립트의 실행 순서
 	1. 발견(Discovery): 현재 서버에 꽃힌 SSD가 뭐냐
 	2. 준비(Setup): 테스트를 위해 SSD의 데이터를 지우거나(Sanitize) 특정 상태로 만들기
-	3. 실행(Test Loop)
+	3. 실행(Test Loop): 실제 읽기/쓰기나 에러 주입 시나리오 돌리기
+	4. 수집(Log Collection): HAL을 통해 SSD 내부의 로그(Telemetry)를 긁어모으기
+4번 로그 수집에서 왜 실패했는지 밝히기 위해 데이터 분석하는게 중요하다.
