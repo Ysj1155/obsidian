@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/PCIe.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 인터페이스.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "PCIe"
+              "title": "SSD 인터페이스"
             }
           },
           {
@@ -221,9 +221,10 @@
   },
   "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 통신 프로토콜.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 인터페이스.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Open Source SSD Validation in Practice Updates from Meta's Qualification Framework.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/OCP-OPF-Testing-and-Validation.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/PCIe.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/SSD Validation Engineer.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
@@ -256,7 +257,6 @@
     "Project(목표와 데드라인)/Project(목표와 데드라인).md",
     "Project(목표와 데드라인)/취준/우분투로 넘어가는 방법.md",
     "Resourece/Pasted image 20260115195135.png",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md",
     "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/SSD Test case generation method for early defect detection.pdf",
