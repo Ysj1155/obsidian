@@ -18,15 +18,15 @@
 
 ## 문서별 주장 – 코드 매핑 테이블
 
-|문서/섹션|주장 내용(요약)|관련 구현 위치(예시)|불일치·미비점|
-|---|---|---|---|
-|**README.md**|OPF 스택에서의 자동화 검증 프레임워크 소개; Pytest 및 벤더 독립성 강조|- `README.md`(설명) <br> - `tests/` 폴더 (테스트 코드) <br> - `hal/` 폴더 (HAL 구현)|_가장 기본 설명만 포함_: 세부 테스트 시나리오 언급 부족.|
-|**docs/architecture.md**|시스템 아키텍처 설명: 하드웨어, 펌웨어, 테스트 흐름 다이어그램|- (미확인) 예: `docs/architecture.md` <br> - `hal/*` (구성도 구현 근거)|해당 문서 확인 필요. 코드와 실제 구성 비교 불가.|
-|**docs/testing_scenarios.md**|핵심 검증 시나리오 목록(전원/부팅, 성능, 오류, 복구) 제시|- `tests/test_power_cycle.py` <br> - `tests/test_performance.py` <br> - `tests/test_fault_injection.py` <br> 등 <br> - `conftest.py` (환경 설정)|테스트 파일이 실제로 존재하는지 확인 필요. 문서화된 일부 항목이 구현 누락 가능성.|
-|**hal/README.md**|HAL 구조 설명: 장치별 모듈과 공통 인터페이스 안내|- `hal/vendor_<name>.py` (실제 HAL 클래스) <br> - `hal/interface.py` (공통 베이스)|HAL 구상은 명시적이나, 각 벤더 지원 수준이 일관적이지 않을 수 있음. 예를 들어 특정 오류 인젝션 기능이 일부 HAL에만 구현되었을 수 있음.|
-|**tests/README.md**|Pytest 이용 방법 및 실행 지침 제공|- 루트 `README.md`의 Pytest 섹션 <br> - `pytest.ini` 또는 `conftest.py`|테스트 실행 예시나 fixture 설명이 부족할 수 있음. `tests/` 내부에 직접 문서 대신 코드로만 설명되어 있을 가능성.|
-|**reproducibility.md**|테스트 환경 재현성 강조: OCP 툴체인, Docker/이미지 공유|- Dockerfile, GitHub Actions 등의 CI 설정 파일 <br> - `scripts/` 폴더 (실행 스크립트)|문서에는 도커 이미지나 설정 명시했으나, 실제 제공 여부(예: DockerHub 등록) 확인 필요.|
-|**protocols.md**|오류 인젝션 및 텔레메트리 포맷 규격 정의|- `tests/fault_injection.py` (예: `inject_media_error()` 함수) <br> - `utils/telemetry_parser.py`|규격 문서는 있지만 구현이 다를 수 있음. 예를 들어 다잉 메시지나 고장 직전 신호 포착에 대한 로직이 테스트 코드에 명확히 대응되는지 확인 필요.|
+| 문서/섹션                         | 주장 내용(요약)                                     | 관련 구현 위치(예시)                                                                                                                                | 불일치·미비점                                                                            |
+| ----------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **README.md**                 | OPF 스택에서의 자동화 검증 프레임워크 소개; Pytest 및 벤더 독립성 강조 | - `README.md`(설명) <br> - `tests/` 폴더 (테스트 코드) <br> - `hal/` 폴더 (HAL 구현)                                                                     | _가장 기본 설명만 포함_: 세부 테스트 시나리오 언급 부족.                                                 |
+| **docs/architecture.md**      | 시스템 아키텍처 설명: 하드웨어, 펌웨어, 테스트 흐름 다이어그램          | - (미확인) 예: `docs/architecture.md` <br> - `hal/*` (구성도 구현 근거)                                                                                | 해당 문서 확인 필요. 코드와 실제 구성 비교 불가.                                                      |
+| **docs/testing_scenarios.md** | 핵심 검증 시나리오 목록(전원/부팅, 성능, 오류, 복구) 제시           | - `tests/test_power_cycle.py` <br> - `tests/test_performance.py` <br> - `tests/test_fault_injection.py` <br> 등 <br> - `conftest.py` (환경 설정) | 테스트 파일이 실제로 존재하는지 확인 필요. 문서화된 일부 항목이 구현 누락 가능성.                                    |
+| **hal/README.md**             | HAL 구조 설명: 장치별 모듈과 공통 인터페이스 안내                | - `hal/vendor_<name>.py` (실제 HAL 클래스) <br> - `hal/interface.py` (공통 베이스)                                                                    | HAL 구상은 명시적이나, 각 벤더 지원 수준이 일관적이지 않을 수 있음. 예를 들어 특정 오류 인젝션 기능이 일부 HAL에만 구현되었을 수 있음. |
+| **tests/README.md**           | Pytest 이용 방법 및 실행 지침 제공                       | - 루트 `README.md`의 Pytest 섹션 <br> - `pytest.ini` 또는 `conftest.py`                                                                            | 테스트 실행 예시나 fixture 설명이 부족할 수 있음. `tests/` 내부에 직접 문서 대신 코드로만 설명되어 있을 가능성.           |
+| **reproducibility.md**        | 테스트 환경 재현성 강조: OCP 툴체인, Docker/이미지 공유         | - Dockerfile, GitHub Actions 등의 CI 설정 파일 <br> - `scripts/` 폴더 (실행 스크립트)                                                                     | 문서에는 도커 이미지나 설정 명시했으나, 실제 제공 여부(예: DockerHub 등록) 확인 필요.                            |
+| **protocols.md**              | 오류 인젝션 및 텔레메트리 포맷 규격 정의                       | - `tests/fault_injection.py` (예: `inject_media_error()` 함수) <br> - `utils/telemetry_parser.py`                                              | 규격 문서는 있지만 구현이 다를 수 있음. 예를 들어 다잉 메시지나 고장 직전 신호 포착에 대한 로직이 테스트 코드에 명확히 대응되는지 확인 필요. |
 
 > 이 표는 (가용한 문서 정보로부터 추정한) 주제별 매핑을 보여 줍니다. 실제 코드 위치는 리포지토리 구조를 직접 살펴봐야 정확해집니다.
 
@@ -67,15 +67,16 @@ flowchart TB
 
 - **설명:** 좌→우 방향 플로우로, 초기화 단계부터 테스트 시나리오 수행, 데이터 수집, 결과 분석의 순서로 표시했습니다. HAL 계층을 통해 장치 의존성을 추상화하고, 다양한 시나리오(오류 주입, FDP 등)가 실행됩니다.
 
-|**필드/메트릭**|**카테고리**|**설명 및 검증 포인트**|
-|---|---|---|
-|**Available Spare**|SMART(예비 공간)|SSD에 사용 가능한 예비 블록 비율. 예비 공간이 가득 차면 성능 저하와 내구도 위험이 증가함. 정상 복구 시나리오에서 값 감소/증가 모니터링 필요.|
-|**Critical Warning**|SMART(경고 비트)|온도 초과, 긴급 정전 등 치명적 상태를 나타내는 플래그. 전원 장애/발열 시나리오에서 적절히 설정되는지 확인.|
-|**Media Errors**|SMART(오류 카운트)|NAND 비트 에러, ECC 복구 건수 등. 오류 주입 테스트 후 카운트가 증가해야 하며, ECC 기능 검증.|
-|**Power Cycle Count**|Telemetry|전원 사이클 누적 횟수. 전원 장애 테스트 후 증분 여부로 실제 리셋 여부를 확인.|
-|**Temperature**|Telemetry|장치 온도. 과부하 시나리오에서 상승 추세, 냉각 효과 등을 평가.|
-|**FDP WAF**|FDP 관련|쓰기 증폭(Write Amplification Factor). FDP 활성화 시 WAF가 낮아지는지 비교(예: 5→1).|
-|**GC Count/Duration**|FDP 관련|가비지 컬렉션 실행 횟수 및 소요 시간. FDP로 인해 GC 비용이 줄어드는지 검증.|
-|**Throughput (IOPS/BW)**|성능|읽기/쓰기 IOPS 또는 대역폭. 정상 상태와 FDP 적용 시 성능 비교.|
+| **필드/메트릭**               | **카테고리**      | **설명 및 검증 포인트**                                                                      |
+| ------------------------ | ------------- | ------------------------------------------------------------------------------------ |
+| **Available Spare**      | SMART(예비 공간)  | SSD에 사용 가능한 예비 블록 비율. 예비 공간이 가득 차면 성능 저하와 내구도 위험이 증가함. 정상 복구 시나리오에서 값 감소/증가 모니터링 필요. |
+| **Critical Warning**     | SMART(경고 비트)  | 온도 초과, 긴급 정전 등 치명적 상태를 나타내는 플래그. 전원 장애/발열 시나리오에서 적절히 설정되는지 확인.                       |
+| **Media Errors**         | SMART(오류 카운트) | NAND 비트 에러, ECC 복구 건수 등. 오류 주입 테스트 후 카운트가 증가해야 하며, ECC 기능 검증.                        |
+| **Power Cycle Count**    | Telemetry     | 전원 사이클 누적 횟수. 전원 장애 테스트 후 증분 여부로 실제 리셋 여부를 확인.                                       |
+| **Temperature**          | Telemetry     | 장치 온도. 과부하 시나리오에서 상승 추세, 냉각 효과 등을 평가.                                                |
+| **FDP WAF**              | FDP 관련        | 쓰기 증폭(Write Amplification Factor). FDP 활성화 시 WAF가 낮아지는지 비교(예: 5→1).                  |
+| **GC Count/Duration**    | FDP 관련        | 가비지 컬렉션 실행 횟수 및 소요 시간. FDP로 인해 GC 비용이 줄어드는지 검증.                                      |
+| **Throughput (IOPS/BW)** | 성능            | 읽기/쓰기 IOPS 또는 대역폭. 정상 상태와 FDP 적용 시 성능 비교.                                            |
+|                          |               |                                                                                      |
 
 - **설명:** 좌측은 측정 항목 이름, 중앙은 종류(예: SMART, Telemetry, FDP 관련), 우측은 해당 항목이 무엇을 의미하는지와 검증 관점을 적었습니다. 예를 들어 _Available Spare_는 예비 블록 비율이고, 이 값이 부족해지지 않도록 예비 블록 동작을 테스트해야 합니다. _FDP WAF_는 호스트 힌트에 따른 쓰기 증폭 정도로, FDP 기능의 핵심 평가 지표입니다.
