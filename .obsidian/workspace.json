@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/SSD Validation Engineer.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Fadu PCIe 4.0 SSD 브로셔"
+              "title": "SSD Validation Engineer"
             }
           },
           {
@@ -221,9 +221,20 @@
   },
   "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
-    "Resourece/Pasted image 20260317220741.png",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/SSD Validation Engineer.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/테스트 엔지니어.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스크 공정] 테스트 리소스들의 기능.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] ILK & IQ & IP Method Flow.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Leakage Current & Quiescent Current.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Test Time Reduction을 위한 Smart Sample Test + Cluster Detection.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Under Voltage Lock Out Method Flow.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] 아날로그 IC 테스트.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/후공정 테스트 양산 엔지니어.md",
+    "Resourece/Pasted image 20260317220741.png",
     "attached file/Pasted image 20260317214258.png",
     "attached file/Pasted image 20260317214115.png",
     "attached file",
@@ -246,16 +257,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 단계적 검증 테스트 방법 및 저장장치.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 6 A Summary - What every programmer should know about solid-state drives.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 4 고급 기능과 내부 병렬 처리.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 3 페이지 & 블록 & FTL(Flash Translation Layer).md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 5 접근 방법과 시스템 최적화.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/개발자를 위한 SSD(Coding for SSD) - Part 2 SSD의 아키텍쳐와 벤치마킹.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 기본 원리와 구조.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/클라이언트 SSD.md",
-    "202603062240.md",
-    "Vault.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/9대 공정/Untitled.md",
     "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/SSD Test case generation method for early defect detection.pdf",
@@ -267,7 +268,6 @@
     "Resourece/Pasted image 20260224224907.png",
     "Project(목표와 데드라인)/취준/FADU/FDP 개요.pdf",
     "Resourece/Pasted image 20260202173719.png",
-    "Resourece/Pasted image 20260202171125.png",
     "time line/yearly/무제.canvas",
     "Project/무제 파일.canvas"
   ]
