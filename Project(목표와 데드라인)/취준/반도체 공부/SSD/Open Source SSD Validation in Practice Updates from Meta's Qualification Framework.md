@@ -61,3 +61,4 @@ Meta가 프레임 워크를 공개한 이유
 - 공급망의 안정화: 벤더들이 개발 단계부터 툴로 검증을 마치고 가져와서(Shift-Left), 실전 투입 후에 문제가 터질 확률이 낮아짐.
 
 [해당 오픈 소스](https://github.com/opencomputeproject/OCP-OPF-Testing-and-Validation)
+
