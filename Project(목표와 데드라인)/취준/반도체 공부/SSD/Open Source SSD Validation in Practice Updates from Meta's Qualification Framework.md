@@ -36,7 +36,7 @@ SSD에서 쏟아지는 Raw 데이터는 사람이 읽기 힘들다. 이 아키�
 ### 에러 주입(Error Injection)
 데이터 센터에는 수만 개의 SSD가 동시에 돌아가기 때문에 확률적으로 반드시 하드웨어 에러나 갑작스러운 전원 차단이 발생한다. Meta의 검증 스크립트는 이를 인위적으로 만들어낸다. 
 - 정전 시나리오(Sudden Power Loss): 데이터를 쓰고 있는 도중 전원을 갑자기 차단. 다시 켰을 때 이전에 기록된 데이터가 깨지지 않았는지(Data Integrity), SSD가 전원 복구 후 장치가 정상적으로 초기화되고 접근 가능한 상태로 복귀하는지 확인.
-- 미디어/데이터 오류 상황을 주입: fault injection, media error simulation, power fault, protocol/firmware error path validation. 이때 SSD가 자체 정정 기능(ECC)을 통해 데이터를 잘 복구는하지, 혹은 다잉 메시지 보고하는지 검증.
+- 미디어/데이터 오류 상황을 주입: fault injection, media error simulation, power fault, protocol/firmware error path validation. 이때 SSD가 자체 정정 기능(ECC)을 통해 데이터를 잘 복구하는지, 혹은 장애 징후를 보고하는지 검증.
 ### FDP(Flexible Data Placement); 효율적인 데이터 배치
 SSD에 다른 데이터가 섞이면 garbage collection 효율이 떨어지고 write amplification이 증가해서 결과적으로 내구도와 효율이 악화된다. FDP는 호스트(서버)가 SSD에 업데이트 패턴이나 데이터 수명 특성에 따라 배치해서 GC 비용을 줄이는 기술. 
 - 스크립트는 FDP 기능을 켰을 때 실제로 WAF(Write Amplification Factor, 쓰기 증폭 지수)가 낮아지는지, 즉 SSD 수명이 효율적으로 관리되는지 측정.
@@ -53,7 +53,7 @@ SSD에 다른 데이터가 섞이면 garbage collection 효율이 떨어지고 w
 과거 Meta에서 오류를 발견해도 제조사에 설명, 재현이 오래걸렸다. 서로 사용하는 테스트 도구와 환경이 달랐기 때문. 
 - Meta와 제조사가 동일한 OCP 검증 스크립트를 공유
 - 재현성 확보: Meta에서 에러가 발생하면 해당 테스트 케이스 번호와 로그로 제조사 랩에서 동일 상황 재현 가능
-- 품질 상향 평준화: 특정 제조사만 알던 노하우가 OCP 사양에 녹아들면서 전체 SSD 업계 수중 상향 평준화.
+- 품질 상향 평준화: 특정 제조사만 알던 노하우가 OCP 사양에 녹아들면서 전체 SSD 업계 수준 상향 평준화.
 ### 오픈 소스의 힘
 Meta가 프레임 워크를 공개한 이유
 - 에코 시스템 확장: 더 많은 회사가 이 표준을 따를수록 Meta가 선택 가능한 고품질 SSD 선택지가 넓어진다.
