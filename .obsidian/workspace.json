@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/SSD Validation Engineer.md",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/PCIe.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SSD Validation Engineer"
+              "title": "PCIe"
             }
           },
           {
@@ -221,9 +221,10 @@
   },
   "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/SSD Validation Engineer.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/PCIe.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/SSD Validation Engineer.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/테스트 엔지니어.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
@@ -256,7 +257,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD 단계적 검증 테스트 방법 및 저장장치.md",
     "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
     "Project(목표와 데드라인)/취준/FADU/20250509162304_FADU_PCIe4.0_SSD_Brochure.pdf",
     "Project(목표와 데드라인)/취준/FADU/SSD Test case generation method for early defect detection.pdf",
