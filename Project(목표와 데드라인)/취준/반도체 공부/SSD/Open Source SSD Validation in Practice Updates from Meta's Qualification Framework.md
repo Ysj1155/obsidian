@@ -59,3 +59,5 @@ Meta가 프레임 워크를 공개한 이유
 - 에코 시스템 확장: 더 많은 회사가 이 표준을 따를수록 Meta가 선택 가능고품질 SSD 선택지가 넓어진다.
 - 커뮤니티의 검증: 전세계 엔지니어들이 스크립트를 같이 개선
 - 공급망의 안정화: 벤더들이 개발 단계부터 툴로 검증을 마치고 가져와서(Shift-Left), 실전 투입 후에 문제가 터질 확률이 낮아짐.
+
+[해당 오픈 소스](https://github.com/opencomputeproject/OCP-OPF-Testing-and-Validation)
