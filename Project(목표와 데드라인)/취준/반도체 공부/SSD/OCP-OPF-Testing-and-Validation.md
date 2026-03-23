@@ -1,5 +1,7 @@
   
 [출처](https://github.com/opencomputeproject/OCP-OPF-Testing-and-Validation)
+
+# 이거는 천천히 수정 필요
 # 개요
 
 - **OCP-OPF-Testing-and-Validation** 리포지토리는 OCP(Open Compute Project)의 OPF(Open Programmable Framework) 스택을 대상으로 한 검증용 테스트 모음입니다. Pytest 기반으로 수많은 검증 시나리오(부팅 복구, 성능 테스트, 오류 주입, 텔레메트리 수집 등)를 **자동화된 프레임워크**로 제공합니다. 주 목적은 **공급망 전체에서 일관된 테스트 체계**를 마련하여, 장비 제조사별로 제각각인 테스트 코드를 벗어나 **재현성 있는 검증 프로세스**를 구현하는 것입니다. 리포지토리 구조는 Pytest 스위트, HAL(하드웨어 추상화 계층), 텔레메트리 핸들러 등으로 구성되어 있으며, OCP 표준화 형식으로 로그/결과를 출력할 것으로 보입니다.
