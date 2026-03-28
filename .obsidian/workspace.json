@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/허브 노트 템플릿.md",
+                "file": "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "허브 노트 템플릿"
+              "title": "검증 포인트 노트 템플릿"
             }
           },
           {
@@ -92,7 +92,7 @@
             }
           },
           {
-            "id": "c9eadd87d82ffb48",
+            "id": "967cd11c435fab66",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -221,9 +221,11 @@
   },
   "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/9대 공정/1. 웨이퍼/1탄, '웨이퍼'란 무엇일까요.md",
+    "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
+    "Project(목표와 데드라인)/취준/허브 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/개념 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/문서 스크랩 템플릿.md",
-    "Project(목표와 데드라인)/취준/허브 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 3.0 SSD 브로셔.md",
@@ -245,12 +247,10 @@
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Test Time Reduction을 위한 Smart Sample Test + Cluster Detection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Under Voltage Lock Out Method Flow.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] 아날로그 IC 테스트.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/후공정 테스트 양산 엔지니어.md",
     "Resourece/Pasted image 20260317220741.png",
     "attached file/Pasted image 20260317214258.png",
     "attached file/Pasted image 20260317214115.png",
     "attached file",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 SSD.md",
     "무제.canvas",
     "무제.base",
     "Project(목표와 데드라인)/취준/FADU/Data_Center_SSD.Product_Brief.pdf",
