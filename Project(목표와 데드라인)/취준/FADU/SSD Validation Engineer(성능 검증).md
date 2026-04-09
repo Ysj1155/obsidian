@@ -18,3 +18,9 @@ SSD는 시장과 ​고객의 ​요구 ​사항을 충족함과 ​동시에, 
 
 - NAND Flash 기반 Storage(SSD/eMMC) 관련 개발/검증 경험 (FIO Tool을 활용한 SSD성능, 파워 검증 경험)
 - Storage Benchmark Tool 사용 및 분석 경험 (DLIO, MLPerf, ACT 등)
+
+
+
+---
+일단 SSD minilab 돌리면서 fio tool 관련 플젝 유기했던거 복구해서 일주일에 하루라도 꾸준히 활동 하는게 중요.
+추가 옵션 느낌으로 DLIO나 MLPerf 같은거 깃허브에서 받아서 돌려보는 활동을 나중에 미니랩 할거 없으면 추가해서 해보는 느낌으로.
