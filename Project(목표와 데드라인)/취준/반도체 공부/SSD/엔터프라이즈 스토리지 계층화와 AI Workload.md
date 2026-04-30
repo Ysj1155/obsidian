@@ -20,12 +20,8 @@ updated:
 source: https://www.snia.org/blog/2024/three-truths-about-hard-drives-and-ssds
 source_type: blog
 reliability: mixed
-related_projects:
-  - fadu-prep
-related_roles:
-  - ssd-validation
-  - product-engineering
-  - test-engineering
+related_projects: []
+related_roles: []
 ---
 
 # SNIA - Three Truths About Hard Drives and SSDs
@@ -34,7 +30,7 @@ related_roles:
 - 출처: SNIA Blog
 - 유형: 산업/시장 관점 블로그
 - 발행/게시 시점: 2024
-- 읽은 날짜: {{date}}
+- 읽은 날짜: {{2026.04.28}}
 - 작성 주체: 표준단체 사이트에 올라온 산업계 글. 작성자는 Seagate 소속으로 보이므로 HDD 산업 관점의 편향 가능성 있음.
 - 신뢰도 1차 판단: mixed
 - 읽은 이유:
