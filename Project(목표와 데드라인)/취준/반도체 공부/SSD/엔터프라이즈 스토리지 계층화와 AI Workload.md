@@ -170,10 +170,6 @@ related_roles: []
   - [[SSD 허브]]
   - [[SSD 단계적 검증 테스트 방법 및 저장장치]]
   - [[SSD Validation Engineer]]
-- 원문 추가 확인 필요:
-  - 저자의 소속과 이해관계
-  - 원문에서 제시한 $/TB, exabyte, TCO 관련 수치
-  - SNIA 외 다른 관점의 자료: Pure Storage, Samsung, Micron, Solidigm, Meta/OCP 자료
 
 ## 남은 질문
 - AI workload 증가가 실제로 HDD 수요와 SSD 수요를 각각 얼마나 늘릴까?
