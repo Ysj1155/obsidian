@@ -65,9 +65,9 @@ related_roles: []
   - HDD와 SSD를 같은 기준으로 비교하면 판단이 흐려진다.
   - HDD는 $/TB 기준에서 강하고, SSD는 $/IOPS, latency, QoS 기준에서 강하다.
 - 왜 중요:
-  - “SSD가 더 좋다” 또는 “HDD가 더 싸다” 같은 단순 비교를 피할 수 있다.
-  - workload 기준으로 저장매체를 판단해야 한다.
-- 이 문서에서의 맥락:
+  - SSD가 더 좋다 또는 HDD가 더 싸다 같은 단순 비교를 피할 수 있다.
+  - workload 기준으로 저장 매체를 판단해야 한다.
+- 이 문서의 맥락:
   - 원문은 HDD의 $/TB 우위를 강조하며, 모든 데이터를 SSD로 대체하는 것은 비경제적이라고 본다.
 - 검증/실무 포인트:
   - SSD Validation에서는 단순 peak throughput보다 p99/p999 latency, sustained workload, power, thermal throttling을 함께 봐야 한다.
@@ -130,7 +130,7 @@ related_roles: []
 
 ## 내 해석
 - 내가 이해한 이 문서의 본질:
-  - 이 글은 “SSD가 HDD를 곧 완전히 대체한다”는 서사를 견제하는 글이다.
+  - 이 글은 SSD가 HDD를 곧 완전히 대체한다는 서사를 견제하는 글이다.
   - 데이터센터 storage는 단일 매체 경쟁이 아니라 workload별 역할 분담 구조로 봐야 한다.
 - 이 문서가 특히 강조하는 관점:
   - HDD는 낡아서 남아 있는 기술이 아니라, 대용량 저장의 경제성 때문에 여전히 필요한 매체다.
@@ -153,9 +153,9 @@ related_roles: []
   - 그러나 실제 데이터센터에서는 SSD가 어떤 tier에서 어떤 workload를 받는지도 중요하다.
   - FDP나 workload-aware placement 같은 개념은 이 연결고리로 볼 수 있다.
 - 자소서/면접에서 쓸 수 있는 포인트:
-  - “엔터프라이즈 SSD는 단순 peak 성능보다 고객 workload에서의 예측 가능한 성능과 QoS가 중요하다고 이해했다.”
-  - “데이터센터에서는 HDD와 SSD가 단순 경쟁 관계가 아니라 capacity tier와 performance tier로 역할을 나누며, validation도 이 맥락에서 workload 기반으로 설계되어야 한다.”
-  - “fio 기반 SSD mini-lab을 단순 속도 측정이 아니라 workload 조건 변화에 따른 latency, power, stability 비교로 확장하고 싶다.”
+  - 엔터프라이즈 SSD는 단순 peak 성능보다 고객 workload에서의 예측 가능한 성능과 QoS가 중요하다고 이해했다.
+  - 데이터센터에서는 HDD와 SSD가 단순 경쟁 관계가 아니라 capacity tier와 performance tier로 역할을 나누며, validation도 이 맥락에서 workload 기반으로 설계되어야 한다.
+  - fio 기반 SSD mini-lab을 단순 속도 측정이 아니라 workload 조건 변화에 따른 latency, power, stability 비교로 확장하고 싶다.
 
 ## 후속 작업
 - 새로 만들 개념 노트:
