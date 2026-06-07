@@ -11,12 +11,15 @@
             "id": "384fc5d1fecf6590",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "Project(목표와 데드라인)/취준"
+                "file": "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "취준"
+              "title": "검증 포인트 노트 템플릿"
             }
           }
         ],
@@ -88,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 532.5
+    "width": 357.5
   },
   "right": {
     "id": "566ea4904b6eaf58",
@@ -155,12 +158,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/취준.md",
+                "file": "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "취준 의 나가는 링크"
+              "title": "검증 포인트 노트 템플릿 의 나가는 링크"
             }
           },
           {
@@ -201,8 +204,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8647ce784937a063",
+  "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/왜 평균 IOPS만 보면 안 되는가.md",
+    "Project(목표와 데드라인)/취준/취준.md",
     "Project(목표와 데드라인)/취준/허브 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/문서 스크랩 템플릿.md",
@@ -230,8 +235,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/후공정 테스트 양산 엔지니어.md",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.29 5일차.md",
     "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.02.02 6일차.md",
-    "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.12 1일차.md",
-    "Project(목표와 데드라인)/취준/취준 컨설팅/취업 스터디 2026.01.15 2일차.md",
     "Project(목표와 데드라인)/취준/취준 컨설팅/면접대응전략.pdf",
     "Resourece/Pasted image 20260317220741.png",
     "attached file/Pasted image 20260317214258.png",
