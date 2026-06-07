@@ -47,7 +47,6 @@
     "//time line",
     "//time line/time line/yearly",
     "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준/Project(목표와 데드라인)/취준/반도체 공부",
-    "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준/Project(목표와 데드라인)/취준/자격증",
     "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준"
   ],
   "expandFolderOnClick": true,
@@ -63,7 +62,7 @@
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
-  "inlineContextExpanded": true,
+  "inlineContextExpanded": false,
   "inlineContextProperties": true,
   "inlineContextSectionsExpanded": true,
   "banners": true,
