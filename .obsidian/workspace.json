@@ -11,15 +11,12 @@
             "id": "384fc5d1fecf6590",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/면접 대비/면접 질문 리스트.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "path": "Project(목표와 데드라인)/취준"
               },
               "icon": "lucide-file",
-              "title": "면접 질문 리스트"
+              "title": "취준"
             }
           }
         ],
@@ -126,7 +123,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "1430851f823f919b",
@@ -157,12 +155,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/Fadu PCIe 4.0 SSD 브로셔.md",
+                "file": "Project(목표와 데드라인)/취준/취준.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Fadu PCIe 4.0 SSD 브로셔 의 나가는 링크"
+              "title": "취준 의 나가는 링크"
             }
           },
           {
@@ -185,8 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,10 +201,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "384fc5d1fecf6590",
+  "active": "8647ce784937a063",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/자격증/자격증.md",
+    "Project(목표와 데드라인)/취준/허브 노트 템플릿.md",
+    "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
+    "Project(목표와 데드라인)/취준/문서 스크랩 템플릿.md",
+    "Project(목표와 데드라인)/취준/개념 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/면접 대비/면접 질문 리스트.md",
+    "Project(목표와 데드라인)/취준/자격증/자격증.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Mini Lab Stage 1 회고.md",
     "Project(목표와 데드라인)/취준/FADU/ssd_validation_24week_roadmap.md",
@@ -223,10 +224,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/Open Source SSD Validation in Practice Updates from Meta's Qualification Framework.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/OCP-OPF-Testing-and-Validation.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/엔터프라이즈 스토리지 계층화와 AI Workload.md",
-    "Project(목표와 데드라인)/취준/문서 스크랩 템플릿.md",
-    "Project(목표와 데드라인)/취준/개념 노트 템플릿.md",
-    "Project(목표와 데드라인)/취준/허브 노트 템플릿.md",
-    "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Analog To Digital Converter  Accuracy & Resolution.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/[테스트 공정] Test Time Reduction을 위한 Smart Sample Test + Cluster Detection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/테스트 엔지니어/SSD Validation Engineer.md",
