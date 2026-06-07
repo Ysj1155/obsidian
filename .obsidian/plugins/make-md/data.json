@@ -39,7 +39,6 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/반도체 공부/Area(꾸준히 신경쓸거)/반도체 공부/SSD",
-    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/C",
     "/",
     "//Project(목표와 데드라인)",
     "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준/Project(목표와 데드라인)/취준/FADU",
@@ -47,7 +46,8 @@
     "//time line",
     "//time line/time line/yearly",
     "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준/Project(목표와 데드라인)/취준/반도체 공부",
-    "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준"
+    "//Project(목표와 데드라인)/Project(목표와 데드라인)/취준",
+    "//Area(꾸준히 신경쓸거)/Area(꾸준히 신경쓸거)/C"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

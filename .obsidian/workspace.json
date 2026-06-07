@@ -11,15 +11,12 @@
             "id": "384fc5d1fecf6590",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/개념 노트 템플릿.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "path": "Area(꾸준히 신경쓸거)"
               },
               "icon": "lucide-file",
-              "title": "개념 노트 템플릿"
+              "title": "Area(꾸준히 신경쓸거)"
             }
           }
         ],
@@ -158,12 +155,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/개념 노트 템플릿.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "개념 노트 템플릿 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -204,8 +200,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "384fc5d1fecf6590",
+  "active": "cae0d56fa142e3fc",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/개념 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/문서 스크랩 템플릿.md",
     "Project(목표와 데드라인)/취준/허브 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
@@ -215,7 +212,6 @@
     "Project(목표와 데드라인)/취준/FADU/ssd_validation_24week_roadmap.md",
     "Project(목표와 데드라인)/취준/검증 포인트 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/취준.md",
-    "Project(목표와 데드라인)/취준/개념 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/면접 대비/면접 질문 리스트.md",
     "Project(목표와 데드라인)/취준/자격증/자격증.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Mini Lab Stage 1 회고.md",
