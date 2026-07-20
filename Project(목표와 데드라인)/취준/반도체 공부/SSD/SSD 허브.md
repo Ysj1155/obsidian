@@ -196,6 +196,13 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
 - [[Request Timing MVP]]
 - [[Temperature-Aware GC Core Findings]]
 
+## 내 언어로 설명하기 / 문답
+
+- [[SSD 문답 허브]]
+- [[SSD Mini Lab 문답]]
+- [[FTL-GC White-box 문답]]
+- [[SSD 검증 공통 문답]]
+
 ## 아직 비어 있거나 보강할 노트
 
 - 아직 없는 필수 노트:
@@ -214,4 +221,8 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
   - [[SSD Mini Lab Portfolio Evidence]], [[Request Timing MVP]], [[Temperature-Aware GC Core Findings]]를 evidence branch로 추가.
   - [[fio]], [[Queue Depth]], [[p99 latency]], [[SSD QoS]], [[Write Amplification Factor]], [[GC Pause]], [[Data Temperature]], [[PVB Metadata Model]] 핵심 후보 노트 생성.
   - [[External SSD Product Validation]], [[NVMe SMART Telemetry]] 제품형 검증/telemetry 노트 생성.
+  - [[SSD 문답 허브]], [[SSD Mini Lab 문답]], [[FTL-GC White-box 문답]], [[SSD 검증 공통 문답]] 문답 공부 branch 생성.
+
+
+
 
