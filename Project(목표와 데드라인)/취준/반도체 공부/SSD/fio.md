@@ -1,4 +1,4 @@
-﻿---
+---
 title: fio
 aliases:
   - Flexible I/O Tester
