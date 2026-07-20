@@ -52,6 +52,9 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
 - [[SSD Wear Leveling]]
 - [[SSD Trim]]
 - [[SSD 전력 손실 보호 원리]]
+- [[Write Amplification Factor]]
+- [[Data Temperature]]
+- [[PVB Metadata Model]]
 
 ### 성능과 QoS
 
@@ -113,6 +116,7 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
   - run-to-run variation
   - direct I/O vs buffered I/O
   - WAF / GC pause / wear trade-off
+  - PVB metadata correction cost
 - 관련 직무 키워드:
   - SSD validation
   - product engineering
@@ -121,6 +125,7 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
   - fio
   - workload
   - telemetry
+  - SMART/NVMe health context
   - reproducibility
 
 ## 프로젝트 연결
@@ -132,12 +137,20 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
   - [[SSD Mini Lab Stage 1 회고]]
   - [[SSD Mini Lab Portfolio Evidence]]
   - [[왜 평균 IOPS만 보면 안 되는가]]
+  - [[fio]]
+  - [[Queue Depth]]
+  - [[p99 latency]]
+  - [[SSD QoS]]
 - white-box 내부 모델 track:
   - [[Request Timing MVP]]
   - [[Temperature-Aware GC Core Findings]]
   - [[SSD Garbage Collection]]
   - [[SSD Wear Leveling]]
   - [[SSD Trim]]
+  - [[Write Amplification Factor]]
+  - [[GC Pause]]
+  - [[Data Temperature]]
+  - [[PVB Metadata Model]]
 - 추후 포트폴리오/자소서로 연결 가능한 노트:
   - [[SSD 단계적 검증 테스트 방법 및 저장장치]]
   - [[OCP-OPF-Testing-and-Validation]]
@@ -159,6 +172,9 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
 - [[SSD Wear Leveling]]
 - [[SSD Trim]]
 - [[SSD 전력 손실 보호 원리]]
+- [[Write Amplification Factor]]
+- [[Data Temperature]]
+- [[PVB Metadata Model]]
 
 ### 문서 / 자료 스크랩
 
@@ -183,23 +199,19 @@ SSD를 구조, 성능, 제품, 검증 관점으로 연결하는 메인 허브.
 ## 아직 비어 있거나 보강할 노트
 
 - 아직 없는 필수 노트:
-  - [[p99 latency]]
-  - [[Queue Depth]]
-  - [[fio]]
-  - [[SSD QoS]]
-  - [[NVMe SMART Telemetry]]
-  - [[Write Amplification Factor]]
-  - [[GC Pause]]
-  - [[PVB Metadata Model]]
+  - 현재 SSD 허브 기준 핵심 후보는 1차 생성 완료
 - 보강이 필요한 노트:
   - [[SSD 통신 프로토콜]]
   - [[SSD]]
+  - [[SSD 인터페이스]]
 
 ## 업데이트 로그
 
 - 2026-07-15:
   - PARA branch 구조 테스트용으로 허브 노트 재정리.
   - SSD 노트를 개념, 문서/자료, 검증 포인트, 프로젝트 회고 흐름으로 재분류.
-  - [[왜 평균 IOPS만 보면 안 되는가]]를 성능/QoS와 검증/프로젝트 흐름에 연결.
   - [[SSD Mini Lab 프로젝트 허브]], [[SSD FTL-GC White-box Validation Lab]]를 프로젝트 branch로 추가.
   - [[SSD Mini Lab Portfolio Evidence]], [[Request Timing MVP]], [[Temperature-Aware GC Core Findings]]를 evidence branch로 추가.
+  - [[fio]], [[Queue Depth]], [[p99 latency]], [[SSD QoS]], [[Write Amplification Factor]], [[GC Pause]], [[Data Temperature]], [[PVB Metadata Model]] 핵심 후보 노트 생성.
+  - [[External SSD Product Validation]], [[NVMe SMART Telemetry]] 제품형 검증/telemetry 노트 생성.
+

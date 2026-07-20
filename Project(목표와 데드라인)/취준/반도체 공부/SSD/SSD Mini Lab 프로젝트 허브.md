@@ -50,6 +50,8 @@ related_roles:
 - QoS 리뷰: `D:\ssd_lab\docs\reports\qos_tail_latency_review.md`
 - Sustained workload: `D:\ssd_lab\docs\reports\sustained_workload_week10.md`
 - 외장 SSD 검증 계획: `D:\ssd_lab\docs\reports\external_ssd_product_validation.md`
+- External SSD Obsidian 요약: [[External SSD Product Validation]]
+- Telemetry Obsidian 요약: [[NVMe SMART Telemetry]]
 
 ## 핵심 검증 질문
 
@@ -62,23 +64,23 @@ related_roles:
 ## 프로젝트 흐름
 
 1. Baseline workload 실행
-   - `seq_read`, `seq_write`, `rand_read`, `rand_write`
-   - 결과: `results/fio_summary.csv`, `results/plots/`, `docs/reports/baseline_v1.md`
+   - `seq_read`, `seq_write`, and_read`, and_write`
+   - 결과: esults/fio_summary.csv`, esults/plots/`, `docs/reports/baseline_v1.md`
 2. Queue-depth sweep
    - 4K random read/write, QD 1/4/16/32
-   - 결과: `results/qd_sweep_grouped.csv`, `results/qd_sweep_plots/`
+   - 결과: esults/qd_sweep_grouped.csv`, esults/qd_sweep_plots/`
 3. 반복 측정 안정성
    - run-to-run variation과 CV 확인
-   - 결과: `results/qd_sweep_reproducibility.csv`
+   - 결과: esults/qd_sweep_reproducibility.csv`
 4. Direct vs buffered
    - `direct=1`과 `direct=0` 비교
-   - 결과: `results/direct_buffered_comparison.csv`
+   - 결과: esults/direct_buffered_comparison.csv`
 5. WSL path 비교
    - WSL native ext4와 `/mnt/d` Windows-mounted path 비교
-   - 결과: `results/wsl_path_compare_comparison.csv`
+   - 결과: esults/wsl_path_compare_comparison.csv`
 6. QoS / tail latency review
    - p99, p99.9, CV를 기준으로 위험 조건 선별
-   - 결과: `results/qos_tail_latency_summary.csv`
+   - 결과: esults/qos_tail_latency_summary.csv`
 7. Sustained workload
    - 120s/300s 장시간 smoke로 tail behavior 확인
    - 결과: `docs/reports/sustained_workload_week10.md`
@@ -113,7 +115,7 @@ related_roles:
 ### QD와 tail latency
 
 - QD를 높이면 IOPS가 좋아질 수 있다.
-- 하지만 `rand_write QD32`처럼 처리량 이득은 제한적인데 p99 latency가 크게 악화되는 조건이 있었다.
+- 하지만 and_write QD32`처럼 처리량 이득은 제한적인데 p99 latency가 크게 악화되는 조건이 있었다.
 - 따라서 최고 IOPS 조건이 항상 좋은 검증 조건은 아니다.
 - 관련 노트: [[왜 평균 IOPS만 보면 안 되는가]]
 
@@ -144,6 +146,14 @@ related_roles:
   - [[SSD QoS]]
   - [[External SSD Product Validation]]
 
+## 핵심 개념 / 검증 포인트
+
+- [[fio]]
+- [[Queue Depth]]
+- [[p99 latency]]
+- [[SSD QoS]]
+- [[왜 평균 IOPS만 보면 안 되는가]]
+
 ## 포트폴리오 문장
 
 > fio 기반 SSD mini-lab을 만들면서 workload 조건을 정의하고, fio JSON을 CSV로 파싱하고, p99/p99.9 latency와 반복 측정 CV를 함께 분석했습니다. 평균 IOPS만으로 성능을 판단하지 않고, direct/buffered, WSL path, sustained workload처럼 결과 해석을 흔들 수 있는 조건을 분리해 검증 보고서에 반영했습니다.
@@ -157,7 +167,7 @@ related_roles:
 
 ## 아직 보강할 것
 
-- [[External SSD Product Validation]] 노트 생성
+- [[External SSD Product Validation]] 생성 완료
 - [[fio]] 개념 노트 생성
 - [[Queue Depth]] 개념 노트 생성
 - [[p99 latency]] 검증 포인트 노트 생성
@@ -170,5 +180,9 @@ related_roles:
   - 외부 black-box SSD 검증 track으로 정리.
   - [[SSD 허브]], [[왜 평균 IOPS만 보면 안 되는가]], [[SSD FTL-GC White-box Validation Lab]]과 연결.
   - [[SSD Mini Lab Portfolio Evidence]]를 evidence branch로 추가.
+  - [[External SSD Product Validation]], [[NVMe SMART Telemetry]]를 외장 SSD 검증/telemetry branch로 추가.
+
+
+
 
 

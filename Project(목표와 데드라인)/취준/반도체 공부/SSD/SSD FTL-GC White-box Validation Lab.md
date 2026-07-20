@@ -156,6 +156,18 @@ related_roles:
   - [[Data Temperature]]
   - [[Request Timing MVP]]
 
+## 핵심 개념 / 검증 포인트
+
+- [[SSD Garbage Collection]]
+- [[SSD Wear Leveling]]
+- [[SSD Trim]]
+- [[Write Amplification Factor]]
+- [[GC Pause]]
+- [[Data Temperature]]
+- [[PVB Metadata Model]]
+- [[Request Timing MVP]]
+- [[Temperature-Aware GC Core Findings]]
+
 ## 포트폴리오 문장
 
 > SSD controller 내부의 FTL/GC/TRIM lifecycle을 Python simulator로 모델링하고, 여러 GC policy를 같은 workload와 seed에서 비교했습니다. WAF 하나만 보지 않고 wear, TRIM reclaim, metadata IO, p95/p99 latency proxy, GC pause를 함께 분석하면서, 정책이 어떤 조건에서 강하고 어디서 깨지는지 검증 관점으로 정리했습니다.
@@ -184,5 +196,6 @@ related_roles:
   - 내부 white-box FTL/GC validation track으로 정리.
   - [[SSD 허브]], [[SSD Mini Lab 프로젝트 허브]]와 연결.
   - [[Request Timing MVP]], [[Temperature-Aware GC Core Findings]]를 evidence branch로 추가.
+
 
 
