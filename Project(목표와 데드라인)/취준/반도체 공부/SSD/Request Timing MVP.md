@@ -15,7 +15,7 @@ type: experiment-report
 status: growing
 domain: SSD FTL Validation
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-20
 source: C:\Users\nei11\venv\venv\GC\docs\request_timing_mvp.md
 source_type: local-report
 reliability: simplified-model
@@ -57,6 +57,7 @@ related_roles:
 ## 실행 / 산출물
 
 - 원본 문서: `C:\Users\nei11\venv\venv\GC\docs\request_timing_mvp.md`
+- 정책 결과 문서: `C:\Users\nei11\venv\venv\GC\docs\request_timing_policy_findings.md`
 - 실행 후보: `tools/request_timing_policy_compare.py`
 - report: `tools/validation_report.py`
 - 산출물:
@@ -74,6 +75,12 @@ related_roles:
 | sequential timing engine | arrival/start/completion/queue wait/latency 계산 |
 | GC pause 연결 | 같은 request iteration에서 발생한 GC 비용을 latency에 반영 |
 | report/QC integration | percentile, queue wait, pause sanity check 가능 |
+
+## 후속 결과
+
+- [[Request Timing Policy Findings]]에서 24-run follow-up을 통해 `greedy`, `cota`, `bsgc`, `pvb_window`의 WAF, wear, p99.9 latency proxy, metadata cost를 비교했다.
+- 핵심 결론은 `cota`는 middle-ground 후보, `bsgc`는 wear-biased control, `pvb_window`는 cost와 seed sensitivity 때문에 일반 후보에서 제외하는 쪽이다.
+- 이후 [[Resource Contention MVP]]에서 single FIFO timing을 PAL-lite resource contention 모델로 확장했다.
 
 ## 해석
 
@@ -94,8 +101,9 @@ related_roles:
 - 아직 증거가 없는 원인:
   - real hardware contention, firmware scheduling, die/channel-level resource conflict
 - 다음 debug step:
-  - 72-run policy comparison 결과에서 p95/p99/GC-pause/WAF/wear/metadata trade-off 해석
-  - 이후 Resource Contention MVP에서 PAL-lite 추가
+  - [[Request Timing Policy Findings]]에서 policy verdict 확인
+  - [[Resource Contention MVP]]에서 PAL-lite 추가 결과 확인
+  - [[Resource Contention Quality Experiment]]에서 seed/scenario 반복성 확인
 
 ## 포트폴리오 / 면접 포인트
 
@@ -104,6 +112,9 @@ related_roles:
 ## 관련 노트
 
 - [[SSD FTL-GC White-box Validation Lab]]
+- [[Request Timing Policy Findings]]
+- [[Resource Contention MVP]]
+- [[Resource Contention Quality Experiment]]
 - [[SSD Garbage Collection]]
 - [[GC Pause]]
 - [[Write Amplification Factor]]

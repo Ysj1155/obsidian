@@ -82,7 +82,7 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 
 ### 검증 / 실무
 
-- [[SSD 단계별 검증 테스트 방법 및 저장장치]]
+- SSD 단계별 검증 테스트 방법 및 저장장치
 - [[OCP-OPF-Testing-and-Validation]]
 - [[Open Source SSD Validation in Practice Updates from Meta's Qualification Framework]]
 - [[SSD Mini Lab Stage 1 회고]]
@@ -149,7 +149,7 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 ## 아직 보강할 것
 
 - [[FTL]] 개념 노트 생성
-- [[SSD 단계별 검증 테스트 방법 및 저장장치]] 정리 상태 점검
+- SSD 단계별 검증 테스트 방법 및 저장장치 정리 상태 점검
 - [[NVMe SMART Telemetry]]를 external SSD 실측 결과와 더 직접 연결
 - sustained 300s QD32 write 결과가 생기면 [[External SSD Product Validation]] 갱신
 - [[Resource Contention Quality Experiment]] 실행 결과가 생기면 planned에서 completed로 갱신
@@ -164,3 +164,4 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
   - PARA branch 구조 테스트용으로 SSD 허브 재정리.
   - [[SSD Mini Lab 프로젝트 허브]], [[SSD FTL-GC White-box Validation Lab]]를 프로젝트 branch로 추가.
   - [[fio]], [[Queue Depth]], [[p99 latency]], [[SSD QoS]], [[Write Amplification Factor]], [[GC Pause]], [[Data Temperature]], [[PVB Metadata Model]] 개념/검증 노트 생성.
+
