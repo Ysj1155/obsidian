@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD 검증 공통 문답
 aliases:
   - SSD Validation Common Q&A

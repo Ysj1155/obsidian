@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD 문답 허브
 aliases:
   - SSD Q&A 허브

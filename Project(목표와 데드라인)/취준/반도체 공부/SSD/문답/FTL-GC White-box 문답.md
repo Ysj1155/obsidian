@@ -1,4 +1,4 @@
-﻿---
+---
 title: FTL-GC White-box 문답
 aliases:
   - FTL GC 문답
