@@ -10,10 +10,10 @@ PC와 연결되는 인터페이스, 데이터 저장용 메모리, 인터페이�
 ### NAND Flash Memory
 비휘발성 메모리. 전원이 꺼져도 데이터가 사라지지 않는다. 이는 데이터를 장기간 보관 가능하게 해준다. Cell이라는 기본 저장 단위로 구성되며 셀 하나는 1비트 또는 그 이상의 데이터를 저장할 수 있다. 여기에는 SLC(Single-Level Cell), MLC(Multi-Level Cell), TLC(Triple-Level Cell), QLC(Quad-Level Cell)이 있다. 각 기술은 속도와 내구성, 비용 등에서 차이가 있으며 SLC는 가장 빠르고 내구성이 뛰어나지만 용량당 비용이 높다. 반면 QLC는 더 많은 데이터를 저장할 수 있지만 속도와 내구성이 상대적으로 낮다. 
 ### 컨트롤러
-데이터의 읽기, 쓰기, 삭제 등의 모든 작업을 관리하며 SSD의 성능을 결정짓는 중요한 요소 중 하나. 컨트롤러는 Wear Leveling, Garbage Collection, [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md|TRIM]]과 같은 다양한 알고리즘을 사용해 플래시 메모리의 수명을 연장하고 성능을 최적화 한다. 
-- [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md|Wear Leveling]]: NAND Flash Memory는 쓰기와 삭제가 반복되면서 특정 셀의 내구성이 떨어지기 때문에 이를 균등하게 분배하는 기술
-- [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md|Garbage Collection]]: Garbage Collection은 유효 데이터는 다른 위치로 이동시키고, 무효 데이터가 많은 블록을 소거해 다시 free block으로 회수하는 내부 관리 동작이다.
-- [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md|TRIM]]: 이 논리 블록은 더 이상 유효하지 않다는 사실을 SSD에 알려주는 통지 명령. 
+데이터의 읽기, 쓰기, 삭제 등의 모든 작업을 관리하며 SSD의 성능을 결정짓는 중요한 요소 중 하나. 컨트롤러는 Wear Leveling, Garbage Collection, [[TRIM]]과 같은 다양한 알고리즘을 사용해 플래시 메모리의 수명을 연장하고 성능을 최적화 한다. 
+- [[SSD Wear Leveling|Wear Leveling]]: NAND Flash Memory는 쓰기와 삭제가 반복되면서 특정 셀의 내구성이 떨어지기 때문에 이를 균등하게 분배하는 기술
+- [[SSD Garbage Collection|Garbage Collection]]: Garbage Collection은 유효 데이터는 다른 위치로 이동시키고, 무효 데이터가 많은 블록을 소거해 다시 free block으로 회수하는 내부 관리 동작이다.
+- [[TRIM]]: 이 논리 블록은 더 이상 유효하지 않다는 사실을 SSD에 알려주는 통지 명령. 
 
 ### DRAM/HMB
 SSD가 데이터를 임시로 저장하는 고속 메모리 공간. 데이터의 접근 속도를 크게 향상시키는 요인. 
@@ -28,5 +28,5 @@ SSD는 기존 페이지를 덮어쓰지 못하므로, 데이터 변경 시 새 f
 SSD는 플래시 메모리에 저장된 데이터를 전자 신호로 읽어들인다. DRAM 캐시가 있는 경우 더 빠른 속도로 데이터를 가져올 수 있다. 
 NAND 내부 읽기 단위는 페이지 기반으로 이해하면 된다. 유저는 OS에 단 하나의 바이트만 읽기를 요청할 수 있지만 실제 SSD 동작은 하나의 페이지를 읽은 다음 불필요한 데이터를 날리고 유저가 요청한 바이트만 반환하는 것이다. 
 ### 데이터 삭제
-즉시 데이터가 삭제되는 것이 아니라 Garbage Collection 과정을 통해 삭제된다. [[Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md|TRIM]]을 통해 성능 저하를 개선할 수 있다. 
+즉시 데이터가 삭제되는 것이 아니라 Garbage Collection 과정을 통해 삭제된다. [[TRIM]]을 통해 성능 저하를 개선할 수 있다. 
 페이지는 덮어 쓰기가 불가능하기 때문에 한번 데이터가 사용된 페이지는 반드시 삭제하는 작업을 거쳐 free상태로 전이된다. 삭제는 단일 페이지 단위로 처리될 수 없다. 그 페이지가 포함된 블록을 전체 삭제해야 한다. 삭제 명령은 컨트롤러사 공간이 필요할 때 자동적으로 내부 명령을 통해 실행된다. 

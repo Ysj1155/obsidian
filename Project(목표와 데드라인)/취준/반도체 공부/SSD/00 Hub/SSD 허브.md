@@ -71,7 +71,7 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 
 - [[SSD Garbage Collection]]
 - [[SSD Wear Leveling]]
-- [[SSD Trim]]
+- [[TRIM]]
 - [[SSD 전력 손실 보호 원리]]
 - [[Write Amplification Factor]]
 - [[Data Temperature]]
@@ -105,7 +105,7 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 
 1. [[SSD Garbage Collection]]
 2. [[SSD Wear Leveling]]
-3. [[SSD Trim]]
+3. [[TRIM]]
 4. [[Write Amplification Factor]]
 5. [[GC Pause]]
 6. [[Request Timing MVP]]

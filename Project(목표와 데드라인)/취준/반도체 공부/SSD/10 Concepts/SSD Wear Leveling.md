@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD Wear Leveling
 aliases:
   - Wear Leveling

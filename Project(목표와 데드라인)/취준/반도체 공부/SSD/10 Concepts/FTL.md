@@ -40,7 +40,7 @@ related_projects:
 ## 관련 노트
 
 - [[SSD Garbage Collection]]
-- [[SSD Trim]]
+- [[TRIM]]
 - [[SSD Wear Leveling]]
 - [[Write Amplification Factor]]
 - [[FTL Metadata Recovery and Bad Block Handling]]
