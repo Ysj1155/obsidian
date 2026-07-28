@@ -7,18 +7,18 @@ Turnkey Storage Solution with FLASH Controller, Customizable Firmware, and SSD D
 FADU’sPCIe 3.0 NVMe SSDsaredesigned to meet the increasing demands placed on Hyperscaler, Hyper converged, Enterprise, and Edge data centers. At the heart of FADU’s SSDs is an innovative SSD controller architecture that enables ultra-low and consistent latency while virtually eliminating thermal throttling issues. As a result, FADU SSDs deliver industry leading KIOPS/Watt performance while supporting superior QoS. In the industry’s first E1.S form factor SSD, FADU’s PCIe 3.0 SSD consumes up to 30% less power and operates up to twice as fast as other PCIe 3.0 SSDs. Consistent low-latency delivers stable, superior Quality of Service (QoS) at any workload. The SSDs support a variety of features for modern data centers, including hardware-based security, advanced telemetry, virtualization functions, data path, and power loss protection.
 
 AWS/Google/Microsoft 같은 초대형 데이터센터인 Hyperscaler, 스토리지/컴퓨트/네트워크를 소프트웨어로 통합한 인프라(HCI)인 Hyperconverged, 일반 기업 데이터 센터 용도의 Enterprise, 데이터가 생성되는 현장 가까운 소형/분산 데이터센터인 Edge data center를 대상으로 설계. PC용이 아니라 데이터 센터용(엔터프라이즈 SSD) 포지셔닝.
-컨트롤러 아키텍쳐가 혁신적이기 때문에 지연시간이 낮고 일관적이다(ultra-low and consistent latency). 열 때문에 성능이 떨어지는 현상(thermal throttling)을 줄였다.
-KIOPS/Watt 성능 업계 최고(같은 전력에서 더 많은 IOPS를 낸다고 주장). superior Qos(지연시간 분포(p99/p99.9)) 지원. -> 전력 효율 + Qos가 핵심 가치다. 
-업계 최초 E1.S 폼팩터 SSD. PCIe 3.0 SSD 대비 전력 30% 덜 먹고, 속도 2배 빠르다 주장. -> 비교 대상, 측정 조건(워크로드/QD/온도/방열)이 없어 기준 모호.
+브로셔는 FADU의 컨트롤러 아키텍처가 ultra-low and consistent latency와 thermal throttling 완화에 기여한다고 주장한다. 다만 실제 검증 관점에서는 workload, QD, 온도, airflow, 방열 조건이 필요하다.
+KIOPS/Watt 성능과 QoS를 강점으로 내세우지만, “industry leading”은 벤더 claim으로 분리해서 읽어야 한다. 비교 대상과 측정 조건이 없으면 객관 순위로 쓰면 안 된다. 
+“업계 최초 E1.S form factor SSD”, “전력 30% 절감”, “속도 2배”도 브로셔 claim이다. 비교 대상, 측정 조건, SKU 조건이 빠져 있으므로 면접/포트폴리오에서는 “FADU가 그렇게 주장한다”로 표현하는 편이 안전하다.
 데이터 센터 기능 체크리스트로 현대 데이터센터에 필요한 기능을 지원한다. hardware-based security(하드웨어 보안), advanced telemetry(상태/로그/모니터링 데이터), virtualization functions(가상화 관련 기능), data path(데이터 경로 최적화/기능), power loss protection(PLP: 전원 꺼져도 데이터/메타데이터 보호). 성능만이 아니라 운영/관리/보안/신뢰성 기능이 있다.
 
-업계 표준인 NVMe 1.3, PCIe 3.0 x4, OCP NVMe Cloud SSD 1.0을 따르면서 데이터센터(특히 클라우드)에서 요구하는 규격/호환성 틀 안에 있다고 주장.
+스펙 표에는 NVMe 버전, PCIe 3.0 x4, OCP NVMe Cloud SSD 1.0 같은 호환성 항목이 나온다. 이 노트 안에 NVMe 1.3/1.4 표기가 섞여 있으므로, 최종 인용 전 원본 PDF 표의 버전을 다시 확인해야 한다.
 
 ---
 ![[Pasted image 20260226192910.png]]
 
 A. 제품 포지션/세그먼트
-- PCIe 3.0 x4 + NVMe 1.4 + OCP NVMe Cloud SSD 1.0는 클라우드/데이터센터 호환성을 의식한 엔터프라이즈 SSD 포지션
+- PCIe 3.0 x4 + NVMe 버전 + OCP NVMe Cloud SSD 1.0는 클라우드/데이터센터 호환성을 의식한 엔터프라이즈 SSD 포지션으로 읽을 수 있다. 단, NVMe 버전은 원본 PDF 기준으로 재확인 필요.
 - 폼팩터: M.2 | E1.S. M.2는 범용/엣지/서버 일부, E1.S는 데이터센터 전용 트렌드(EDSFF).
 - 용량 1/2/4TB -> 엔터프라이즈라면 더 큰 용량도 흔한데(예: 8TB+), 여기선 비교적 제한적.  메인스트림 엔터프라이즈에 가깝고, 하이엔드 대용량 라인업 느낌은 약함.
 B. 성능의 상한(peak) 수준
@@ -32,7 +32,7 @@ QD/IOsize 정도만 있고, steady-state/혼합비/측정 window/환경 조건�
 - 상태: fresh-out-of-box vs steady-state(Preconditioning)
 - QoS의 정의: p99? p99.9? 측정 window?
 - 전력 측정 조건: 활성 상태가 read인지 write인지, PS state/APST 설정
-- 폼팩터별 차이: M.2 vs E1.S는 열/전력/스로틀링이 완전히 다름
+- 폼팩터별 차이: M.2 vs E1.S는 열/전력/스로틀링 조건이 크게 달라질 수 있음
 -> “브로셔 수치는 peak 조건이라 QD sweep/steady-state 조건을 분리해 재현하고, 평균뿐 아니라 p99.9 지연으로 QoS를 확인하겠습니다.” 이거 각 단어 뜻이 뭔지 알아야 한다. 
 
 #### 알면 좋은거
@@ -127,7 +127,7 @@ QoS (99.9%) Random Read (µs) / QoS (99.9%) Random Write (µs)
     - M.2: 200/5300 µs
     - E1.S: 60/2000, 60/1500 µs
 - 이게 의미하는 바:
-    - 랜덤 쓰기에서는 어떤 상황에서 ms 단위 tail latency 이벤트가 생긴다는 신호일 수 있음(예: GC, mapping update, flush, thermal/power state 변화).
+    - 랜덤 쓰기에서는 어떤 조건에서 ms 단위 tail latency 이벤트가 생길 수 있다는 신호로 볼 수 있음. 원인은 GC, mapping update, flush, thermal/power state 변화 등일 수 있지만 브로셔만으로 단정하면 안 됨.
     - E1.S가 M.2보다 QoS가 더 좋다는 메시지를 주려는 구조.
 
 3) Power Consumption (전력)

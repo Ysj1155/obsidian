@@ -8,6 +8,12 @@ tags:
 ---
 [출처](https://www.youtube.com/watch?v=-w6hqG_TvJw)
 
+## 사실 확인 메모
+
+- 이 노트는 YouTube 발표를 듣고 정리한 2차 요약이다. 발표자가 말한 내용, Meta 내부 프레임워크, 공개 OCP repo의 현재 구조가 서로 완전히 같다고 단정하면 안 된다.
+- Pytest, HAL, FDP, telemetry 같은 키워드는 발표 내용의 핵심 주제로 공부할 가치는 있지만, 특정 공개 repo에 해당 구현이 존재한다고 말하려면 별도 코드 확인이 필요하다.
+- 면접/포트폴리오에서는 “Meta 발표에서는 SSD qualification을 표준화/자동화하고 벤더와 같은 테스트 언어를 쓰려는 방향을 강조했다” 정도로 표현하는 것이 안전하다.
+
 # 1. 테스트 아키텍쳐
 ## 왜 Pytest와 python인가? 
 Meta는 거대한 데이터 센터 환경에서 수만 개의 SSD를 관리한다. 과거에는 제조사마다 제각각인 전용 validation 도구를 사용했지만, Meta는 이를 Pytest 기반의 파이썬 프레임 워크로 통합했다.
