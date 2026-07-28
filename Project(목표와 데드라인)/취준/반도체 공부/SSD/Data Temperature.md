@@ -1,4 +1,4 @@
-﻿---
+---
 title: Data Temperature
 aliases:
   - FTL-observed Data Temperature
