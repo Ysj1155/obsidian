@@ -52,32 +52,6 @@ related_roles:
 | 현재 suite 상태 | handoff 기준 warning-strict full suite 387 passed |
 | 하지 않는 주장 | 실제 SSD firmware, NVMe 성능 예측, physical NAND reliability proof |
 
-## 원본 위치와 핵심 문서
-
-- 로컬 프로젝트: `C:\Users\nei11\venv\venv\GC`
-- README: `C:\Users\nei11\venv\venv\GC\readme.md`
-- Handoff: `C:\Users\nei11\venv\venv\GC\docs\next_chat_handoff.md`
-- Resource Contention: `docs\resource_contention_quality_experiment.md`
-- PVB decision boundary: `docs\case_study_pvb_decision_boundary.md`
-- Translation payload timing: `docs\translation_payload_timing_findings.md`
-- Persistent PBBT: `docs\persistent_bad_block_recovery_mvp.md`
-- Valid-data failure recovery: `docs\valid_data_failure_recovery_mvp.md`
-- Page mirroring: `docs\page_mirroring_mvp.md`
-- Request replay: `docs\request_replay_mvp.md`
-- Request checkpoint eviction: `docs\request_checkpoint_eviction_mvp.md`
-- Controller lease/epoch: `docs\controller_lease_epoch_mvp.md`
-- External fencing: `docs\external_fencing_anti_rollback_mvp.md`
-
-## 핵심 검증 질문
-
-- GC victim selection policy가 WAF, wear, TRIM reclaim, metadata IO 사이에서 어떤 trade-off를 만드는가?
-- stale metadata와 correction 비용이 victim 품질에 어떤 영향을 주는가?
-- PAL-lite resource model에서 GC migration/erase와 host I/O의 resource 충돌이 tail latency proxy에 어떻게 나타나는가?
-- bad block, torn metadata, sudden VALID-data failure 뒤 어떤 state는 rollback되고 어떤 state는 roll-forward되는가?
-- spare promotion과 data recovery를 구분해서 설명할 수 있는가?
-- host retry, lost completion, replay ledger eviction이 중복 write 없이 처리되는가?
-- multi-controller ownership에서 stale owner나 old controller image가 mutation authority를 되찾지 못하게 막을 수 있는가?
-
 ## 주요 branch
 
 | Branch | 노트 | 역할 |
@@ -88,6 +62,16 @@ related_roles:
 | Recovery / bad block | [[FTL Metadata Recovery and Bad Block Handling]] | PBBT, valid-data failure, page mirroring, spare/data recovery 분리 |
 | Request durability | [[Durable Request Replay]] | stable request ID, replay ledger, checkpoint floor, selective ACK |
 | Controller ownership | [[Controller Lease and External Fencing]] | lease/epoch, bounded expiry, external anti-rollback authority |
+
+## 핵심 검증 질문
+
+- GC victim selection policy가 WAF, wear, TRIM reclaim, metadata IO 사이에서 어떤 trade-off를 만드는가?
+- stale metadata와 correction 비용이 victim 품질에 어떤 영향을 주는가?
+- PAL-lite resource model에서 GC migration/erase와 host I/O의 resource 충돌이 tail latency proxy에 어떻게 나타나는가?
+- bad block, torn metadata, sudden VALID-data failure 뒤 어떤 state는 rollback되고 어떤 state는 roll-forward되는가?
+- spare promotion과 data recovery를 구분해서 설명할 수 있는가?
+- host retry, lost completion, replay ledger eviction이 중복 write 없이 처리되는가?
+- multi-controller ownership에서 stale owner나 old controller image가 mutation authority를 되찾지 못하게 막을 수 있는가?
 
 ## 내부 모델 범위
 
@@ -109,23 +93,6 @@ related_roles:
   - 실제 NAND cell degradation, ECC, retention, read disturb 물리 정확도
   - hardware monotonic counter, network quorum/consensus, storage-fabric reservation semantics
   - 실제 SSD latency 예측
-
-## 봐야 할 지표 / evidence
-
-- WAF
-- GC count
-- moved valid pages
-- wear std / wear max
-- metadata read/write IO
-- p95/p99/p99.9 latency proxy
-- resource wait / GC resource wait
-- PBBT generation, retired/promoted counts
-- recovered/unrecoverable LPN count
-- mirror writes / mirror WAF
-- request ledger state, replay floor, selective tombstone
-- owner ID, lease epoch, lease generation, pending transition
-- strict invariant / QC findings
-- deterministic probe PASS count
 
 ## 공부 순서
 
@@ -174,12 +141,16 @@ related_roles:
 - external fencing은 controller image 밖의 monotonic authority가 있어야 anti-rollback claim이 가능하다고 말한다.
 - [[SSD Mini Lab 프로젝트 허브]]와 연결해 black-box 측정과 white-box 내부 모델을 섞지 않는다.
 
-## 아직 보강할 것
+## 관련 노트
 
-- `docs/portfolio_gc_evidence.md`를 별도 포트폴리오 evidence 노트로 요약
-- [[FTL]] 개념 노트 생성
-- `project_internalization_plan` 성격의 “내 언어로 설명하기” 문답 노트 생성
-- quorum/consensus, physical clock authority, real hardware monotonic counter는 현재 범위 밖으로 유지
+- [[SSD 허브]]
+- [[SSD Mini Lab 프로젝트 허브]]
+- [[FTL]]
+- [[SSD Garbage Collection]]
+- [[Write Amplification Factor]]
+- [[FTL Metadata Recovery and Bad Block Handling]]
+- [[Durable Request Replay]]
+- [[Controller Lease and External Fencing]]
 
 ## 업데이트 로그
 
@@ -189,7 +160,6 @@ related_roles:
   - 프로젝트 정체성을 GC policy 비교에서 white-box FTL/GC + failure/recovery/protocol validation lab으로 확장.
 - 2026-07-20:
   - [[Request Timing Policy Findings]], [[Resource Contention MVP]], [[Resource Contention Quality Experiment]]를 white-box branch에 추가.
-  - Request timing 이후 policy verdict와 resource contention 검증 흐름을 허브에 반영.
 - 2026-07-15:
   - `C:\Users\nei11\venv\venv\GC` 스윕 결과를 바탕으로 프로젝트 허브 생성.
   - 내부 white-box FTL/GC validation track으로 정리.

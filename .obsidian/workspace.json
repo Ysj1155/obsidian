@@ -93,7 +93,7 @@
             }
           },
           {
-            "id": "abf51fb4874c4c74",
+            "id": "a516da1526a713eb",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -103,7 +103,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -223,12 +223,16 @@
   },
   "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/문답 노트 템플릿.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD FTL-GC White-box Validation Lab.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD FTL-GC White-box Validation Lab.md.bak-mojibake",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD 허브.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD 허브.md.bak-mojibake",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/FTL.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective/재현되지 않은 가설도 검증 결과다.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective/왜 평균 IOPS만 보면 안 되는가.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective/SSD Mini Lab Stage 1 회고.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective/SSD Mini Lab Portfolio Evidence.md",
-    "Project(목표와 데드라인)/취준/문답 노트 템플릿.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Mini Lab 프로젝트 허브.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab/재현되지 않은 가설도 검증 결과다.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab/왜 평균 IOPS만 보면 안 되는가.md",
@@ -247,8 +251,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/GC Pause.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Write Amplification Factor.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD Trim.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD Wear Leveling.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD Garbage Collection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/30 White-box FTL-GC Lab",
@@ -257,8 +259,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub",
     "무제.base",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox",
-    "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
-    "Project(목표와 데드라인)/취준/취준 컨설팅/서류전형대응전략.pdf",
     "무제.canvas",
     "Resourece/Pasted image 20260202173719.png",
     "Resourece/Pasted image 20260317220741.png",
