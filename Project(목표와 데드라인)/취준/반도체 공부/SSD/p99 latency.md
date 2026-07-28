@@ -1,4 +1,4 @@
-﻿---
+---
 title: p99 latency
 aliases:
   - p99

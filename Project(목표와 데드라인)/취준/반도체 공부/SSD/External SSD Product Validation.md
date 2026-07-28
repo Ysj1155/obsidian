@@ -15,7 +15,7 @@ type: experiment-report
 status: growing
 domain: SSD Validation
 created: 2026-07-15
-updated: 2026-07-20
+updated: 2026-07-28
 source: D:\ssd_lab\docs\reports\external_ssd_product_validation.md
 source_type: local-report
 reliability: black-box-measurement
@@ -31,44 +31,60 @@ related_roles:
 
 ## 한 줄 결론
 
-- 외장 SSD를 `external_ssd_dut_01`이라는 black-box DUT로 두고 fio QD sweep, repeatability, sustained workload를 요구사항 matrix에 연결한 제품형 검증 결과다.
-- 현재까지의 핵심은 random read는 QD 증가에 따라 비교적 안정적으로 scale했고, random write는 QD16 이후 처리량 이득이 제한적인 반면 QD32에서 p99/p99.9 변동성이 크게 나빠졌다는 점이다.
+- 외장 SSD를 `external_ssd_dut_01`이라는 black-box DUT로 두고, fio file-target 실험을 requirement, condition, runner/observer, raw evidence, analysis, verdict로 추적한 제품형 검증 결과다.
+- 현재 프로젝트의 핵심은 최고 benchmark 숫자가 아니라 QD, sustained workload, mixed workload, block-size, data integrity, host observation limitation을 분리해 설명하는 validation system으로 성장했다는 점이다.
 
-## 실험 목적
+## 현재 상태
 
-- 검증 질문:
-  - 외장 SSD를 제품처럼 검증할 때 평균 IOPS, tail latency, 반복성, sustained behavior, 환경/telemetry 한계를 어떻게 함께 보고할 수 있는가.
-- 왜 이 실험이 필요한가:
-  - 외장 SSD 결과는 NAND/FTL만이 아니라 USB bridge, enclosure, host controller, filesystem, OS cache, test path 영향을 함께 받는다.
-- 기대한 관찰:
-  - 단순 최고 성능 조건이 아니라, 반복 가능하고 tail latency까지 설명 가능한 조건을 찾는다.
+- QD sweep, sustained QD16/QD32, state reproducibility, 32 GiB sequential pilot, mixed workload controls, idle-ramp challenge, block-size mapping, 4 GiB CRC32C data integrity가 완료됐다.
+- compact regression profile은 설계/계약 단계까지 완료됐고, 새 workload를 실행하는 단계는 아니다.
+- Korean portfolio material은 사용자가 명시적으로 요청할 때까지 보류 상태다.
 
 ## DUT 범위
 
 | 항목 | 값 |
 |---|---|
 | DUT label | `external_ssd_dut_01` |
+| vendor/model | SanDisk Extreme SSD |
 | connection | external SSD over USB path |
 | filesystem | exFAT |
-| test path | `E:\validation\ssd_lab_fio_testfile` |
+| main test target | `E:\validation\ssd_lab_fio_testfile` |
+| large working-set target | `E:\validation\ssd_lab_seq_32g` |
+| fio version | `fio-3.42` |
 | test model | black-box file-target fio validation |
 | repo path | `D:\ssd_lab` |
-| out of scope | raw physical-drive destructive test, firmware modification, direct NAND/FTL/GC tracing |
+| out of scope | raw physical-drive destructive test, firmware modification, direct NAND/FTL/GC tracing, power-loss validation |
 
-## 실행 상태
+## 검증 흐름
 
-| Test case | Workload | Runtime | Repeats | 상태 |
-|---|---|---:|---:|---|
-| `EXT-QD-SMOKE` | randread/randwrite 4k QD 1/4/16/32 | 30s | 1 | Done |
-| `EXT-PERF-RR-QD-SWEEP` | randread 4k QD 1/4/16/32 | 30s | 3 | Done |
-| `EXT-PERF-RW-QD-SWEEP` | randwrite 4k QD 1/4/16/32 | 30s | 3 | Done |
-| `EXT-SUST-WRITE-120S` | randwrite 4k QD16 | 120s | 3 | Done |
-| `EXT-SUST-READ-120S` | randread 4k QD16 | 120s | 3 | Done |
-| `EXT-SUST-READ-QD32-120S` | randread 4k QD32 | 120s | 3 | Done |
-| `EXT-SUST-WRITE-QD32-120S` | randwrite 4k QD32 | 120s | 3 | Done |
-| `EXT-SUST-WRITE-QD32-300S` | randwrite 4k QD32 | 300s | 3 | Prepared |
+```text
+requirement -> condition -> runner / observer -> raw evidence -> analysis -> verdict
+```
 
-## QD Sweep Repeat=3 핵심 결과
+| 단계 | 이 프로젝트에서의 의미 |
+|---|---|
+| requirement | 무엇을 검증할지 `REQ-*`로 정의한다. |
+| condition | workload, QD, block size, runtime, target path를 고정한다. |
+| runner | fio를 실행하고 raw JSON/log/runner manifest를 남긴다. |
+| observer | 실행 전후 또는 실행 중 read-only 환경/telemetry/counter evidence를 남긴다. |
+| raw evidence | fio JSON, one-second logs, manifests를 보존한다. |
+| analysis | CSV summary, window summary, paired comparison, verdict file을 만든다. |
+| verdict | Pass, Observation, Limited, not reproduced를 분리한다. |
+
+## 실행 Coverage
+
+| 영역 | 대표 test / result | 상태 | Obsidian branch |
+|---|---|---|---|
+| QD sweep | 4K randread/randwrite QD 1/4/16/32 repeat=3 | Complete | [[왜 평균 IOPS만 보면 안 되는가]] |
+| sustained QoS | QD16/QD32 120s/300s read/write | Complete | [[p99 latency]], [[SSD QoS]] |
+| mixed workload | ABBA/BAAB, mixed-ratio sessions | Complete, hypothesis not reproduced | [[재현되지 않은 가설도 검증 결과다]] |
+| idle ramp | 0/60/300s mirrored idle-duration test | Complete, no clear association | [[재현되지 않은 가설도 검증 결과다]] |
+| block-size mapping | 4K/64K/1M QD32 randread/randwrite | Complete | [[External SSD Block Size Sweep]] |
+| data integrity | 4 GiB CRC32C write/readback | Pass | [[External SSD Data Integrity]] |
+| host observer | synchronized logical-disk counters | Limited | [[External SSD Data Integrity]], [[NVMe SMART Telemetry]] |
+| regression profile | compact requirement-based profile | Contract complete | 이 노트의 다음 단계 섹션 |
+
+## QD Sweep 핵심 결과
 
 | workload | QD | avg IOPS | IOPS CV | p99 us | p99 CV | p99.9 us | p99.9 CV |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -81,78 +97,86 @@ related_roles:
 | rand_write | 16 | 49210.83 | 0.014 | 398.00 | 0.016 | 583.00 | 0.032 |
 | rand_write | 32 | 49410.50 | 0.021 | 1067.69 | 0.431 | 1600.17 | 0.456 |
 
-## Sustained Write QD16 120s
+- random read는 QD에 따라 scale했고 반복성도 비교적 안정적이었다.
+- random write는 QD16 부근에서 throughput이 포화됐고, QD32는 평균 이득이 거의 없으면서 tail CV가 크게 나빠졌다.
+- 이 결과는 [[왜 평균 IOPS만 보면 안 되는가]]의 핵심 근거다.
 
-| 지표 | 값 |
-|---|---:|
-| avg bandwidth | 162.96 MiB/s |
-| bandwidth CV | 0.044 |
-| avg IOPS | 41716.65 |
-| IOPS CV | 0.044 |
-| avg p99 | 516.10 us |
-| p99 CV | 0.062 |
-| avg p99.9 | 735.91 us |
-| p99.9 CV | 0.084 |
-| max latency CV | 0.770 |
-| last-third IOPS / first-third IOPS | 1.058 |
-| last-third avg clat / first-third avg clat | 0.949 |
+## Sustained / State 해석
 
-## 해석
+- QD32 300s original session의 late-run degradation은 traced session에서 재현되지 않았다.
+- QD16 120s는 낮은 throughput regime이 두 session에서 반복됐지만, severe p99.9 inflation은 고정 패키지처럼 함께 움직이지 않았다.
+- state-reproducibility study에서는 baseline-conditioning-post sequence를 세 independently initiated session으로 바꿨고, bandwidth delta가 -6.37%, -7.59%, +23.33%로 섞였다.
+- 가장 방어 가능한 결론은 deterministic internal mechanism이 아니라 session-level black-box variability다.
 
-- 결과가 보여주는 것:
-  - random read는 QD가 올라갈수록 IOPS가 증가했고 repeat=3 기준으로 변동성도 낮았다.
-  - random write는 QD1에서 QD16까지는 처리량이 증가했지만, QD32는 QD16 대비 평균 IOPS 이득이 거의 없었다.
-  - rand_write QD32는 p99 CV 0.431, p99.9 CV 0.456으로 tail latency 반복성이 가장 약했다.
-  - sustained write QD16 120s에서는 last-third IOPS가 first-third보다 낮아지지 않았고, 평균 completion latency도 악화되지 않았다.
-- 결과가 보여주지 못하는 것:
-  - 내부 GC, SLC cache exhaustion, firmware throttling 같은 root cause는 직접 증명하지 못한다.
-  - USB/exFAT/Windows file-target 조건이 섞인 black-box 결과다.
-- 가장 중요한 trade-off:
-  - 평균 IOPS가 높은 조건이 검증적으로 좋은 조건은 아니다. 특히 QD32 random write처럼 throughput gain은 제한적인데 tail CV가 크게 커지는 조건은 QoS 후보로 조심해야 한다.
+## Mixed / Idle 결과
 
-## Evidence 위치
+- ABBA에서는 second mixed phase가 나빠졌지만, BAAB에서는 방향이 뒤집혔다.
+- mixed-ratio Session 1과 Session 2는 ratio rank, cycle rank, position rank, Phase 5 direction, ramp pattern을 재현하지 못했다.
+- idle-ramp test는 0/60/300초 pre-probe idle을 분리했지만 prior 37-53초 ramp를 재현하지 못했다.
+- 이 결과들은 성능 가설을 지지하지 않지만, 검증 evidence로는 가치가 크다. 자세한 해석은 [[재현되지 않은 가설도 검증 결과다]]에 정리했다.
 
-- QD smoke:
-  - `D:\ssd_lab\results\external_ssd\qd_sweep_smoke\`
-  - `D:\ssd_lab\results\external_ssd_qd_smoke_summary.csv`
-  - `D:\ssd_lab\results\external_ssd_qd_smoke_grouped.csv`
-- QD repeat=3:
-  - `D:\ssd_lab\results\external_ssd\qd_sweep_repeat3\`
-  - `D:\ssd_lab\results\external_ssd_qd_repeat3_summary.csv`
-  - `D:\ssd_lab\results\external_ssd_qd_repeat3_grouped.csv`
-- sustained:
-  - `D:\ssd_lab\results\external_ssd\sustained_rand_write_120s_qd16_repeat3\`
-  - `D:\ssd_lab\results\external_ssd_sustained_summary.csv`
-  - `D:\ssd_lab\results\external_ssd_sustained_timeseries.csv`
-  - `D:\ssd_lab\results\external_ssd_sustained_window_summary.csv`
-  - `D:\ssd_lab\results\external_ssd_sustained_repeatability.csv`
+## Block Size 결과
 
-## Requirement Verdict
+- QD32 random read/write에서 64K가 observed throughput knee였다.
+- 1M은 64K 대비 bandwidth 이득이 없었고, p99 latency는 read 13.77x, write 15.69x 증가했다.
+- 이 결과는 block size를 평균 throughput만으로 선택하면 안 된다는 근거다.
+- 자세한 수치와 해석은 [[External SSD Block Size Sweep]]에 정리했다.
 
-| Requirement | Verdict | 메모 |
+## Data Integrity / Observer 결과
+
+- 4 GiB CRC32C write/readback은 정확히 4,294,967,296 bytes를 처리했고 fio error 0으로 통과했다.
+- integrity verdict는 Pass, `REQ-DATA-009`도 Pass다.
+- synchronized Windows logical-disk observer는 실행됐지만 zero-only samples만 나와 host-observer evidence는 Limited다.
+- 이 분리는 correctness verdict와 observability coverage를 섞지 않는 좋은 예다. 자세한 내용은 [[External SSD Data Integrity]]에 정리했다.
+
+## Requirement Verdict 요약
+
+| 분류 | Verdict | 의미 |
 |---|---|---|
-| `REQ-PERF-001` | Pass | random read QD sweep evidence 있음 |
-| `REQ-PERF-002` | Pass | random write QD sweep evidence 있음 |
-| `REQ-QOS-001` | Pass | p99/p99.9와 CV를 함께 보고함 |
-| `REQ-REPRO-001` | Pass | repeat=3 결과와 CV 있음 |
-| `REQ-SUST-001` | Pass | sustained 120s 결과 있음 |
-| `REQ-SUST-002` | TBD | 300s QD32 write 실행 대기 |
-| `REQ-SUST-003` | TBD | sustained read/write 비교 해석 보강 필요 |
-| `REQ-ENV-001` | TBD | 환경 snapshot 정리 필요 |
-| `REQ-TEL-001` | TBD | telemetry 가능/불가능 범위 정리 필요 |
-| `REQ-LIMIT-001` | Pass | black-box limitation 명시 |
+| Performance sweep | Observation / Pass evidence | 외부 spec threshold가 없어 관찰값 중심 |
+| QoS metrics | Pass | p99/p99.9가 별도로 보고됨 |
+| Repeatability | Pass | repeat/CV/cross-session evidence 존재 |
+| Sustained | Pass | time-window 비교 존재 |
+| Mixed / idle hypotheses | evidence Pass, hypothesis not reproduced | 실험 완성도와 성능 방향을 분리 |
+| Block size | Pass | counterbalanced 4K/64K/1M evidence complete |
+| Data integrity | Pass | CRC32C write/readback complete |
+| Host observer | Limited | counter collector는 zero-only signal |
+| Telemetry | Limited | SMART/reliability/fsutil coverage 제한 |
+| Traceability | Pass for traced runs | runner/observer/manifests linked |
+| Limitation | Pass | USB/Windows/exFAT/file-target/root-cause boundary 명시 |
+
+## 다음 단계
+
+- broad performance sweep은 일단 멈추는 것이 맞다.
+- 다음 방향은 compact regression profile이다.
+- regression profile의 기본 구성:
+  - 4K random read/write QD1/QD16
+  - 64K random read/write QD32
+  - 120s sustained QoS condition
+  - 4 GiB CRC32C file-integrity condition
+- hard threshold는 아직 이르다. 현재는 `threshold_mode: observation`으로 두고, independent session이 충분해진 뒤 mature band를 정의해야 한다.
+
+## 해석 한계
+
+- 이 프로젝트는 내부 FTL, NAND, GC, firmware 원인을 증명하지 않는다.
+- USB bridge, enclosure, host controller, Windows, exFAT, fio file-target effects가 모두 포함된 black-box 결과다.
+- SMART/reliability counters는 현재 Windows/USB path에서 제한적이다.
+- direct power measurement나 forced power-loss validation은 수행하지 않았다.
 
 ## 포트폴리오 / 면접 포인트
 
-> 외장 SSD를 black-box DUT로 정의하고 fio QD sweep과 sustained workload를 수행했습니다. 평균 IOPS만 보지 않고 p99/p99.9 latency와 repeat CV를 함께 비교해, rand_write QD32처럼 처리량 이득은 제한적인데 tail latency 안정성이 나쁜 조건을 분리했습니다. 또한 USB/exFAT/Windows file-target이라는 해석 한계를 명시해 device-level claim과 observed behavior를 구분했습니다.
+> 외장 SSD를 black-box DUT로 두고, fio 실험을 requirement, condition, runner/observer, raw evidence, analysis, verdict로 추적 가능한 검증 체계로 만들었습니다. 평균 IOPS뿐 아니라 p99/p99.9 latency, 반복 CV, sustained window, block-size knee, data integrity, host-observer limitation을 분리해 보고했고, 성능 가설이 재현되지 않은 경우에도 evidence Pass와 hypothesis verdict를 분리했습니다.
 
 ## 관련 노트
 
 - [[SSD Mini Lab 프로젝트 허브]]
+- [[SSD Mini Lab Portfolio Evidence]]
+- [[External SSD Block Size Sweep]]
+- [[External SSD Data Integrity]]
+- [[재현되지 않은 가설도 검증 결과다]]
 - [[왜 평균 IOPS만 보면 안 되는가]]
 - [[fio]]
 - [[Queue Depth]]
 - [[p99 latency]]
 - [[SSD QoS]]
 - [[NVMe SMART Telemetry]]
-- [[SSD Mini Lab Portfolio Evidence]]

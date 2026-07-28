@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD Mini Lab Portfolio Evidence
 aliases:
   - SSD Mini Lab 포트폴리오 근거

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Queue Depth
 aliases:
   - QD
