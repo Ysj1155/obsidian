@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD FTL-GC White-box Validation Lab
 aliases:
   - GC Lab

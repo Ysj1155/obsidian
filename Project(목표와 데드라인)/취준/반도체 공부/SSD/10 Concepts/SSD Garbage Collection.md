@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD Garbage Collection
 aliases:
   - SSD GC
