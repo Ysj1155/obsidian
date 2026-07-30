@@ -1,4 +1,4 @@
----
+﻿---
 title: FTL
 aliases:
   - Flash Translation Layer
@@ -149,6 +149,7 @@ FTL은 host가 보는 LBA 공간과 NAND의 page/block 제약 사이를 이어�
 ## 관련 노트
 
 - [[SSD]]
+- [[LBA LPN PPN]]
 - [[SSD 기본 원리와 구조]]
 - [[TRIM]]
 - [[SSD Garbage Collection]]
@@ -159,3 +160,4 @@ FTL은 host가 보는 LBA 공간과 NAND의 page/block 제약 사이를 이어�
 - [[FTL Metadata Recovery and Bad Block Handling]]
 - [[Durable Request Replay]]
 - [[Controller Lease and External Fencing]]
+

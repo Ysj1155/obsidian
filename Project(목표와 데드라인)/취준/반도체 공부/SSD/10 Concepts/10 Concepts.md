@@ -1,4 +1,4 @@
----
+﻿---
 title: SSD 10 Concepts Index
 tags:
   - hub
@@ -34,14 +34,27 @@ updated: 2026-07-30
 ## Black-box 검증 흐름
 
 - [[fio]]
+- [[SSD Host Device Path]]
+- [[fio Result Pipeline]]
+- [[Storage Performance Metrics]]
 - [[Queue Depth]]
 - [[p99 latency]]
 - [[SSD QoS]]
+- [[SSD Telemetry]]
 - [[NVMe SMART Telemetry]]
+
+## 빠른 용어 사전
+
+- 주소 변환: [[LBA LPN PPN]]
+- 측정 경로: [[SSD Host Device Path]]
+- 결과 가공: [[fio Result Pipeline]]
+- 성능 해석: [[Storage Performance Metrics]]
+- 상태 관찰: [[SSD Telemetry]]
 
 ## White-box FTL/GC 흐름
 
 - [[FTL]]
+- [[LBA LPN PPN]]
 - [[SSD Garbage Collection]]
 - [[TRIM]]
 - [[SSD Wear Leveling]]
@@ -62,3 +75,4 @@ updated: 2026-07-30
 - 브로셔 claim은 측정 조건, workload, QD, thermal condition을 확인하기 전까지 claim으로 남긴다.
 - 평균 IOPS, p99/p99.9 latency, CV, telemetry를 같이 본다.
 - 같은 단어라도 black-box 실험과 white-box simulator에서 의미가 달라질 수 있다.
+

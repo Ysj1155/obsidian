@@ -1,4 +1,4 @@
----
+﻿---
 title: fio
 aliases:
   - Flexible I/O Tester
@@ -77,6 +77,8 @@ related_roles:
   - [[p99 latency]]
   - [[SSD QoS]]
 - 결과적으로 연결되는 것:
+  - [[fio Result Pipeline]]
+  - [[Storage Performance Metrics]]
   - [[SSD Mini Lab Portfolio Evidence]]
   - [[왜 평균 IOPS만 보면 안 되는가]]
 
@@ -110,8 +112,15 @@ related_roles:
 - 외장 SSD에서는 USB bridge, enclosure, port, cable 영향도 함께 고려해야 한다.
 - 결과 해석은 항상 test condition과 함께 해야 한다.
 
+## 관련 용어 사전
+
+- [[SSD Host Device Path]]
+- [[fio Result Pipeline]]
+- [[Storage Performance Metrics]]
+
 ## 출처 / 참고
 
 - [[SSD Mini Lab 프로젝트 허브]]
 - [[SSD Mini Lab Portfolio Evidence]]
 - `D:\ssd_lab\README.md`
+

@@ -1,10 +1,8 @@
----
+﻿---
 title: NVMe SMART Telemetry
 aliases:
   - SMART Telemetry
   - NVMe SMART
-  - Storage Telemetry
-  - SSD Telemetry
 tags:
   - validation
   - ssd-validation
@@ -28,6 +26,9 @@ related_roles:
 ---
 
 # NVMe SMART Telemetry
+
+> [!summary]
+> 넓은 용어와 공통 해석 원칙은 [[SSD Telemetry]]에서 먼저 보고, 이 노트에서는 NVMe 중심 지표와 SSD Mini Lab의 실제 수집 경험을 다룬다.
 
 ## 한 줄 결론
 
@@ -123,8 +124,10 @@ related_roles:
 
 ## 관련 노트
 
+- [[SSD Telemetry]]
 - [[External SSD Product Validation]]
 - [[SSD Mini Lab 프로젝트 허브]]
 - [[SSD QoS]]
 - [[p99 latency]]
 - [[fio]]
+

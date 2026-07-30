@@ -1,4 +1,4 @@
----
+﻿---
 title: SSD
 aliases:
   - Solid State Drive
@@ -103,6 +103,10 @@ SSD는 기존 page를 바로 덮어쓸 수 없다. 새 page에 out-of-place writ
 ## 관련 노트
 
 - [[SSD 기본 원리와 구조]]
+- [[LBA LPN PPN]]
+- [[SSD Host Device Path]]
+- [[Storage Performance Metrics]]
+- [[SSD Telemetry]]
 - [[SSD 인터페이스]]
 - [[SSD 통신 프로토콜]]
 - [[FTL]]
@@ -110,3 +114,4 @@ SSD는 기존 page를 바로 덮어쓸 수 없다. 새 page에 out-of-place writ
 - [[SSD Garbage Collection]]
 - [[Write Amplification Factor]]
 - [[SSD QoS]]
+
