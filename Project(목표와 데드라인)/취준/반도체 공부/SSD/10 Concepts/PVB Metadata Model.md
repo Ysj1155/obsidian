@@ -1,4 +1,4 @@
-﻿---
+---
 title: PVB Metadata Model
 aliases:
   - PVB
