@@ -38,6 +38,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -220,8 +221,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "384fc5d1fecf6590",
+  "active": "6feb8b0607cb9f68",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/FTL.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/10 Concepts.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 통신 프로토콜.md",
@@ -247,7 +249,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/FTL.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Queue Depth.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/GC Pause.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References/AWS와 Oracle 공개 자료로 배우는 데이터센터 스토리지.md",
