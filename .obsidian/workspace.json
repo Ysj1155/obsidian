@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD 허브.md",
-                "mode": "preview",
+                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SSD 허브"
+              "title": "2026-07-30"
             }
           },
           {
@@ -53,7 +53,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -236,9 +235,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "384fc5d1fecf6590",
+  "active": "22be28b735f658c0",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Data Temperature.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References/엔터프라이즈 스토리지 계층화와 AI Workload.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-20.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD 허브.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD Mini Lab 프로젝트 허브.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/클라이언트 SSD.md",
@@ -263,9 +265,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Mini Lab 프로젝트 허브.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab/재현되지 않은 가설도 검증 결과다.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab/왜 평균 IOPS만 보면 안 되는가.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab/SSD Mini Lab Stage 1 회고.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab/SSD Mini Lab Portfolio Evidence.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab/External SSD Data Integrity.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/30 White-box FTL-GC Lab",
