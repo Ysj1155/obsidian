@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD Mini Lab 프로젝트 허브
 aliases:
   - SSD Mini Lab
