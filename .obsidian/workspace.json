@@ -53,6 +53,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -235,16 +236,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "22be28b735f658c0",
+  "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/fio.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/클라이언트 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Data Temperature.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References/엔터프라이즈 스토리지 계층화와 AI Workload.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-20.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD 허브.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD Mini Lab 프로젝트 허브.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/클라이언트 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD FTL-GC White-box Validation Lab.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective/재현되지 않은 가설도 검증 결과다.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References/개발자를 위한 SSD(Coding for SSD) - Part 2 SSD의 아키텍쳐와 벤치마킹.md",
