@@ -1,4 +1,4 @@
-﻿---
+---
 title: NVMe SMART Telemetry
 aliases:
   - SMART Telemetry

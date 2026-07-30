@@ -1,4 +1,4 @@
-﻿---
+---
 title: Write Amplification Factor
 aliases:
   - WAF

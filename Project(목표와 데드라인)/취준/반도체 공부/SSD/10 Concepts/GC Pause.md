@@ -1,4 +1,4 @@
-﻿---
+---
 title: GC Pause
 aliases:
   - Garbage Collection Pause
