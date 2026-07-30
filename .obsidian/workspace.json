@@ -53,6 +53,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -235,14 +236,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "22be28b735f658c0",
+  "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 전력 손실 보호 원리.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 통신 프로토콜.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 인터페이스.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD Trim.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/PVB Metadata Model.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/10 Concepts.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 기본 원리와 구조.md",
