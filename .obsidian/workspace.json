@@ -8,33 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "22be28b735f658c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/FTL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "FTL"
-            }
-          },
-          {
             "id": "384fc5d1fecf6590",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/GC Pause.md",
-                "mode": "source",
+                "file": "Project(목표와 데드라인)/취준/FADU/ssd_validation_24week_roadmap.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "GC Pause"
+              "title": "ssd_validation_24week_roadmap"
             }
           },
           {
@@ -53,7 +38,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -238,10 +222,18 @@
   },
   "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References/AWS와 Oracle 공개 자료로 배우는 데이터센터 스토리지.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Queue Depth.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
+    "Project(목표와 데드라인)/취준/FADU/ssd validation 특허.pdf",
+    "Project(목표와 데드라인)/취준/FADU/SSD Validation Engineer(성능 검증).md",
+    "Project(목표와 데드라인)/취준/FADU/SSD Test case generation method for early defect detection.pdf",
+    "Project(목표와 데드라인)/취준/FADU/FDP 개요.pdf",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Wear Leveling.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Garbage Collection.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD Trim.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/FTL.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Queue Depth.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/GC Pause.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References/AWS와 Oracle 공개 자료로 배우는 데이터센터 스토리지.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/TRIM.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/엔터프라이즈 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/클라이언트 SSD.md",
@@ -249,7 +241,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Data Temperature.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD QoS.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/p99 latency.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/GC Pause.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/fio.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/NVMe SMART Telemetry.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Write Amplification Factor.md",
@@ -259,11 +250,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 전력 손실 보호 원리.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 통신 프로토콜.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/10 Concepts.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/SSD.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/SSD 기본 원리와 구조.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/40 References/엔터프라이즈 스토리지 계층화와 AI Workload.md",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-20.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD FTL-GC White-box Validation Lab.md.bak-mojibake",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub/SSD 허브.md.bak-mojibake",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/50 Portfolio and Retrospective",
@@ -272,8 +258,6 @@
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/20 Black-box SSD Mini Lab",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/00 Hub",
-    "무제.base",
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox",
     "무제.canvas",
     "Resourece/Pasted image 20260202173719.png",
     "Resourece/Pasted image 20260317220741.png",
