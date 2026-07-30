@@ -53,6 +53,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -235,10 +236,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "22be28b735f658c0",
+  "active": "384fc5d1fecf6590",
   "lastOpenFiles": [
-    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/GC Pause.md",
+    "Project(목표와 데드라인)/취준/반도체 공부/SSD/inbox/2026-07-30.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/클라이언트 SSD.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/fio.md",
     "Project(목표와 데드라인)/취준/반도체 공부/SSD/10 Concepts/Data Temperature.md",
