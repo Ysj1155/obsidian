@@ -1,4 +1,4 @@
----
+﻿---
 title: SSD 허브
 aliases:
   - SSD Hub
@@ -12,7 +12,7 @@ type: hub
 status: growing
 domain: SSD
 created: 2026-02-21
-updated: 2026-07-28
+updated: 2026-08-04
 related_projects:
   - ssd-mini-lab
   - ftl-gc-whitebox-lab
@@ -33,6 +33,7 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 |---|---|
 | `00 Hub` | SSD 전체 지도와 프로젝트 허브 |
 | `10 Concepts` | SSD 구조, FTL/GC, fio, QD, QoS 같은 기본 개념 |
+| `15 Controller and Verification Foundations` | FSM, handshake, FIFO, bus, DMA, arbitration, assertion, coverage를 SSD controller 관점으로 학습 |
 | `20 Black-box SSD Mini Lab` | 실제 외장 SSD를 fio로 측정한 실험 리포트 |
 | `30 White-box FTL-GC Lab` | Python simulator 기반 내부 모델, recovery, protocol 검증 |
 | `40 References` | 외부 문서, 브로셔, 읽기 자료 스크랩 |
@@ -54,6 +55,13 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 - [[SSD FTL-GC White-box Validation Lab]]
   - FTL/GC/TRIM/wear/resource contention, recovery, request durability, controller ownership을 Python simulator로 관찰하는 white-box validation track.
   - 핵심 산출물: [[Request Timing MVP]], [[Resource Contention MVP]], [[FTL Metadata Recovery and Bad Block Handling]], [[Durable Request Replay]], [[Controller Lease and External Fencing]]
+
+## Controller와 Verification 기초
+
+- [[00 SSD Controller and Verification 학습 지도]]
+  - 일반 CS 전체가 아니라 SSD controller에서 요청이 이동하고 대기하고 실패하는 과정을 이해하기 위한 digital system/verification branch.
+  - 현재 시작 노트: [[01 FSM과 SSD 상태 전이]], [[02 Valid Ready Handshake와 Backpressure]]
+  - 이후 FIFO/buffer, bus, DMA, arbitration, concurrency, assertion, coverage, reset/recovery 순서로 확장한다.
 
 ## 개념 지도
 
@@ -146,3 +154,4 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
   - [[FTL]] 개념 노트 생성.
   - [[FTL Metadata Recovery and Bad Block Handling]], [[Durable Request Replay]], [[Controller Lease and External Fencing]]를 white-box validation branch에 추가.
   - [[External SSD Block Size Sweep]], [[External SSD Data Integrity]], [[재현되지 않은 가설도 검증 결과다]]를 black-box validation branch에 추가.
+
