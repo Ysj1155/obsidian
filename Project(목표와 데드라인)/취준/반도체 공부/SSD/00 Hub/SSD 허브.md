@@ -38,7 +38,7 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 | `30 White-box FTL-GC Lab` | Python simulator 기반 내부 모델, recovery, protocol 검증 |
 | `40 References` | 외부 문서, 브로셔, 읽기 자료 스크랩 |
 | `50 Portfolio and Retrospective` | 회고, 포트폴리오 evidence, 내 언어로 정리한 해석 |
-| `inbox` | 아직 정리 전인 생각 덤프 |
+| `inbox` | [[SSD Inbox Index]]에서 관리하는 아직 정리 전인 생각과 질문 |
 
 ## 먼저 읽을 것
 
@@ -160,5 +160,6 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
   - [[FTL]] 개념 노트 생성.
   - [[FTL Metadata Recovery and Bad Block Handling]], [[Durable Request Replay]], [[Controller Lease and External Fencing]]를 white-box validation branch에 추가.
   - [[External SSD Block Size Sweep]], [[External SSD Data Integrity]], [[재현되지 않은 가설도 검증 결과다]]를 black-box validation branch에 추가.
+
 
 
