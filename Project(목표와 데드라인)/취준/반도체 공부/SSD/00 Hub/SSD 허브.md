@@ -140,6 +140,12 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
 
 > SSD mini-lab에서는 fio 기반 black-box 측정으로 QD, p99/p99.9 latency, 반복 CV, block-size throughput knee, CRC32C data integrity, observer limitation을 분석했고, FTL-GC white-box lab에서는 GC policy가 WAF, wear, GC pause, resource contention에 미치는 영향과 bad-block recovery, request replay, controller fencing 같은 failure boundary를 simulator trace로 검증했습니다. 두 track을 분리해 실제 장치 관찰 결과와 내부 모델 기반 해석의 한계를 구분했습니다.
 
+## 외부 자료와 출처
+
+- [[SSD References Index]]
+  - 표준·검증 framework, vendor brochure, 기술 글, 데이터센터 workload 자료를 모은 source index.
+  - 외부 자료의 주장과 내가 프로젝트에서 직접 관찰한 evidence를 분리한다.
+
 ## 아직 보강할 것
 
 - [[FTL Metadata Recovery and Bad Block Handling]], [[Durable Request Replay]], [[Controller Lease and External Fencing]]를 문답 노트로 소화
@@ -154,4 +160,5 @@ SSD를 구조, 성능, 제품 검증, FTL/GC 내부 모델 관점으로 연결�
   - [[FTL]] 개념 노트 생성.
   - [[FTL Metadata Recovery and Bad Block Handling]], [[Durable Request Replay]], [[Controller Lease and External Fencing]]를 white-box validation branch에 추가.
   - [[External SSD Block Size Sweep]], [[External SSD Data Integrity]], [[재현되지 않은 가설도 검증 결과다]]를 black-box validation branch에 추가.
+
 
