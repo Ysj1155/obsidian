@@ -1,4 +1,4 @@
-﻿---
+---
 title: FTL
 aliases:
   - Flash Translation Layer

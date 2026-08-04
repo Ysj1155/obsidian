@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD
 aliases:
   - Solid State Drive
