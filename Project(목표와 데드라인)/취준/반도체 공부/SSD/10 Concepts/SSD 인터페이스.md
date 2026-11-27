@@ -46,6 +46,8 @@ SATA는 오래된 storage interface로, HDD와 SATA SSD에서 널리 쓰였다. 
 
 ## PCIe
 
+링크의 속도·폭, TLP와 DMA, Gen3–5 대역폭 계산은 [[PCIe]]에서 다룬다.
+
 PCIe는 CPU/chipset과 주변 장치를 연결하는 고속 bus/interface다. NVMe SSD는 보통 PCIe lane을 사용한다.
 
 PCIe 성능은 세대와 lane 수로 표현한다.

@@ -44,6 +44,8 @@ SSD 통신 프로토콜은 host가 SSD에 read/write/flush/TRIM 같은 명령을
 
 ## NVMe 핵심
 
+SQ·CQ, doorbell, DMA를 한 건의 READ로 따라가려면 [[NVMe]]를 읽는다. 상태 로그는 [[NVMe SMART Telemetry]]에 정리했다.
+
 NVMe는 Non-Volatile Memory Express의 약자다. PCIe 위에서 동작하며 SSD가 가진 내부 병렬성을 더 잘 활용하도록 설계된 protocol이다.
 
 핵심은 queue 구조다.
