@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSD 허브
 aliases:
   - SSD Hub

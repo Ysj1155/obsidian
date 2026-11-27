@@ -154,7 +154,7 @@ CAS 시간(ns) ≈ CL × 클럭 주기(ns)
 
 예로 3,200 MT/s에서 클럭 주기는 0.625 ns이고 CL22가 나타내는 시간은 13.75 ns다. 64-bit 데이터 경로를 가정하면 이론 대역폭은 25.6 GB/s다. 이 수치로 row conflict 처리 시간이나 실제 애플리케이션 대역폭을 바로 알 수 없다. 예를 들어 한 x8 칩의 데이터 핀은 8개이고, 64-bit 폭은 그런 칩을 여러 개 묶어 구성할 수 있는 데이터 경로 폭이다. Micron 부품표에서 실제로 전송률과 클럭 주파수, x8, CL의 표기가 어떻게 나뉘는지 비교해 볼 수 있다. [Micron DDR4 부품 카탈로그](https://www.micron.com/products/memory/dram-components/ddr4-sdram/part-catalog)
 
-DDR4·DDR5를 이어서 읽을 때는 외부 버스트 길이, bank 및 bank group 구성, 모듈의 채널 구성, refresh 명령, 오류 보호 범위를 같은 항목으로 비교한다. 이번 노트에서는 두 세대를 읽는 데 공통으로 필요한 ACT·RD·WR·PRE·REF와 타이밍에 집중한다.
+[[DDR4와 DDR5]]에서 외부 버스트 길이, bank 및 bank group 구성, 모듈의 채널 구성, refresh 명령, 오류 보호 범위를 비교한다. 여기서 배운 ACT·RD·WR·PRE·REF를 두 세대가 64 B를 읽는 과정에 적용해 본다.
 
 ## 7. SSD 컨트롤러에서는 무엇을 저장하는가
 
